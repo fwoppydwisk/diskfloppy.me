@@ -5,7 +5,7 @@
 	<title>Calculators</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" id="theme" href="../res/css/dark.min.css" type="text/css" />
+	<link rel="stylesheet" id="theme" href="../res/css/dark.css" type="text/css" />
 	<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">
 
     <meta property="og:type" content="website">

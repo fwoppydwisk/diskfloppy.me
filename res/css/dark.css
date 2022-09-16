@@ -5,6 +5,10 @@ been moved to global.css and imported below.
 */
 @import url('global.css');
 
+html {
+    color-scheme: dark;
+}
+
 div.project pre {
     border: 1px solid #666666
 }

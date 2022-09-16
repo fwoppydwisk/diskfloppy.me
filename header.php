@@ -1,19 +1,16 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
-
 <div class="header">
 	<nav>
 		<div>
-			<a href="./me/">about</a> |
-			<a href="./pics/">pics</a> |
-			<a href="./projects/">projects</a> |
-			<a href="./cgit">repos</a> |
-			<a href="./calculators/">calculators</a> |
-			<a href="./computers/">computers</a> |
+			<!--<a href="/me/">about</a> |
+			<a href="/projects/">projects</a> |
+			<a href="/pics/">pics</a> |-->
+			<a href="/dog/">dog</a> |
+			<a href="https://github.com/floppydisk05?tab=repositories">repos</a> |
+			<a href="/calculators/">calculators</a> |
+			<a href="/computers/">computers</a> |
+			<a href="/bookmarks/">bookmarks</a> |
             <a href="https://blog.diskfloppy.me/">blog</a>
+			<!--<a href="/sitemap/">sitemap</a>-->
 		</div>
 	</nav>
 	<div class="pagetree">
@@ -21,21 +18,18 @@ error_reporting(E_ALL);
 			<span class="title">
 				<?php
 				$uri = $_SERVER['REQUEST_URI'];
-				if ($uri === '/') {
-					echo '~floppydisk';
-				} else {
+				if ($uri === '/') { echo '~floppydisk'; }
+				else {
 					$uri = substr(substr($uri, 1), 0, -1);
-					if (strpos($uri, '/')) {
+					if (!strpos($uri, '/')) {
 						$uriArr = explode('/', $uri);
 						$link = "/";
 						$links = '<a href="/">~floppydisk</a> / ';
 						$currentDir = basename(getcwd());
 						foreach($uriArr as $page) {
 							if ($page !== $currentDir) {
-								if ($link !== '/')
-									$link = $link . '/' . $page;
-								else
-									$link = $link . $page;
+								if ($link !== '/') $link = $link . '/' . $page;
+								else $link = $link . $page;
 								$links = $links . '<a href="' . $link . '">' . $page . '</a> / ';
 							}
 						}

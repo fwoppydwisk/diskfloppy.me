@@ -5,7 +5,7 @@
 	<title>~floppydisk</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" id="theme" href="./res/css/dark.min.css" type="text/css" />
+	<link rel="stylesheet" id="theme" href="./res/css/dark.css" type="text/css" />
 	
     <meta property="og:type" content="website">
 	<meta property="og:title" content="~floppydisk">
@@ -15,7 +15,7 @@
 	<!--<script lang="javascript" href="/res/js/themeswap.js"></script>-->
 	<script>
 		function addStyleSheet(name, id) {
-			var path = '/res/css/' + name + '.min.css';
+			var path = '/res/css/' + name + '.css';
 			var old = document.getElementById(id);
 			if (old && (old.href != path)) {
 				old.href = path;

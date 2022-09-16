@@ -1,5 +1,5 @@
 function addStyleSheet(name, id) {
-	var path = '/res/css/' + name + '.min.css';
+	var path = '/res/css/' + name + '.css';
 	var old = document.getElementById(id);
 	if (old && (old.href != path)) {
 		old.href = path;

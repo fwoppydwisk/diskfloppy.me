@@ -10,11 +10,9 @@
 			<a href="/computers/">computers</a> |
 			<a href="/bookmarks/">bookmarks</a> |
             <a href="https://blog.diskfloppy.me/">blog</a>
-			<!--<a href="/sitemap/">sitemap</a>-->
 		</div>
 	</nav>
 	<div class="pagetree">
-			<div style="float: left;">Design based on <a href="https://finalrewind.org/">finalrewind.org</a></div>
 			<span class="title">
 				<?php
 				$uri = $_SERVER['REQUEST_URI'];

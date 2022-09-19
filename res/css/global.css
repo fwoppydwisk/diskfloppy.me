@@ -268,3 +268,12 @@ body {
     font-family: sans-serif;
     margin: 0px;
 }
+
+table.computers {
+    width: 100%;
+}
+
+td.computer {
+    width: 50%;
+    border: 0px;
+}

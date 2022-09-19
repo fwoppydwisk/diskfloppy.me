@@ -2,46 +2,19 @@
 <html lang="en">
 
 <head>
-	<title>~floppydisk</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" id="theme" href="./res/css/dark.css" type="text/css" />
-	
-    <meta property="og:type" content="website">
-	<meta property="og:title" content="~floppydisk">
+	<!-- Global -->
+	<?php require('./inc/head.html'); ?>
+
+	<!-- Page-specific -->
+	<title>~floppydisk</title>	
+>	<meta property="og:title" content="~floppydisk">
 	<meta property="og:description" content="This is the personal homepage of floppydisk. Every now and then, I dabble in software/hardware projects, take pictures, or write blogposts.">
 	<meta property="og:image" content="/favicon.png">
-	
-	<!--<script lang="javascript" href="/res/js/themeswap.js"></script>-->
-	<script>
-		function addStyleSheet(name, id) {
-			var path = '/res/css/' + name + '.css';
-			var old = document.getElementById(id);
-			if (old && (old.href != path)) {
-				old.href = path;
-			}
-		}
-		var otherTheme = {
-			'dark': 'light',
-			'light': 'dark',
-		};
-		var currentTheme = localStorage.getItem('theme');
-		if (!otherTheme.hasOwnProperty(currentTheme)) {
-			currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-		}
-		addStyleSheet(currentTheme, 'theme');
-
-		function toggleTheme() {
-			currentTheme = otherTheme[currentTheme] || 'light';
-			localStorage.setItem('theme', currentTheme);
-			addStyleSheet(currentTheme, 'theme');
-		}
-	</script>
 </head>
 
 <body>
 <div class="page">
-<?php require('nav.php') ?>
+<?php require('./inc/nav.php') ?>
 <div id="pagebody">
 	<div id="content">
 		<p>Hi!</p>

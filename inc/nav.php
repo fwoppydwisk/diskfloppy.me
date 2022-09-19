@@ -1,3 +1,4 @@
+<script lang="javascript" src="/res/js/themeswap.js"></script>
 <div class="header">
 	<nav>
 		<div>

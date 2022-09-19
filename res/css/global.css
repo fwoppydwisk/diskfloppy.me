@@ -219,6 +219,7 @@ table td {
 }
 
 td {
+    padding: 3px;
     vertical-align: top;
 }
 

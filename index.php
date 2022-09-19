@@ -7,7 +7,7 @@
 
 	<!-- Page-specific -->
 	<title>~floppydisk</title>	
->	<meta property="og:title" content="~floppydisk">
+	<meta property="og:title" content="~floppydisk">
 	<meta property="og:description" content="This is the personal homepage of floppydisk. Every now and then, I dabble in software/hardware projects, take pictures, or write blogposts.">
 	<meta property="og:image" content="/favicon.png">
 </head>

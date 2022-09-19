@@ -16,7 +16,7 @@
 	<script lang="javascript" src="../res/js/themeswap.js"></script>
 </head>
 <body>
-<?php require('../header.php') ?>
+<?php require('../nav.php') ?>
 
 <div id="pagebody">
 	<div id="content">

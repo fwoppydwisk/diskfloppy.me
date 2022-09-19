@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="page">  
-<?php require('../header.php') ?>
+<?php require('../nav.php') ?>
 
 <div id="pagebody">
 	<div id="content">

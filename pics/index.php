@@ -6,18 +6,24 @@
 	<?php require('../inc/head.html'); ?>
 
 	<!-- Page-specific -->
-	<title>Calculators</title>
-	<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">
-	<meta property="og:description" content="C a l c u l a t o r s">
-	<meta property="og:image" content="/res/img/icons/png/calc.png">
+	<title>Pictures</title>
+	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
+	<meta property="og:title" content="Pictures">
+	<meta property="og:description" content="description">
+	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
 </head>
 <body>
-<div class="page">
+<div class="page">  
 <?php require('../inc/nav.php') ?>
 
 <div id="pagebody">
 	<div id="content">
+		TBD
 	</div> <!-- content -->
+
+	<div id="footer" class="pagefooter">
+		<!-- Created <span class="date">Sat 26 Mar 2011 03:11:41 PM CET</span> -->
+	</div> <!-- footer -->
 </div> <!-- pagebody -->
 </div> <!-- page -->
 </body>

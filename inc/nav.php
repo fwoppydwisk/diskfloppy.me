@@ -6,13 +6,14 @@
 			<a href="/projects/">projects</a> |
 			<a href="/pics/">pics</a> |-->
 			<!--<a href="/dog/">dog</a> |-->
-			<a href="/pics/">pictures</a> |
+			<!--<a href="/pics/">pictures</a> |-->
 			<a href="/projects/">projects</a> |
 			<a href="https://github.com/floppydisk05?tab=repositories">repos</a> |
 			<a href="/calculators/">calculators</a> |
 			<a href="/computers/">computers</a> |
 			<a href="/bookmarks/">bookmarks</a> |
-            <a href="https://blog.diskfloppy.me/">blog</a>
+			<a href="https://blog.diskfloppy.me/">blog</a> |
+			<a href="/guestbook/">guestbook</a>
 		</div>
 	</nav>
 	<div class="pagetree">

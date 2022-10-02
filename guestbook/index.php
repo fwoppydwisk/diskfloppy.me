@@ -6,7 +6,7 @@
 	<?php require('../inc/head.html'); ?>
 
 	<!-- Page-specific -->
-	<title>Bookmarks</title>
+	<title>Guestbook</title>
 	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
 	<meta property="og:title" content="Guestbook">
 	<meta property="og:description" content="h">

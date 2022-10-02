@@ -6,7 +6,7 @@
 	<?php require('../inc/head.html'); ?>
 
 	<!-- Page-specific -->
-	<title>Bookmarks</title>
+	<title>Guestbook</title>
 	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
 	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
 </head>
@@ -17,13 +17,13 @@
 <div id="pagebody">
 	<div id="content">
 		<?php
-		// Open the DB
-		if ($_POST['name'] === "" || $_POST['message'] === "") {
+		$name = strip_tags($_POST["name"]);
+		$msg = strip_tags($_POST["message"]);
+		if ($msg === "" || $name === "" || strip_tags(htmlspecialchars_decode($msg)) === "") {
 		    echo '<b>You must provide both a name and message!</b>';
 		} else {
 		    $db = new PDO("sqlite:/mnt/data1/webdata/floppydisk/guestbook.db");
-		    $name = $_POST["name"];
-		    $msg = strip_tags($_POST["message"]);
+		    
 		    $showinfo = isset($_POST["showinfo"]) ? true : false;
 		    $showip = isset($_POST["showip"]) ? true : false;
 		    $ip = $_SERVER['REMOTE_ADDR'];

@@ -23,7 +23,7 @@
 			<b>Nickname:</b> <input type="text" name="name"><br>
 			<b>Message:</b> <textarea name="message"></textarea><br>
 			<b>Show IP:</b><input type="checkbox" name="showip" value="yes"><br>
-			<b>Show info:</b><input type="checkbox" name="showinfo" value="yes"><br>
+			<b>Show info:</b><input type="checkbox" name="showinfo" value="yes" checked><br>
 			<br><input type="submit">
 		</form>
 

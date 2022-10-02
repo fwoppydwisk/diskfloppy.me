@@ -17,16 +17,13 @@
 <div id="pagebody">
 	<div id="content">
 		<?php
-		ini_set('display_errors', 1);
-		ini_set('display_startup_errors', 1);
-		error_reporting(E_ALL);
 		// Open the DB
 		if ($_POST['name'] === "" || $_POST['message'] === "") {
 		    echo '<b>You must provide both a name and message!</b>';
 		} else {
 		    $db = new PDO("sqlite:/mnt/data1/webdata/floppydisk/guestbook.db");
 		    $name = $_POST["name"];
-		    $msg = strip_tags($_POST["message"]);
+		    $msg = htmlspecialchars($_POST["message"]);
 		    $showinfo = isset($_POST["showinfo"]) ? true : false;
 		    $showip = isset($_POST["showip"]) ? true : false;
 		    $ip = $_SERVER['REMOTE_ADDR'];

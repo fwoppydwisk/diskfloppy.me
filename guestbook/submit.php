@@ -23,7 +23,7 @@
 		} else {
 		    $db = new PDO("sqlite:/mnt/data1/webdata/floppydisk/guestbook.db");
 		    $name = $_POST["name"];
-		    $msg = htmlspecialchars($_POST["message"]);
+		    $msg = strip_tags($_POST["message"]);
 		    $showinfo = isset($_POST["showinfo"]) ? true : false;
 		    $showip = isset($_POST["showip"]) ? true : false;
 		    $ip = $_SERVER['REMOTE_ADDR'];

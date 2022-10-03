@@ -17,6 +17,7 @@
 <?php require('./inc/nav.php') ?>
 <div id="pagebody">
 	<div id="content">
+		<br><table class="banner"><tr><td>h</td></tr></table>
 		<p>Hi!</p>
 		<p>This is the personal homepage of <a href="./me/">floppydisk</a>. Every now and then, I
 			dabble in software/hardware <a href="./projects/">projects</a>, take <a href="./pics/">pictures</a>, or write

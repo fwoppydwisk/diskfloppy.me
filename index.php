@@ -61,7 +61,7 @@
 		</p>
 	</div> <!-- content -->
 	<div id="footer" class="pagefooter">
-		<!-- Created <span class="date">Sat 26 Mar 2011 11:39:56 AM CET</span> -->
+		<?php $file = __FILE__;require('./inc/footer.php'); ?>
 	</div> <!-- footer -->
 </div> <!-- pagebody -->
 </div> <!-- page -->

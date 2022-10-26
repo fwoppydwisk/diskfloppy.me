@@ -43,5 +43,5 @@
 				
 			</span>
 		<div style="float: right;"><a onclick="javascript:toggleTheme()">dark / light mode</a></div>
-	</div>
+	</div> <!-- pagetree -->
 </div> <!-- header -->

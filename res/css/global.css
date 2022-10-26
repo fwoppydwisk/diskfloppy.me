@@ -16,9 +16,30 @@ table.banner {
     color: #0F0F0F;
 }
 
+td.banner {
+    padding: 5px;
+}
+
+a.bannerlink {
+    color:  #0F0F0F;
+}
+
+a.bannerlink:hover {
+    text-decoration: underline;
+}
+
+pre.music {
+    font-size: 12pt;
+}
+
 div.page {
-    margin-left: 0.5em;
-    margin-right: 0.5em
+    min-width: 700px;
+    max-width: 1024px;
+    /*margin-left: 0.5em;
+    margin-right: 0.5em;*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto
 }
 
 h1.inline {

@@ -1,39 +1,20 @@
+/*
+This stylesheet contains only colors which are
+different depending on theme. All other styles have
+been moved to global.css and imported below.
+*/
 @import url('global.css');
 
+/*html {
+    color-scheme: dark;
+}
+
+div.project pre {
+    border: 1px solid #666666
+}*/
 body {
-    font-family: sans-serif;
     color: #000;
     background-color: #fff;
-    margin: 0px;
-}
-
-div.page {
-    margin-left: 0.5em;
-    margin-right: 0.5em
-}
-
-h1.inline {
-    font-family: sans-serif;
-    font-weight: normal;
-    margin-top: 0em;
-    clear: none;
-    font-size: 100%;
-    display: inline
-}
-
-h1.inline:before {
-    content: ""
-}
-
-h1:before {
-    content: "> "
-}
-
-h1, h2, h3 {
-    font-family: Monospace;
-    font-weight: normal;
-    margin-top: 1em;
-    clear: left
 }
 
 h1 {
@@ -41,115 +22,31 @@ h1 {
     font-size: 150%
 }
 
-h2:before {
-    content: ">> "
-}
-
 h2 {
     color: #333;
     font-size: 130%
 }
 
-h3:before {
-    content: ">>> "
-}
-
 h3 {
     color: #333;
-    font-size: 115%
-}
-
-img {
-    border: none;
-    max-width: 100%
-}
-
-img.right {
-    float: right;
-    margin-left: 0.5em
-}
-
-div.preview {
-    display: inline-block;
-    width: 30em;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: top;
-    margin-bottom: 2em
-}
-
-div.project {
-    display: inline-block;
-    width: 40em;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: top;
-    margin-bottom: 2em
-}
-
-div.preview .heading .name, div.project .heading .name {
-    font-size: 120%
-}
-
-div.preview img, div.project img {
-    width: auto;
-    max-width: 90%;
-    max-height: 15em
 }
 
 div.preview pre, div.project pre {
-    display: inline-block;
-    text-align: left;
     background-color: #333;
     color: #fff;
-    padding: 0.2em;
-    max-width: 90%
-}
-
-div.preview pre.small, div.project pre.small {
-    font-size: 75%;
-    overflow: hidden
 }
 
 a {
     color: #009;
-    text-decoration: none
-}
-
-pre {
-    max-width: 95%;
-    overflow: auto
 }
 
 .header {
-    font-size: 100%;
-    font-weight: normal;
     color: #333;
-    padding-bottom: 0em;
     border-bottom: 1px solid #cccccc;
-    text-align: center
-}
-
-.header a {
-    text-decoration: none
-}
-
-nav {
-    margin-bottom: 0.3em
-}
-
-div.ddate {
-    text-align: center
 }
 
 .header .pagetree {
-    font-size: 80%;
     color: #333;
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
     border-top: 1px solid #cccccc
 }
 
@@ -157,21 +54,10 @@ div.ddate {
     color: #333
 }
 
-div.note {
-    font-style: italic
-}
-
-table {
-    border-collapse: collapse
-}
-
 table td {
     border: 1px solid black
 }
 
-table.noborder td {
-    border: none
-}
 
 table.skami {
     border-color: #eeeeee
@@ -186,101 +72,11 @@ table.skami .unused {
     color: #222;
     background-color: #ddd
 }
-
-table.skami a {
-    text-decoration: none
-}
-
-table.weather th {
-    font-weight: normal
-}
-
-table.weather td {
-    font-weight: bold;
-    text-align: right
-}
-
-.project .name {
-    font-weight: bold
-}
-
-.project .attributes {
-    font-style: italic
-}
-
-.project .attribbracket {
-    margin-left: 0.5em
-}
-
 .toplinks {
-    line-height: 140%;
-    width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     border-bottom: 1px solid #cccccc
 }
 
-.toplinks span {
-    display: block;
-    text-align: right;
-    float: left;
-    width: 8em;
-    margin-right: 0.5em
-}
-
-.toplinks span:after {
-    content: " >"
-}
-
-.toplinks a {
-    margin-right: 0.5em;
-    text-decoration: none
-}
-
 .deprecated {
-    line-height: 140%;
-    width: 100%;
     color: #aa0000;
-    text-align: center;
-    padding-bottom: 0.5em;
     border-bottom: 2px dashed #aa0000
-}
-
-div.inlinepage {
-    margin-top: 2em;
-    border: 0;
-    padding: 0
-}
-
-div.pheader {
-    font-size: 120%
-}
-
-div.pheader span.date {
-    margin-right: 1em;
-    font-weight: normal
-}
-
-div.pheader a {
-    font-weight: bold;
-    text-decoration: none
-}
-
-div.rss {
-    position: absolute;
-    top: 1em;
-    right: 1em
-}
-
-div.archived {
-    margin-top: 0.5em
-}
-
-div.archived span.date {
-    font-style: italic;
-    margin-right: 0.2em
-}
-
-video {
-    max-width: 100%
 }

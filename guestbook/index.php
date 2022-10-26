@@ -42,6 +42,7 @@
 
 		// Get the results.
 		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 		foreach($results as $row) {
 			echo '<table border="1" width="500"><tr><td><pre>';
 		    $submittedRaw = $row['submitted'];

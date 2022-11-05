@@ -27,10 +27,73 @@
 		<h1>Music <small>(that I like)</small></h1>
 		<table class="skami">
 			<tr>
+				<td><img src="https://ia804502.us.archive.org/8/items/mbid-b1d2802a-73a9-43e0-a704-f3641cdd8841/mbid-b1d2802a-73a9-43e0-a704-f3641cdd8841-29578599476.jpg" width="64" ></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Goodbye
+<b>Album:</b>  Inside (The Songs)
+<b>Artist:</b> Bo Burnham
+				</pre></td>
+			</tr>
+			<tr>
 				<td><img src="https://geo-media.beatsource.com/image_size/64x64/2/1/9/21919d1e-4c70-4525-864e-73be29a56f2c.jpg"></td>
 				<td width="500"><pre class="music"><b>Title:</b>  Enjoy the Silence
 <b>Album:</b>  The Singles 86>98
 <b>Artist:</b> Depeche Mode
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Bizarre Love Triangle
+<b>Album:</b>  album
+<b>Artist:</b> New Order
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Crying in the Rain
+<b>Album:</b>  album
+<b>Artist:</b> a-ha
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Drama!
+<b>Album:</b>  album
+<b>Artist:</b> Erasure
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Stop!
+<b>Album:</b>  album
+<b>Artist:</b> Erasure
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Is This Love?
+<b>Album:</b>  album
+<b>Artist:</b> Alisson Moyet
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Two Birds
+<b>Album:</b>  Far
+<b>Artist:</b> Regina Spektor
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://via.placeholder.com/64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Maid Of Orleans
+<b>Album:</b>  album
+<b>Artist:</b> Orchestral Manoeuvres in the Dark
+				</pre></td>
+			</tr>
+			<tr>
+				<td><img src="https://ia600508.us.archive.org/15/items/mbid-08159cda-2db5-4bd4-94ca-8d6c75522cb7/mbid-08159cda-2db5-4bd4-94ca-8d6c75522cb7-9970486444.jpg" width="64"></td>
+				<td width="500"><pre class="music"><b>Title:</b>  Go!
+<b>Album:</b>  The Race For Space
+<b>Artist:</b> Public Service Broadcasting
 				</pre></td>
 			</tr>
 		</table>

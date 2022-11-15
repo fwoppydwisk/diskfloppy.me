@@ -18,24 +18,24 @@
 
 <div id="pagebody">
 	<div id="content">
-		<h2>Personal Projects</h2>
+		<h1>Personal Projects</h1>
 		<p>Projects I prefer to work on solo</p>
 		<span class="name"><a href="http://weather.diskfloppy.me/"><b>weather.diskfloppy.me</b></a></span><br>
-		<a href="/projects/weatherdata">A page to display data from my weather station</a><br><br>
+		A page to display data from my weather station</a><br><br>
 
 		<span class="name"><a href="http://trivia.diskfloppy.me/"><b>trivia.diskfloppy.me</b></a></span><br>
-		<a href="/projects/trivia-api">A REST API to get trivia questions</a><br>
+		A REST API to get trivia questions<br>
 
-		<h2>Group Projects (<a href="//ndfnet.com/">NDFNet</a> / <a href="//nickandfloppy.com/">nickandfloppy</a>)</h2>
+		<h1>Group Projects (<a href="//ndfnet.com/">NDFNet</a> / <a href="//nickandfloppy.com/">nickandfloppy</a>)</h1>
 		<p>Projects I do/have done with friends</p>
 		<span class="name"><a href="//drivers.nickandfloppy.com/"><b>drivers.nickandfloppy.com</a></b> <small>(nickandfloppy)</small></span><br>
-		<a href="http://www.nickandfloppy.com/projects/netdrivers/">Driver indexing and storage website</a><br><br>
+		Driver indexing and storage website<br><br>
 
 		<span class="name"><a href="https://github.com/NDFNet/PlexBot"><b>PlexBot</b></a> <small>(NDFNet)</small></span><br>
-		<a href="http://ndfnet.com/projects/plexbot/">A basic bot to play music from the configured Plex server in a Discord voice channel.</a><br><br>
+		A basic bot to play music from the configured Plex server in a Discord voice channel.<br><br>
 
 		<span class="name"><a href="https://github.com/nickandfloppy/NetRunner"><b>NetRunner</b></a> <small>(nickandfloppy)</small></span><br>
-		<a href="http://www.nickandfloppy.com/projects/netrunner/">A fork of Starman0620's WinBot, modified for use in nick and floppy's corner.</a><br>
+		A fork of Starman0620's WinBot, modified for use in nick and floppy's corner.<br>
 	</div> <!-- content -->
 
 	<div id="footer" class="pagefooter">

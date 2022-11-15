@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<!-- Global -->
-	<?php require('../inc/head.html'); ?>
+	<?php require('../inc/header.inc.php'); ?>
 
 	<!-- Page-specific -->
 	<title>Computers</title>
@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="page">  
-<?php require('../inc/nav.php') ?>
+<?php require('../inc/nav.inc.php') ?>
 
 <div id="pagebody">
 	<div id="content"><table class="computers" border="0">
@@ -266,7 +266,7 @@
 	</tr></table></div> <!-- content -->
 
 	<div id="footer" class="pagefooter">
-		<?php $file = __FILE__;require('../inc/footer.php'); ?>
+		<?php $file = __FILE__;require('../inc/footer.inc.php'); ?>
 	</div> <!-- footer -->
 </div> <!-- pagebody -->
 </div> <!-- page -->

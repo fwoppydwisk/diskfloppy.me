@@ -2,11 +2,6 @@
 <div class="header">
 	<nav>
 		<div>
-			<!--<a href="/me/">about</a> |
-			<a href="/projects/">projects</a> |
-			<a href="/pics/">pics</a> |-->
-			<!--<a href="/dog/">dog</a> |-->
-			<!--<a href="/pics/">pictures</a> |-->
 			<a href="/projects/">projects</a> |
 			<a href="https://github.com/floppydisk05?tab=repositories">repos</a> |
 			<a href="/calculators/">calculators</a> |

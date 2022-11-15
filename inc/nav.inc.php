@@ -7,7 +7,6 @@
 			<a href="/calculators/">calculators</a> |
 			<a href="/computers/">computers</a> |
 			<a href="/bookmarks/">bookmarks</a> |
-			<a href="https://blog.diskfloppy.me/">blog</a> |
 			<a href="/guestbook/">guestbook</a>
 		</div>
 	</nav>

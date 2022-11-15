@@ -190,7 +190,20 @@
 			<td class="computer">
 				<h1>Dell OptiPlex 745 (USFF, 2007, x3)</h1>
 				<h2>Specifications</h2>
-				<p>TBD</p>
+				<table class="skami">
+					<tr>
+						<td><b>OS</b></td>
+						<td>Various</td>
+					</tr>
+					<tr>
+						<td><b>CPU</b></td>
+						<td>Intel Pentium Dual Core</td>
+					</tr>
+					<tr>
+						<td><b>Memory</b></td>
+						<td>4GB</td>
+					</tr>
+				</table>
 			</td>
 			<!-- Compaq Armada M300 (2000) -->
 			<td class="computer">
@@ -260,7 +273,24 @@
 			<td class="computer">
 				<h1>Fujitsu Milan (1996)</h1>
 				<h2>Specifications</h2>
-				<p>TBD</p>
+				<table class="skami">
+					<tr>
+						<td><b>OS</b></td>
+						<td>Windows 98 SE</td>
+					</tr>
+					<tr>
+						<td><b>CPU</b></td>
+						<td>Intel Pentium</td>
+					</tr>
+					<tr>
+						<td><b>Memory</b></td>
+						<td>32MB</td>
+					</tr>
+					<tr>
+						<td><b>HDD</b></td>
+						<td>IBM DPRA-21215 (1215MB)</td>
+					</tr>
+				</table>
 			</td>
 		</tr>
 	</tr></table></div> <!-- content -->

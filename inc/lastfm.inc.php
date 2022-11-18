@@ -1,4 +1,4 @@
-<h1>Last.fm</h1>
+<h1>Last.fm <small><a href="https://www.last.fm/user/floppydisk_">Profile</a></small></h1>
 <?php
 require('inc/config.inc.php');
 
@@ -25,7 +25,7 @@ if ($err) {
 $current_response = json_decode($current_response, true);
 $nowplaying = $current_response['recenttracks']['track'][0];
 
-echo '        <b>Now Playing:</b> <a href="'.$nowplaying['url'].'">'.$nowplaying['name'].' • '.$nowplaying['artist']['#text'].'</a>'.PHP_EOL;
+echo '        <b>Last/Current Track:</b> <a href="'.$nowplaying['url'].'">'.$nowplaying['name'].' • '.$nowplaying['artist']['#text'].'</a>'.PHP_EOL;
 
 $tracks_to_show = 10;
 
@@ -49,7 +49,7 @@ curl_close($curl);
 if ($err) {
   die("cURL Error #:" . $err);
 }
-echo '        <h2>Top '.$tracks_to_show.' Tracks (Last 7 days) <small><a href="https://www.last.fm/user/floppydisk_">Profile</a></small></h2>'.PHP_EOL;
+echo '        <h2>Top '.$tracks_to_show.' Tracks (Last 7 days)</h2>'.PHP_EOL;
 echo '        <ol>'.PHP_EOL;
 $toptracks_response = json_decode($toptracks_response, true);
 $tracks = $toptracks_response['toptracks']['track'];

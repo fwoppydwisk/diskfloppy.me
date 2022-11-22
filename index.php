@@ -33,7 +33,7 @@
         </p>
         
         <h1>Elsewhere</h1>
-        <p><strong>Mastodon:</strong> <a href="https://mastodon.sdf.org/@floppydisk_">@floppydisk_@mastodon.sdf.org</a><br>
+        <p><strong>Mastodon:</strong> <a rel="me" href="https://mastodon.sdf.org/@floppydisk_">@floppydisk_@mastodon.sdf.org</a><br>
             <strong>Twitter:</strong> <a href="https://twitter.com/floppydisk__">@floppydisk__</a><br>
             <strong>GitHub:</strong> <a href="https://github.com/floppydisk05">floppydisk05</a><br>
             <strong>SDF:</strong> <a href="http://floppydisk.sdf.org/">~floppydisk</a>

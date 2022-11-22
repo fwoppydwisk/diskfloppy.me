@@ -20,11 +20,30 @@
 	<div id="content">
 		<br>
 		<form action="submit.php" method="post">
-			<b>Nickname:</b> <input type="text" name="name"><br>
-			<b>Message:</b> <textarea name="message"></textarea><br>
-			<b>Show IP:</b><input type="checkbox" name="showip" value="yes"><br>
-			<b>Show info:</b><input type="checkbox" name="showinfo" value="yes" checked><br>
-			<br><input type="submit">
+			<fieldset>
+				<legend>Add Entry</legend>
+				<table class="form">
+					<tr>
+						<td class="form"><label for="name">Name: </label></td>
+						<td class="form"><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td class="form"><label for="message">Message: </label></td>
+						<td class="form"><textarea name="message"></textarea></td>
+					</tr>
+					<tr>
+						<td class="form"><label for="showip">Show IP: </label></td>
+						<td class="form"><input type="checkbox" name="showip" value="yes"></td>
+					</tr>
+					<tr>
+						<td class="form"><label for="showinfo">Show info: </label></td>
+						<td class="form"><input type="checkbox" name="showinfo" value="yes" checked></td>
+					</tr>
+					<tr>
+						<td class="form" colspan="2"><input type="submit"></td>
+					</tr>
+				</table>
+			</fieldset>
 		</form>
 
 		<?php

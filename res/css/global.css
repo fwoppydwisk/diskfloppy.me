@@ -84,6 +84,10 @@ img.right {
     margin-left: 0.5em
 }
 
+table.form, td.form {
+    border: none;
+}
+
 div.preview {
     display: inline-block;
     width: 30em;

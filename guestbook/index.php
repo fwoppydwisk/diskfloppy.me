@@ -79,7 +79,7 @@
 			echo '</pre></td></tr></table><br>';
 		}
 		?>
-		</>
+
 	</div> <!-- content -->
 
 	<div id="footer" class="pagefooter">

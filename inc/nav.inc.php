@@ -1,4 +1,3 @@
-<script src="/res/js/themeswap.js"></script>
 <div class="header">
 	<nav>
 		<div>
@@ -36,6 +35,5 @@
 				?>
 				
 			</span>
-		<div style="float: right;"><a onclick="javascript:toggleTheme()">dark / light mode</a></div>
 	</div> <!-- pagetree -->
 </div> <!-- header -->

@@ -35,7 +35,7 @@
 		A basic bot to play music from the configured Plex server in a Discord voice channel.<br><br>
 
 		<span class="name"><a href="https://github.com/nickandfloppy/NetRunner"><b>NetRunner</b></a> <small>(nickandfloppy)</small></span><br>
-		A fork of Starman0620's WinBot, modified for use in nick and floppy's corner.<br>
+		A fork of Starman0620's WinBot, modified for use in The Corner.<br>
 	</div> <!-- content -->
 
 	<div id="footer" class="pagefooter">

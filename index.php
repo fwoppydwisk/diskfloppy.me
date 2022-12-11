@@ -25,7 +25,10 @@
         <p>This is the personal homepage of floppydisk.
         </p>
 
-        <?php require('./inc/lastfm.inc.php') ?>
+        <?php
+        require('./inc/lastfm.inc.php');
+        require('./inc/weatherdata.inc.php');
+        ?>
 
         <h1>Contact</h1>
         <p><strong>Mail</strong>: <a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a><br>

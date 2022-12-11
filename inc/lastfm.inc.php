@@ -1,4 +1,4 @@
-<h1>Last.fm <small><a href="https://www.last.fm/user/floppydisk_">Profile</a></small></h1>
+<h1>Last.fm <small>(<a href="https://www.last.fm/user/floppydisk_">Profile</a>)</small></h1>
 <?php
 require('inc/config.inc.php');
 

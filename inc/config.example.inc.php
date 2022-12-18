@@ -1,5 +1,6 @@
 <?php
 // Create a constant array with config variables
 const CONF = array(
-    "lastfm_key" => "key"
+    "lastfm_key" => "key",
+    "lastfm_user" => "username"
 );

@@ -7,7 +7,7 @@
     <?php require('./inc/header.inc.php'); ?>
 
     <!-- Page-specific -->
-    <title>~floppydisk</title>	
+    <?php require_once('./inc/title.inc.php') ?>
     <meta property="og:title" content="~floppydisk">
     <meta property="og:description" content="This is the personal homepage of floppydisk.">
     <meta property="og:image" content="/favicon.png">

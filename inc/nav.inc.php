@@ -9,31 +9,4 @@
 			<a href="/guestbook/">guestbook</a>
 		</div>
 	</nav>
-	<div class="pagetree">
-			<span class="title">
-				<?php
-				$uri = $_SERVER['REQUEST_URI'];
-				if ($uri === '/') { echo '~floppydisk'; }
-				else {
-					$uri = substr(substr($uri, 1), 0, -1);
-					if (!strpos($uri, '/')) {
-						$uriArr = explode('/', $uri);
-						$link = "/";
-						$links = '<a href="/">~floppydisk</a> / ';
-						$currentDir = basename(getcwd());
-						foreach($uriArr as $page) {
-							if ($page !== $currentDir) {
-								if ($link !== '/') $link = $link . '/' . $page;
-								else $link = $link . $page;
-								$links = $links . '<a href="' . $link . '">' . $page . '</a> / ';
-							}
-						}
-						$links = substr($links, 0, -3) . ' / ' . $currentDir;
-						echo $links;
-					}
-				}
-				?>
-				
-			</span>
-	</div> <!-- pagetree -->
 </div> <!-- header -->

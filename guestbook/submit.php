@@ -6,7 +6,7 @@
 	<?php require('../inc/header.inc.php'); ?>
 
 	<!-- Page-specific -->
-	<title>Guestbook</title>
+	<?php require_once('../inc/title.inc.php') ?>
 	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
 	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
 </head>

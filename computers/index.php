@@ -7,10 +7,10 @@
 
 	<!-- Page-specific -->
 	<?php require_once('../inc/title.inc.php') ?>
-	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
+	<link rel="shortcut icon" href="../res/img/icons/ico/computer.ico" type="image/x-icon">
 	<meta property="og:title" content="Computers">
 	<meta property="og:description" content="Computers I own or have owned.">
-	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
+	<meta property="og:image" content="/res/img/icons/png/computer.png">
 </head>
 <body>
 <div class="page">  

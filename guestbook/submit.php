@@ -7,7 +7,7 @@
 
 	<!-- Page-specific -->
 	<?php require_once('../inc/title.inc.php') ?>
-	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
+	<link rel="shortcut icon" href="../res/img/icons/ico/help-book.ico" type="image/x-icon">
 	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
 </head>
 <body>
@@ -64,7 +64,7 @@
 		}
 		?>
 		<br><br>
-		<a href="./">Back</a>
+		<a href="/guestbook/">Back</a>
 	</div> <!-- content -->
 
 	<div id="footer" class="pagefooter">

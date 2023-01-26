@@ -7,10 +7,10 @@
 
 	<!-- Page-specific -->
 	<?php require_once('../inc/title.inc.php') ?>
-	<!--<link rel="shortcut icon" href="../res/img/icons/ico/calc.ico" type="image/x-icon">-->
+	<link rel="shortcut icon" href="../res/img/icons/ico/help-book.ico" type="image/x-icon">
 	<meta property="og:title" content="Guestbook">
 	<meta property="og:description" content="h">
-	<!--<meta property="og:image" content="/res/img/icons/png/computer.png">-->
+	<meta property="og:image" content="/res/img/icons/png/help-book.png">
 </head>
 <body>
 <div class="page">  

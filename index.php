@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- HTTPS -->
+
 <head>
     <!-- Global -->
     <?php require('./inc/header.inc.php'); ?>

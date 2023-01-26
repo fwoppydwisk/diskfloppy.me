@@ -30,17 +30,18 @@
 			<li><a href="https://starman0620.neocities.org/">CamK06</a> - Now with more outdated HTML!</li>
 			<li><a href="https://hiden.pw/">HIDEN</a> - Moar buttons!</li>
 			<li><a href="http://cocomark.neocities.org/">Coco</a> - needs to go to the brain store</li>
-			<li><a href="http://toxi.pw/">Toxidations</a> - h (idk if this is his actual domain he has like 5)</li>
+			<li><a href="http://toxi.pw/">Toxidation</a> - h (idk if this is his actual domain he has like 5)</li>
 			<li><a href="http://xproot.pw/">xproot</a> - a random internet person on this very random planet</li>
 		</ul>
-		<h1>Computing / Technology</h1>
+		<h1>Cool Projects</h1>
 		<ul>
-			<li><a href="http://www.winworldpc.com/">WinWorld</a> - WinWorld is an online museum dedicated to the preservation and sharing of vintage, abandoned, and pre-release software.</li>
-			<li><a href="http://nina.chat/">NINA</a> - Upcoming revival of the America Online service.</li>
-			<li><a href="http://escargot.chat/">Escargot</a> - MSN & Yahoo Messenger Revival</li>
+			<li><a href="https://tosdr.org">ToS;DR</a> - “I have read and agree to the Terms” is the biggest lie on the web. They aim to fix that.</li>
+			<li><a href="https://nina.chat/">NINA</a> - Upcoming revival of the America Online service.</li>
+			<li><a href="https://escargot.chat/">Escargot</a> - MSN & Yahoo Messenger Revival</li>
 		</ul>
 		<h1>Other Cool Stuff</h1>
 		<ul>
+			<li><a href="http://www.winworldpc.com/">WinWorld</a> - WinWorld is an online museum dedicated to the preservation and sharing of vintage, abandoned, and pre-release software.</li>
 			<li><a href="http://toastytech.com/">ToastyTech</a> - Nathan's Toasty Technology Page</li>
 			<li><a href="http://www.hoary.org/browse/">Optimized for no one</a> - Optimized for no one, but pretty much OK with . . .</li>
 			<li><a href="http://www.cameronsworld.net/">Cameron's World</a> - A love letter to the Internet of old.</li>

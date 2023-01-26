@@ -3,7 +3,7 @@
 $curl_current = curl_init();
 
 curl_setopt_array($curl_current, [
-  CURLOPT_URL => "http://weather.diskfloppy.me/weatherData.json",
+  CURLOPT_URL => "http://weather.diskfloppy.me/data/weatherData.json",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -20,7 +20,7 @@ curl_close($curl_current);
 $curl_current = curl_init();
 
 curl_setopt_array($curl_current, [
-  CURLOPT_URL => "http://weather.diskfloppy.me/got.txt",
+  CURLOPT_URL => "http://weather.diskfloppy.me/data/got.txt",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -65,4 +65,4 @@ echo '<b>Wind Speed:</b> '.$weather_data['wind_speed_last'].' mph<br>';
 echo '<b>Wind Direction:</b> '.$weather_data['wind_dir_last'].'°, '.$windDir.'<br>';
 echo '<b>Temperature:</b> '.round(($weather_data['temp']-32)*(5/9), 1).'°C<br>';
 echo '<b>Rain Rate:</b> '.round($weather_data['rain_rate_last']*0.2, 2).' mm/hr<br>';
-echo '<b>Humidity:</b> '.$weather_data['hum'].'%<br>';
+echo '<b>Humidity:</b> '.round($weather_data['hum']).'%<br>';

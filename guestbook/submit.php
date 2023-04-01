@@ -17,7 +17,7 @@
 <div id="pagebody">
 	<div id="content">
 		<?php
-		$banned_keywords = array("financial", "finance", "stymn", "world4news", "invest");
+		$banned_keywords = array("financial", "finance", "stymn", "world4news", "invest", "special offer", "viagra");
 		$contains_keywords = array();
 		$name = strip_tags($_POST["name"]);
 		$msg = strip_tags($_POST["message"]);

@@ -39,7 +39,7 @@ if ($err) {
 }
 $current_response = json_decode($current_response, true);
 $weather_data = $current_response['data']['conditions'][0];
-echo '<h1>Local Weather <small>(Last Update: '.rtrim($last_update).')</small></h1>';
+echo '<h1>Local Weather <small>(Last Update: '.gmdate('H:i Y-m-d', intval(rtrim($last_update))).')</small></h1>';
 $windDirDeg = $weather_data['wind_dir_last'];
 $windDir = "";
 // W I N D

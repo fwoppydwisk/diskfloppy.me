@@ -1,4 +1,4 @@
-<?php $db = new PDO("sqlite:/mnt/data1/webdata/floppydisk/guestbook.db"); ?>
+<?php $db = new PDO("sqlite:/srv/guestbook.db"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,23 +24,7 @@
 				<legend>Add Entry</legend>
 				<table class="form">
 					<tr>
-						<td class="form"><label for="name">Name: </label></td>
-						<td class="form"><input type="text" name="name"></td>
-					</tr>
-					<tr>
-						<td class="form"><label for="message">Message: </label></td>
-						<td class="form"><textarea name="message"></textarea></td>
-					</tr>
-					<tr>
-						<td class="form"><label for="showip">Show IP: </label></td>
-						<td class="form"><input type="checkbox" name="showip" value="yes"></td>
-					</tr>
-					<tr>
-						<td class="form"><label for="showinfo">Show info: </label></td>
-						<td class="form"><input type="checkbox" name="showinfo" value="yes" checked></td>
-					</tr>
-					<tr>
-						<td class="form" colspan="2"><input type="submit"></td>
+						<td class="form"><i>Form temporarily disabled</i></td>
 					</tr>
 				</table>
 			</fieldset>
@@ -53,7 +37,7 @@
 		$count = $count_query->fetch()[0];
 		echo '<h1>Entries <small>(' . $count . ' total)</small></h1>';
 		// Prepare SELECT statement.
-		$select = "SELECT name, message, show_info, show_ip, ip, submitted, browser_info FROM Entries ORDER BY id DESC";
+		$select = "SELECT name, message, show_info, show_ip, ip, submitted, browser_info FROM Entries ORDER BY submitted DESC";
 		$stmt = $db->prepare($select);
 
 		// Execute statement.

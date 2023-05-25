@@ -19,38 +19,42 @@
 <div id="pagebody">
 	<div id="content"><table class="computers" border="0">
 		<tr>
-			<!-- Lenovo ThinkPad T430 -->
+			<!-- Custom Build -->
 			<td class="computer">
-				<h1>Lenovo ThinkPad T430 (2012)</h1>
+				<h1>Custom Build</h1>
 				<h2>Specifications</h2>
 				<table class="skami">
 					<tr>
 						<td><b>OS</b></td>
-						<td>Arch Linux x86_64 / Windows 7 Pro</td>
+						<td>NixOS 22.11 / Windows 10 Pro</td>
 					</tr>
 					<tr>
-						<td><b>LCD Resolution</b></td>
-						<td>1600x900</td>
+						<td><b>Monitor</b></td>
+						<td>Dell P2018H (1600x900)</td>
 					</tr>
 					<tr>
 						<td><b>CPU</b></td>
-						<td>Intel i7-3520M (4 cores) @ 3.6GHz</td>
+						<td>Intel i7-6700K (8) @ 4.0GHz</td>
 					</tr>
 					<tr>
 						<td><b>GPU</b></td>
-						<td>Intel 3rd Gen Core processor Graphics Controller</td>
+						<td>NVidia GTX 1060 (3GB)</td>
 					</tr>
 					<tr>
 						<td><b>Memory</b></td>
-						<td>16GB</td>
+						<td>64GB</td>
 					</tr>
 					<tr>
 						<td><b>HDD0</b></td>
-						<td>Crucial CT500MX500SSD1 (500GB, Linux)</td>
+						<td>SanDisk SSD Plus (120GB, Windows 10)</td>
 					</tr>
 					<tr>
 						<td><b>HDD1</b></td>
-						<td>Crucial CT250MX500SSD1 (250GB, Windows)</td>
+						<td>Crucial CT500MX500SSD1 (500GB, NixOS)</td>
+					</tr>
+					<tr>
+						<td><b>HDD2</b></td>
+						<td>WDC WD20EZEAZ-00GGJB0 (2TB, Data)</td>
 					</tr>
 				</table>
 			</td>
@@ -87,34 +91,38 @@
 			</td>
 		</tr>
 		<tr>
-			<!-- IBM ThinkPad T40 (2003) -->
+			<!-- Lenovo ThinkPad T430 -->
 			<td class="computer">
-				<h1>IBM ThinkPad T40 (2003)</h1>
+				<h1>Lenovo ThinkPad T430 (2012)</h1>
 				<h2>Specifications</h2>
 				<table class="skami">
 					<tr>
 						<td><b>OS</b></td>
-						<td>Windows XP Pro / Windows 2000 Pro (Extended)</td>
+						<td>Arch Linux x86_64 / Windows 7 Pro</td>
 					</tr>
 					<tr>
 						<td><b>LCD Resolution</b></td>
-						<td>1024x768</td>
+						<td>1600x900</td>
 					</tr>
 					<tr>
 						<td><b>CPU</b></td>
-						<td>Intel Pentium M (single core) @ 1.3GHz</td>
+						<td>Intel i7-3520M (4 cores) @ 3.6GHz</td>
 					</tr>
 					<tr>
 						<td><b>GPU</b></td>
-						<td>ATI Mobility Radeon 7500 (32MB)</td>
+						<td>Intel 3rd Gen Core processor Graphics Controller</td>
 					</tr>
 					<tr>
 						<td><b>Memory</b></td>
-						<td>1GB (DDR SDRAM)</td>
+						<td>16GB</td>
 					</tr>
 					<tr>
-						<td><b>HDD</b></td>
-						<td>Fujitsu MHS2030AT (30GB)</td>
+						<td><b>HDD0</b></td>
+						<td>Crucial CT500MX500SSD1 (500GB, Linux)</td>
+					</tr>
+					<tr>
+						<td><b>HDD1</b></td>
+						<td>Crucial CT250MX500SSD1 (250GB, Windows)</td>
 					</tr>
 				</table>
 			</td>
@@ -205,11 +213,36 @@
 					</tr>
 				</table>
 			</td>
-			<!-- Compaq Armada M300 (2000) -->
+			<!-- IBM ThinkPad T40 (2003) -->
 			<td class="computer">
-				<h1>Compaq Armada M300 (2000)</h1>
+				<h1>IBM ThinkPad T40 (2003)</h1>
 				<h2>Specifications</h2>
-				<p>TBD</p>
+				<table class="skami">
+					<tr>
+						<td><b>OS</b></td>
+						<td>Windows XP Pro / Windows 2000 Pro (Extended)</td>
+					</tr>
+					<tr>
+						<td><b>LCD Resolution</b></td>
+						<td>1024x768</td>
+					</tr>
+					<tr>
+						<td><b>CPU</b></td>
+						<td>Intel Pentium M (single core) @ 1.3GHz</td>
+					</tr>
+					<tr>
+						<td><b>GPU</b></td>
+						<td>ATI Mobility Radeon 7500 (32MB)</td>
+					</tr>
+					<tr>
+						<td><b>Memory</b></td>
+						<td>1GB (DDR SDRAM)</td>
+					</tr>
+					<tr>
+						<td><b>HDD</b></td>
+						<td>Fujitsu MHS2030AT (30GB)</td>
+					</tr>
+				</table>
 			</td>
 		</tr>
 		<tr>
@@ -291,6 +324,13 @@
 						<td>IBM DPRA-21215 (1215MB)</td>
 					</tr>
 				</table>
+			</td>
+			
+			<!-- Compaq Armada M300 (2000) -->
+			<td class="computer">
+				<h1>Compaq Armada M300 (2000)</h1>
+				<h2>Specifications</h2>
+				<p>TBD</p>
 			</td>
 		</tr>
 	</tr></table></div> <!-- content -->

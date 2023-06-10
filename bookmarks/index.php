@@ -22,7 +22,7 @@
 		<ul>
 			<li><a href="http://www.nick99nack.com/">nick99nack</a> - Currently in the process of taking over the internet. I <i>Totally</i> didn't steal any of his stuff.</li>
 			<li><a href="http://dkay.xyz/">dkay</a> - The land of norton.</li>
-			<li><a href="https://campos02.me/">Vbc</a> - Cool brazilian dude, does programming and stuff</li>
+			<li><a href="https://campos02.me/">campos</a> - Cool brazilian dude, does programming and stuff</li>
 			<li><a href="https://kickfacehq.com/">KickfaceHQ</a> - The interwebz home of Daniel Kickface and Team Kickface! Uses a totally rad FrontPage 2003 theme.</li>
 			<li><a href="https://joshuaalto.com/">Sashi</a> - Site redesign #8! I'll find a website style I enjoy eventually, I swear!</li>
 			<li><a href="http://strangenessnetworks.com/">noone</a> - Strangeness Network, noone's website.</li>

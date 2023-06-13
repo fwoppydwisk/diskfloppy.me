@@ -1,0 +1,77 @@
+/*
+This stylesheet contains only colors which are
+different depending on theme. All other styles have
+been moved to global.css and imported below.
+*/
+@import url('global.css');
+
+html {
+    color-scheme: dark;
+}
+
+div.project pre {
+    border: 1px solid #666666
+}
+
+body {
+    color: #ddd;
+    background-color: #333;
+}
+
+h1 {
+    color: #fff;
+}
+
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+div.preview pre, div.project pre {
+    background-color: #222;
+    color: #ccc;
+}
+
+a {
+    color: #99f;
+    text-decoration: none
+}
+.header {
+    color: #fff;
+}
+
+
+.header .pagetree {
+    color: #fff;
+}
+
+.header .pagetree .title {
+    color: #fff
+}
+
+/*table td {
+    border: 1px solid black
+}*/
+
+
+/*table.skami {
+    border-color: #eeeeee
+}*/
+table.skami .semiused {
+    color: #ccc;
+    background-color: #444;
+    border-color: #FFF;
+}
+
+table.skami .unused {
+    color: #bbb;
+    background-color: #555
+}
+
+table {
+    border-color: #fff
+}

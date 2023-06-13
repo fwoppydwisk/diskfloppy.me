@@ -1,0 +1,311 @@
+/*
+This stylesheet contains all styles which are
+the same across both themes.
+*/
+ul {
+    list-style-type: square;
+}
+
+table.banner {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #E04A38;
+    background-color: #E6897E;
+    width: 95%;
+    /* Passes both WCAG AA and WCAG AAA contrast tests */
+    color: #0F0F0F;
+}
+
+td.banner {
+    padding: 5px;
+}
+
+a.bannerlink {
+    color:  #0F0F0F;
+}
+
+a.bannerlink:hover {
+    text-decoration: underline;
+}
+
+div.page {
+    min-width: 700px;
+    max-width: 1024px;
+    /*margin-left: 0.5em;
+    margin-right: 0.5em;*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto
+}
+
+h1.inline {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0em;
+    clear: none;
+    font-size: 100%;
+    display: inline
+}
+
+h1.inline:before {
+    content: ""
+}
+
+h1:before {
+    content: "> "
+}
+
+h2:before {
+    content: ">> "
+}
+
+h3:before {
+    content: ">>> "
+}
+
+.toplinks span:after {
+    content: " >"
+}
+
+h1, h2, h3 {
+    font-family: Monospace;
+    font-weight: normal;
+    margin-top: 1em;
+    clear: left
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+img.right {
+    float: right;
+    margin-left: 0.5em
+}
+
+table.form, td.form {
+    border: none;
+}
+
+div.preview {
+    display: inline-block;
+    width: 30em;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 2em
+}
+
+div.project {
+    display: inline-block;
+    width: 40em;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 2em
+}
+
+div.preview .heading .name, div.project .heading .name {
+    font-size: 120%
+}
+
+div.preview img, div.project img {
+    width: auto;
+    max-width: 90%;
+    max-height: 15em
+}
+
+div.preview pre.small, div.project pre.small {
+    font-size: 75%;
+    overflow: hidden
+}
+
+pre {
+    display: inline;
+    max-width: 95%;
+    overflow: auto
+}
+
+.header a {
+    text-decoration: none
+}
+
+nav {
+    margin-bottom: 0.3em
+}
+
+div.ddate {
+    text-align: center
+}
+
+div.note {
+    font-style: italic
+}
+
+table {
+    border-collapse: collapse
+}
+
+table.noborder td {
+    border: none
+}
+
+table.skami a {
+    text-decoration: none
+}
+
+table.weather th {
+    font-weight: normal
+}
+
+table.weather td {
+    font-weight: bold;
+    text-align: right
+}
+
+.project .name {
+    font-weight: bold
+}
+
+.toplinks a {
+    margin-right: 0.5em;
+    text-decoration: none
+}
+
+div.inlinepage {
+    margin-top: 2em;
+    border: 0;
+    padding: 0
+}
+
+div.pheader {
+    font-size: 120%
+}
+
+div.pheader span.date {
+    margin-right: 1em;
+    font-weight: normal
+}
+
+div.pheader a {
+    font-weight: bold;
+    text-decoration: none
+}
+
+div.rss {
+    position: absolute;
+    top: 1em;
+    right: 1em
+}
+
+div.archived {
+    margin-top: 0.5em
+}
+
+div.archived span.date {
+    font-style: italic;
+    margin-right: 0.2em
+}
+
+video {
+    max-width: 100%
+}
+
+.toplinks span {
+    display: block;
+    text-align: right;
+    float: left;
+    width: 8em;
+    margin-right: 0.5em
+}
+
+.deprecated {
+    line-height: 140%;
+    width: 100%;
+    color: #aa0000;
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px dashed #aa0000
+}
+
+.project .attributes {
+    font-style: italic
+}
+
+.project .attribbracket {
+    margin-left: 0.5em
+}
+
+.toplinks {
+    line-height: 140%;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #cccccc
+}
+
+table td {
+    border: 1px solid white
+}
+
+td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+table.skami {
+    border-color: #eeeeee !important
+}
+
+.header .pagetree {
+    font-size: 80%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-top: 1px solid #cccccc
+}
+
+.header {
+    font-size: 100%;
+    font-weight: normal;
+    padding-bottom: 0em;
+    border-bottom: 1px solid #cccccc;
+    text-align: center
+}
+
+div.preview pre, div.project pre {
+    display: inline-block;
+    text-align: left;
+    padding: 0.2em;
+    max-width: 90%
+}
+
+h1 {
+    font-size: 150%
+}
+
+
+h2 {
+    font-size: 130%
+}
+
+h3 {
+    font-size: 115%
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+table.computers {
+    width: 100%;
+}
+
+td.computer {
+    width: 50%;
+    border: 0px;
+}

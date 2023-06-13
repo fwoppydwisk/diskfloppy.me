@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'test')
+@section('title', 'home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
 <p>Hi!</p>

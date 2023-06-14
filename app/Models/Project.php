@@ -1,4 +1,6 @@
 <?php
+namespace App\Models;
+
 class Project {
     /**
      * @var string The name of the project.

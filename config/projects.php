@@ -1,6 +1,6 @@
 <?php
-include 'app/Models/Project.php';
-include 'app/Models/ProjectCategory.php';
+use App\Models\Project;
+use App\Models\ProjectCategory;
 
 return [
     new ProjectCategory("Websites", [

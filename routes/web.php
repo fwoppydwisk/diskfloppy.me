@@ -24,3 +24,7 @@ Route::get('/bookmarks', function () {
 Route::get('/projects', function () {
     return View::make('pages.projects');
 });
+
+Route::get('/calculators', function () {
+    return View::make('pages.calculators');
+});

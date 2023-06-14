@@ -5,7 +5,6 @@
 			<a href="https://github.com/floppydisk05?tab=repositories">repos</a> |
 			<a href="/calculators/">calculators</a> |
 			<a href="/computers/">computers</a> |
-			<a href="/bookmarks/">bookmarks</a> |
-			<a href="/guestbook/">guestbook</a>
+			<a href="/bookmarks/">bookmarks</a>
 		</div>
 	</nav>

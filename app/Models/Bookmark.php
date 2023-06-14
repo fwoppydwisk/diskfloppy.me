@@ -1,4 +1,6 @@
 <?php
+namespace App\Models;
+
 class Bookmark {
     /**
      * @var string The name of the bookmark.

@@ -1,6 +1,6 @@
 <?php
-include 'app/Models/Bookmark.php';
-include 'app/Models/BookmarkCategory.php';
+use App\Models\Bookmark;
+use App\Models\BookmarkCategory;
 
 return [
     new BookmarkCategory("Friends' Websites", [

@@ -1,6 +1,6 @@
 @extends('layouts.default')
-@section('title', 'test')
-@section('description', 'This is the personal homepage of floppydisk.')
+@section('title', 'computers')
+@section('description', 'Computers I own or have owned.')
 @section('content')
 <table class="computers" border="0">
 		<tr>

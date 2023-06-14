@@ -1,6 +1,6 @@
 @extends('layouts.default')
-@section('title', 'test')
-@section('description', 'This is the personal homepage of floppydisk.')
+@section('title', 'calculators')
+@section('description', 'C a l c u l a t o r s.')
 @section('content')
 <h1>CASIO fx-CG50</h1>
 		<p>TBD</p>

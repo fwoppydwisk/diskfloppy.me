@@ -9,7 +9,7 @@
         @include('components.lastfm')
 
         <!-- WeatherData -->
-        @include('components.weatherdata')
+        @include('components.weather')
 
         <h1>Contact</h1>
         <p><strong>Mail</strong>: <a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a><br/>

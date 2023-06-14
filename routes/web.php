@@ -28,3 +28,7 @@ Route::get('/projects', function () {
 Route::get('/calculators', function () {
     return View::make('pages.calculators');
 });
+
+Route::get('/computers', function () {
+    return View::make('pages.computers');
+});

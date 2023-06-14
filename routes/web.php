@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/bookmarks', function () {
     return View::make('pages.bookmarks');
 });
+
+Route::get('/projects', function () {
+    return View::make('pages.projects');
+});

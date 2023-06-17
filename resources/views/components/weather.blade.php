@@ -1,9 +1,10 @@
 @php
     function degreesToCompassDirection($degrees) {
-        $cardinalDirections = array('N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW', 'N');
-        $degreesPerDirection = 360 / count($cardinalDirections);
-        $index = round($degrees / $degreesPerDirection);
-        return $cardinalDirections[$index];
+        $cardinalDirections = [
+            'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
+            'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW', 'N'
+        ];
+        return $cardinalDirections[round($degrees*16/360)];
     }
 
     $data = json_decode(file_get_contents('http://weather.diskfloppy.me/data/weatherData.json'));

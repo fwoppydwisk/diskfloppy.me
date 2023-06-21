@@ -2,6 +2,10 @@
 This stylesheet contains all styles which are
 the same across both themes.
 */
+* {
+    font-family: monospace;
+}
+
 ul {
     list-style-type: square;
 }

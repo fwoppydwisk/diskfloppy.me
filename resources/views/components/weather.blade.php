@@ -13,8 +13,8 @@
 @endphp
 
 <h1>Local Weather <small>(Last Update: {{ $updated }})</small></h1>
-        <b>Wind Speed:</b> {{ $data->wind_speed_last }} mph<br>
+        <b>Wind Speed:</b>     {{ $data->wind_speed_last }} mph<br>
         <b>Wind Direction:</b> {{ $data->wind_dir_last }}°, {{ degreesToCompassDirection($data->wind_dir_last) }}<br>
-        <b>Temperature:</b> {{ round(($data->temp-32)*(5/9), 1) }}°C<br>
-        <b>Rain Rate:</b> {{ round($data->rain_rate_last*0.2, 2) }} mm/hr<br>
-        <b>Humidity:</b> {{ round($data->hum) }}%<br>
+        <b>Temperature:</b>    {{ round(($data->temp-32)*(5/9), 1) }}°C<br>
+        <b>Rain Rate:</b>      {{ round($data->rain_rate_last*0.2, 2) }} mm/hr<br>
+        <b>Humidity:</b>       {{ round($data->hum) }}%<br>

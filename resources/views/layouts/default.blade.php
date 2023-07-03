@@ -1,9 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- HTTPS -->
-
 <head>
     @include('includes.head')
 </head>

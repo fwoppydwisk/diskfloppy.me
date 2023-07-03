@@ -11,7 +11,7 @@ function degreesToCompassDirection($degrees) {
 
 $data = json_decode(file_get_contents($api_root.'/weather'));
 $updated = gmdate('H:i Y-m-d', $data->updated);
-$data = $data->data;
+$data = $data->current;
 @endphp
 
 <h1>Local Weather <small>(Last Update: {{ $updated }})</small></h1>

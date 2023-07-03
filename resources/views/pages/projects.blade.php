@@ -3,10 +3,10 @@
 @section('title', 'projects')
 @section('description', 'My projects')
 @section('content')
-@foreach ($categories as $category)
+    @foreach ($categories as $category)
     <h1>{{ $category['name']}}</h1>
     @foreach ($category['projects'] as $project)
-        <div>
+    <div>
             <a href="{{ $project['url'] }}">{{ $project['name'] }}</a> - {{ $project['description'] }}<br/>
             <b>Languages:</b> {{ implode(", ", $project['languages']) }}
         </div>

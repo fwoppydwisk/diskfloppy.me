@@ -2,7 +2,7 @@
 @section('title', 'home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
-<p>Hi!</p>
+        <p>Hi!</p>
         <p>This is the personal homepage of floppydisk.</p>
 
         <!-- Last.fm -->

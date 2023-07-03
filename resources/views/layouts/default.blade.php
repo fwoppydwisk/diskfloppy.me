@@ -13,7 +13,7 @@
 
 <div id="pagebody">
     <div id="content">
-        @yield('content')
+@yield('content')
     </div> <!-- content -->
     <div id="footer" class="pagefooter">
         @include('includes.footer')

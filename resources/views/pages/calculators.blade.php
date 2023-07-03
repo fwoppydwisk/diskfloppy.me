@@ -2,7 +2,7 @@
 @section('title', 'calculators')
 @section('description', 'C a l c u l a t o r s.')
 @section('content')
-<h1>CASIO fx-CG50</h1>
+        <h1>CASIO fx-CG50</h1>
 		<p>TBD</p>
 		<h2>Pictures</h2>
 		<p>Click images to view full size</p>

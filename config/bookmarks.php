@@ -102,5 +102,16 @@ return [
                 'description' => "A love letter to the Internet of old."
             ]
         ]
+    ],
+    // Miscellaneous Resources
+    [
+        'name' => "Miscellaneous Resources",
+        'bookmarks' => [
+            [
+                'name' => "Home Manager (Appendix A)",
+                'url' => "https://rycee.gitlab.io/home-manager/options.html",
+                'description' => "Useful list of configuration options for Home Manager."
+            ]
+        ]
     ]
 ];

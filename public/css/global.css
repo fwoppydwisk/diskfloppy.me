@@ -313,3 +313,8 @@ td.computer {
     width: 50%;
     border: 0px;
 }
+
+div.footer {
+    text-align: center;
+    margin-bottom: 5px;
+}

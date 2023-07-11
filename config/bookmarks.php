@@ -1,5 +1,6 @@
 <?php
 return [
+    // Friends' Websites
     [
         'name' => "Friends' Websites",
         'bookmarks' => [
@@ -55,6 +56,7 @@ return [
             ]
         ]
     ],
+    // Cool Projects
     [
         'name' => "Cool Projects",
         'bookmarks' => [
@@ -75,6 +77,7 @@ return [
             ],
         ]
     ],
+    // Other Cool Stuff
     [
         'name' => "Other Cool Stuff",
         'bookmarks' => [

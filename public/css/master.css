@@ -1,9 +1,9 @@
-/*
-This stylesheet contains all styles which are
-the same across both themes.
-*/
 * {
     font-family: monospace;
+}
+
+html {
+    color-scheme: dark;
 }
 
 ul {
@@ -16,30 +16,28 @@ table.banner {
     border: 2px solid #E04A38;
     background-color: #E6897E;
     width: 95%;
-    /* Passes both WCAG AA and WCAG AAA contrast tests */
+    /* Passes both WCAG AD and WCAG AAA contrast tests */
     color: #0F0F0F;
 }
 
-td.banner {
+table.banner td {
     padding: 5px;
 }
 
-a.bannerlink {
-    color:  #0F0F0F;
+table.banner td a {
+    color: #0F0F0F;
 }
 
-a.bannerlink:hover {
+table.banner td a:hover {
     text-decoration: underline;
 }
 
 div.page {
     min-width: 700px;
     max-width: 1024px;
-    /*margin-left: 0.5em;
-    margin-right: 0.5em;*/
     padding-left: 0.5em;
     padding-right: 0.5em;
-    margin: auto
+    margin: auto;
 }
 
 h1.inline {
@@ -48,34 +46,20 @@ h1.inline {
     margin-top: 0em;
     clear: none;
     font-size: 100%;
-    display: inline
+    display: inline;
 }
 
-h1.inline:before {
-    content: ""
-}
-
-h1:before {
-    content: "> "
-}
-
-h2:before {
-    content: ">> "
-}
-
-h3:before {
-    content: ">>> "
-}
-
-.toplinks span:after {
-    content: " >"
-}
+h1.inline:before { content: "" }
+h1:before { content: "> " }
+h2:before { content: ">> " }
+h3:before { content: ">>> " }
 
 h1, h2, h3 {
-    font-family: Monospace;
+    font-family: monospace;
     font-weight: normal;
     margin-top: 1em;
-    clear: left
+    clear: left;
+    color: #FFFFFF;
 }
 
 img {
@@ -85,12 +69,15 @@ img {
 
 img.right {
     float: right;
-    margin-left: 0.5em
+    margin-left: 0.5em;
 }
 
-table.form, td.form {
+table.form td {
     border: none;
 }
+
+/* -------------------------------------------------------------------------- */
+
 
 div.preview {
     display: inline-block;
@@ -125,6 +112,15 @@ div.preview pre.small, div.project pre.small {
     overflow: hidden
 }
 
+div.preview pre, div.project pre {
+    background-color: #222;
+    color: #ccc;
+}
+
+div.project pre {
+    border: 1px solid #666666
+}
+
 pre {
     display: inline;
     max-width: 95%;
@@ -148,7 +144,8 @@ div.note {
 }
 
 table {
-    border-collapse: collapse
+    border-collapse: collapse;
+    border-color: #FFFFFF;
 }
 
 table.noborder td {
@@ -254,7 +251,7 @@ table td {
 }
 
 td {
-    padding: 3px;
+    padding: 0px;
     vertical-align: top;
 }
 
@@ -269,7 +266,12 @@ table.skami {
     width: 100%;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
-    border-top: 1px solid #cccccc
+    border-top: 1px solid #cccccc;
+    color: #FFFFFF;
+}
+
+.header .pagetree .title {
+    color: #fff
 }
 
 .header {
@@ -277,7 +279,8 @@ table.skami {
     font-weight: normal;
     padding-bottom: 0em;
     border-bottom: 1px solid #cccccc;
-    text-align: center
+    text-align: center;
+    color: #FFFFFF;
 }
 
 div.preview pre, div.project pre {
@@ -287,22 +290,15 @@ div.preview pre, div.project pre {
     max-width: 90%
 }
 
-h1 {
-    font-size: 150%
-}
-
-
-h2 {
-    font-size: 130%
-}
-
-h3 {
-    font-size: 115%
-}
+h1 { font-size: 150% }
+h2 { font-size: 130% }
+h3 { font-size: 115% }
 
 body {
     font-family: sans-serif;
     margin: 0px;
+    color: #ddd;
+    background-color: #333;
 }
 
 table.computers {
@@ -322,4 +318,9 @@ div.footer {
 table.commits tr td {
     border: none;
     padding-right: 5px;
+}
+
+a {
+    color: #99f;
+    text-decoration: none
 }

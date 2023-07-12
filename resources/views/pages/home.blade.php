@@ -19,6 +19,9 @@
         <!-- WeatherData -->
         @include('components.weather')
 
+        <!-- Site Updates -->
+        @include('components.git')
+
         <h1>Contact</h1>
         <p><strong>Mail</strong>:&nbsp;<a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a><br/>
             <strong>IRC</strong>:&nbsp;&nbsp;<a href="https://r-type.ca/page.php?id=1034">floppydisk @ r-type</a><br/>

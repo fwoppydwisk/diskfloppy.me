@@ -40,7 +40,7 @@ function formatRelativeTime(DateTime $dateTime) {
         $date = DateTime::createFromFormat("Y-m-d\TH:i:s\Z", $commit->author->date)
     @endphp
         <tr>
-            <td>&bullet;</td>
+            <td>&bull;</td>
             <td>{{ formatRelativeTime($date) }}</td>
             <td><a href="{{ $commit->url }}">{{ $commit->message }}</a></td>
         </tr>

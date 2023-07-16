@@ -45,6 +45,11 @@ class Kernel extends HttpKernel
         ],
     ];
 
+    protected $routeMiddleware = [
+        'rate_limit' => \App\Http\Middleware\RateLimiter::class,
+    ];
+
+
     /**
      * The application's middleware aliases.
      *

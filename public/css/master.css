@@ -350,3 +350,29 @@ table.gb_entry tr td {
 table.gb_entry {
     margin-bottom: 5px;
 }
+
+table.gb_admin {
+    margin-bottom: 5px;
+    width: 500px;
+    border: #FFFFFF solid;
+}
+
+table.gb_admin tr td {
+    border-right: none;
+    border-bottom: none;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table.gb_admin tr td.gb_del {
+    border-left: none;
+    vertical-align: top;
+    padding: 5px;
+    width: 32px;
+}
+
+table.gb_admin tr td.gb_message {
+    border-top: none;
+    vertical-align: top;
+    padding: 5px;
+}

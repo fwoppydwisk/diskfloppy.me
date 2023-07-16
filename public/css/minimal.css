@@ -9,3 +9,7 @@ body {
     color: #ddd;
     background-color: #333;
 }
+
+table.gb_entry_details tr td {
+    padding-right: 5px;
+}

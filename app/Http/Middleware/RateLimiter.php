@@ -21,7 +21,7 @@ class RateLimiter
 
         if (Cache::has($cacheKey)) {
             // If the cache key exists, the IP has submitted an entry within the last hour
-            return response()->view('errors.ratelimit-guestbook', [], 429);
+            return response()->view('errors.guestbook-ratelimit', [], 429);
         }
 
         // Add the IP address to the cache and set the expiration time to one hour

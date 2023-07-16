@@ -35,8 +35,12 @@
             </tr>
         </table>
     </form>
-    <p>You can submit an entry <u>once every hour</u>.</p>
-    <p>Your IP address <u>will</u> be logged but <u>will not</u> be publically displayed.</p>
+    <p>A few things to note:</p>
+    <ul>
+        <li>You can submit an entry <u>once every hour</u>.</li>
+        <li>Your IP address <u>will</u> be logged but <u>will not</u> be publically displayed.</li>
+        <li>Any entries that appear to be spam <u>will</u> be removed.</li>
+    </ul>
     <hr/>
     @php
         $entries = DB::select('SELECT name, timestamp, message FROM guestbook_entries ORDER BY id DESC');

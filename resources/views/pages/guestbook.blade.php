@@ -50,7 +50,7 @@
         <table class="gb_entry"><tr><td>
             Name:&nbsp;{{ $entry->name }}<br/>
             Date:&nbsp;{{ gmdate("H:i:s - Y-m-d", $entry->timestamp) }}<br/><br/>
-            {{ htmlspecialchars($entry->message) }}
+            {{ $entry->message }}
         </td></tr></table>
     @endforeach
 @stop

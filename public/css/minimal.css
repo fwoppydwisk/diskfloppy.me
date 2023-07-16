@@ -1,0 +1,11 @@
+html {
+    color-scheme: dark;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    margin-left: 10px;
+    color: #ddd;
+    background-color: #333;
+}

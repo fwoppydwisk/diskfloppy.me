@@ -6,6 +6,7 @@
             <a href="/projects/">projects</a> |
             <a href="/calculators/">calculators</a> |
             <a href="/computers/">computers</a> |
-            <a href="/bookmarks/">bookmarks</a>
+            <a href="/bookmarks/">bookmarks</a> |
+            <a href="/guestbook/">guestbook</a>
         </div>
     </nav>

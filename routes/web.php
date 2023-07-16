@@ -32,3 +32,12 @@ Route::get('/calculators', function () {
 Route::get('/computers', function () {
     return View::make('pages.computers');
 });
+
+Route::get('/guestbook', 'App\Http\Controllers\GuestbookController@guestbook')
+    ->name('guestbook');
+
+Route::post('/guestbook', 'App\Http\Controllers\GuestbookController@guestbookpost')
+    ->name('guestbookPost')
+    ->middleware('rate_limit');
+
+

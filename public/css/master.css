@@ -115,6 +115,10 @@ div.preview pre.small, div.project pre.small {
 div.preview pre, div.project pre {
     background-color: #222;
     color: #ccc;
+    display: inline-block;
+    text-align: left;
+    padding: 0.2em;
+    max-width: 90%
 }
 
 div.project pre {
@@ -283,13 +287,6 @@ table.skami {
     color: #FFFFFF;
 }
 
-div.preview pre, div.project pre {
-    display: inline-block;
-    text-align: left;
-    padding: 0.2em;
-    max-width: 90%
-}
-
 h1 { font-size: 150% }
 h2 { font-size: 130% }
 h3 { font-size: 115% }
@@ -323,4 +320,33 @@ table.commits tr td {
 a {
     color: #99f;
     text-decoration: none
+}
+
+table.gb_entryform tr td {
+    border: none;
+}
+
+table.gb_entryform tr td label {
+    padding-right: 5px;
+}
+
+table.gb_entryform tr td span.text-danger {
+    padding-left: 5px;
+    color: rgb(255, 114, 114);
+}
+
+table.gb_entryform tr td textarea,
+table.gb_entryform tr td input {
+    margin-bottom: 5px;
+}
+
+table.gb_entry tr td {
+    border: solid #FFFFFF;
+    width: 500px;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table.gb_entry {
+    margin-bottom: 5px;
 }

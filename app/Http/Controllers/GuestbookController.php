@@ -16,13 +16,13 @@ class GuestbookController extends Controller {
             'message' => 'required'
         ]);
 
-        $matching_bans = DB::select('SELECT reason FROM guestbook_bans WHERE ip_address = ?', array($request->ip()));
+        $matching_bans = DB::select('SELECT reason FROM guestbook__bans WHERE ip_address = ?', array($request->ip()));
 
         if (count($matching_bans) > 0 ) {
             return view('errors.guestbook-ipban')->with('reason', $matching_bans[0]->reason);
         }
 
-        DB::insert('INSERT INTO guestbook_entries (name, timestamp, ip_address, agent, message) values (?, ?, ?, ?, ?)', array(
+        DB::insert('INSERT INTO guestbook__entries (name, timestamp, ip_address, agent, message) values (?, ?, ?, ?, ?)', array(
             htmlspecialchars($request->get('name')),
             time(),
             $request->ip(),

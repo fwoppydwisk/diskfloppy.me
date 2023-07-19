@@ -43,7 +43,11 @@
     </ul>
     <hr/>
     @php
-        $entries = DB::select('SELECT name, timestamp, message FROM guestbook_entries ORDER BY id DESC');
+        $entries = DB::select('
+            SELECT name, timestamp, message
+            FROM guestbook__entries
+            ORDER BY id DES
+        ');
     @endphp
     <h1>Entries <small>({{ count($entries) }} total)</small></h1>
     @foreach ($entries as $entry)

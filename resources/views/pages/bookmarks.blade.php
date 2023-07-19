@@ -5,7 +5,7 @@
 @php
     $categories = DB::select('
         SELECT id, name
-        FROM bookmark_categories
+        FROM bookmark__categories
         ORDER BY priority ASC
     ');
 @endphp
@@ -15,7 +15,7 @@
     @php
         $sites = DB::select('
             SELECT name, url, description
-            FROM bookmark_sites
+            FROM bookmark__sites
             WHERE category_id = ? ORDER BY priority ASC
         ', array($category->id));
     @endphp

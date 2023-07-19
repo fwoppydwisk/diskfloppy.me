@@ -2,7 +2,11 @@
 @section('title', 'guestbook')
 @section('content')
     @php
-        $entries = DB::select('SELECT id, name, timestamp, message FROM guestbook_entries ORDER BY id DESC');
+        $entries = DB::select('
+            SELECT id, name, timestamp, message
+            FROM guestbook__entries
+            ORDER BY id DESC
+        ');
     @endphp
     <h1>Entries <small>({{ count($entries) }} total)</small></h1>
     @foreach ($entries as $entry)

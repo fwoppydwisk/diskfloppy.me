@@ -60,7 +60,7 @@ Route::get('/admin/guestbook/delete', function () {
     }
 
     $id = request()->input('id');
-    $entry = DB::table('guestbook_entries')->find($id);
+    $entry = DB::table('guestbook__entries')->find($id);
 
     if ($entry) {
         // Render a confirmation view
@@ -78,7 +78,7 @@ Route::post('/admin/guestbook/delete', function () {
     }
 
     $id = request()->input('id');
-    DB::table('guestbook_entries')->where('id', $id)->delete();
+    DB::table('guestbook__entries')->where('id', $id)->delete();
 
     return back()->with('success', 'Entry deleted successfully!');
 });

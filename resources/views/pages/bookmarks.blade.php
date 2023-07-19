@@ -1,13 +1,27 @@
-<?php $categories = app('config')->get('bookmarks'); ?>
 @extends('layouts.default')
 @section('title', 'bookmarks')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
+@php
+    $categories = DB::select('
+        SELECT id, name
+        FROM bookmark_categories
+        ORDER BY priority ASC
+    ');
+@endphp
+
 @foreach ($categories as $category)
-        <h1>{{ $category['name'] }}</h1>
-        <ul>
-    @foreach ($category['bookmarks'] as $bookmark)
-        <li><a href="{{ $bookmark['url'] }}">{{ $bookmark['name'] }}</a> - {{ $bookmark['description'] }}</li>
+    <h1>{{ $category->name }}</h1>
+    @php
+        $sites = DB::select('
+            SELECT name, url, description
+            FROM bookmark_sites
+            WHERE category_id = ? ORDER BY priority ASC
+        ', array($category->id));
+    @endphp
+    <ul>
+    @foreach ($sites as $site)
+        <li><a href="{{ $site->url }}">{{ $site->name }}</a> - {{ $site->description }}</li>
     @endforeach
     </ul>
 @endforeach

@@ -46,7 +46,7 @@
         $entries = DB::select('
             SELECT name, timestamp, message
             FROM guestbook__entries
-            ORDER BY id DES
+            ORDER BY id DESC
         ');
     @endphp
     <h1>Entries <small>({{ count($entries) }} total)</small></h1>

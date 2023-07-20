@@ -25,7 +25,7 @@ class RateLimiter
         }
 
         // Add the IP address to the cache and set the expiration time to one hour
-        Cache::put($cacheKey, true, 60);
+        Cache::put($cacheKey, true, 3600);
 
         return $next($request);
     }

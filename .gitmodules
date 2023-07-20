@@ -1,0 +1,3 @@
+[submodule "public/publicfiles"]
+	path = public/publicfiles
+	url = https://github.com/floppydisk05/diskfloppy.me-publicfiles

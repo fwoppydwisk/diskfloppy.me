@@ -3,7 +3,7 @@
 @section('content')
     @php
         $entries = DB::select('
-            SELECT id, name, timestamp, message
+            SELECT id, name, timestamp, message, ip_address
             FROM guestbook__entries
             ORDER BY id DESC
         ');
@@ -14,6 +14,7 @@
             <tr>
                 <td>
                     Name:&nbsp;{{ $entry->name }}<br/>
+                    IP:&nbsp;&nbsp;&nbsp;{{ $entry->ip_address }}<br/>
                     Date:&nbsp;{{ gmdate("H:i:s - Y-m-d", $entry->timestamp) }}
                 </td>
                 <td class="gb_del">

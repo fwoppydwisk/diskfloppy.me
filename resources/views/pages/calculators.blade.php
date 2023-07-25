@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'calculators')
+@section('title', 'Calculators')
 @section('description', 'C a l c u l a t o r s.')
 @section('content')
         <h1>CASIO fx-CG50</h1>

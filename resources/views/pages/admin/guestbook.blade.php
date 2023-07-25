@@ -1,5 +1,5 @@
 @extends('layouts.default-admin')
-@section('title', 'guestbook')
+@section('title', 'Guestbook')
 @section('content')
     @php
         $entries = DB::select('
@@ -13,8 +13,8 @@
         <table class="gb_admin">
             <tr>
                 <td>
-                    Name:&nbsp;{{ $entry->name }}<br/>
-                    IP:&nbsp;&nbsp;&nbsp;{{ $entry->ip_address }}<br/>
+                    Name:&nbsp;{{ $entry->name }}<br>
+                    IP:&nbsp;&nbsp;&nbsp;{{ $entry->ip_address }}<br>
                     Date:&nbsp;{{ gmdate("H:i:s - Y-m-d", $entry->timestamp) }}
                 </td>
                 <td class="gb_del">
@@ -23,7 +23,7 @@
             </tr>
             <tr>
                 <td colspan="2" class="gb_message">
-                    <br/>
+                    <br>
                     {{ htmlspecialchars($entry->message) }}
                 </td>
             </tr></table>

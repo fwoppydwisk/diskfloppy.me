@@ -2,7 +2,7 @@
 @section('title', 'Delete confirm')
 @section('content')
     <h1>Delete Confirmation</h1>
-    <hr/>
+    <hr>
     <p>Are you sure you want to delete this entry?</p>
 
     <h3>Entry Details:</h3>

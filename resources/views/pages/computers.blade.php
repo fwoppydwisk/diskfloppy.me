@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'computers')
+@section('title', 'Computers')
 @section('description', 'Computers I own or have owned.')
 @section('content')
         <table class="computers" border="0">

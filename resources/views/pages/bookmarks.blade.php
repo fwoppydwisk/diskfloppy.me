@@ -1,28 +1,46 @@
 @extends('layouts.default')
-@section('title', 'bookmarks')
+@section('title', 'Bookmarks')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
-@php
-    $categories = DB::select('
+    @php
+        $categories = DB::select('
         SELECT id, name
         FROM bookmark__categories
         ORDER BY priority ASC
     ');
-@endphp
+    @endphp
 
-@foreach ($categories as $category)
-    <h1>{{ $category->name }}</h1>
-    @php
-        $sites = DB::select('
+    @foreach ($categories as $category)
+        <table class="infotable">
+
+            <tr>
+                <td colspan="2">
+                    <h1>{{ $category->name }}</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            @php
+                $sites = DB::select(
+                    '
             SELECT name, url, description
             FROM bookmark__sites
             WHERE category_id = ? ORDER BY priority ASC
-        ', array($category->id));
-    @endphp
-    <ul>
-    @foreach ($sites as $site)
-        <li><a href="{{ $site->url }}">{{ $site->name }}</a> - {{ $site->description }}</li>
+        ',
+                    [$category->id],
+                );
+            @endphp
+            @foreach ($sites as $site)
+                <tr>
+                    <td><a href="{{ $site->url }}">{{ $site->name }}</a>
+                        - {{ $site->description }}</td>
+                </tr>
+            @endforeach
+        </table>
+        <br>
     @endforeach
-    </ul>
-@endforeach
 @stop

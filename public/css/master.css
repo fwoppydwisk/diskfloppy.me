@@ -1,4 +1,4 @@
-* {
+body {
     font-family: monospace;
 }
 
@@ -13,11 +13,11 @@ ul {
 table.banner {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #E04A38;
-    background-color: #E6897E;
+    border: 2px solid #e04a38;
+    background-color: #e6897e;
     width: 95%;
     /* Passes both WCAG AD and WCAG AAA contrast tests */
-    color: #0F0F0F;
+    color: #0f0f0f;
 }
 
 table.banner td {
@@ -25,7 +25,7 @@ table.banner td {
 }
 
 table.banner td a {
-    color: #0F0F0F;
+    color: #0f0f0f;
 }
 
 table.banner td a:hover {
@@ -34,32 +34,24 @@ table.banner td a:hover {
 
 div.page {
     min-width: 780px;
-    max-width: 1024px;
+    max-width: 800px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin: auto;
 }
 
 h1.inline {
-    font-family: sans-serif;
-    font-weight: normal;
     margin-top: 0em;
     clear: none;
-    font-size: 100%;
     display: inline;
 }
 
-h1.inline:before { content: "" }
-h1:before { content: "> " }
-h2:before { content: ">> " }
-h3:before { content: ">>> " }
-
-h1, h2, h3 {
-    font-family: monospace;
-    font-weight: normal;
+h1,
+h2,
+h3 {
     margin-top: 1em;
     clear: left;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 img {
@@ -78,14 +70,13 @@ table.form td {
 
 /* -------------------------------------------------------------------------- */
 
-
 div.preview {
     display: inline-block;
     width: 30em;
     max-width: 100%;
     text-align: center;
     vertical-align: top;
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
 div.project {
@@ -94,127 +85,146 @@ div.project {
     max-width: 100%;
     text-align: center;
     vertical-align: top;
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
-div.preview .heading .name, div.project .heading .name {
-    font-size: 120%
+div.preview .heading .name,
+div.project .heading .name {
+    font-size: 120%;
 }
 
-div.preview img, div.project img {
+div.preview img,
+div.project img {
     width: auto;
     max-width: 90%;
-    max-height: 15em
+    max-height: 15em;
 }
 
-div.preview pre.small, div.project pre.small {
+div.preview pre.small,
+div.project pre.small {
     font-size: 75%;
-    overflow: hidden
+    overflow: hidden;
 }
 
-div.preview pre, div.project pre {
+div.preview pre,
+div.project pre {
     background-color: #222;
     color: #ccc;
     display: inline-block;
     text-align: left;
     padding: 0.2em;
-    max-width: 90%
+    max-width: 90%;
 }
 
 div.project pre {
-    border: 1px solid #666666
+    border: 1px solid #666666;
 }
 
 pre {
     display: inline;
     max-width: 95%;
-    overflow: auto
+    overflow: auto;
 }
 
 .header a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 nav {
-    margin-bottom: 0.3em
+    margin-bottom: 0.3em;
+    text-align: left;
 }
 
-div.ddate {
-    text-align: center
+nav div a img {
+    width: 32px;
+}
+
+nav div h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+div.date {
+    text-align: center;
 }
 
 div.note {
-    font-style: italic
+    font-style: italic;
 }
 
 table {
     border-collapse: collapse;
-    border-color: #FFFFFF;
+    border-color: #ffffff;
 }
 
 table.noborder td {
-    border: none
+    border: none;
 }
 
 table.skami a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 table.weather th {
-    font-weight: normal
+    font-weight: normal;
 }
 
 table.weather td {
     font-weight: bold;
-    text-align: right
+    text-align: right;
 }
 
 .project .name {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .toplinks a {
     margin-right: 0.5em;
-    text-decoration: none
+    text-decoration: none;
 }
 
 div.inlinepage {
     margin-top: 2em;
     border: 0;
-    padding: 0
+    padding: 0;
 }
 
 div.pheader {
-    font-size: 120%
+    font-size: 120%;
 }
 
 div.pheader span.date {
     margin-right: 1em;
-    font-weight: normal
+    font-weight: normal;
 }
 
 div.pheader a {
     font-weight: bold;
-    text-decoration: none
+    text-decoration: none;
 }
 
 div.rss {
     position: absolute;
     top: 1em;
-    right: 1em
+    right: 1em;
 }
 
 div.archived {
-    margin-top: 0.5em
+    margin-top: 0.5em;
 }
 
 div.archived span.date {
     font-style: italic;
-    margin-right: 0.2em
+    margin-right: 0.2em;
 }
 
 video {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .toplinks span {
@@ -222,7 +232,7 @@ video {
     text-align: right;
     float: left;
     width: 8em;
-    margin-right: 0.5em
+    margin-right: 0.5em;
 }
 
 .deprecated {
@@ -231,15 +241,15 @@ video {
     color: #aa0000;
     text-align: center;
     padding-bottom: 0.5em;
-    border-bottom: 2px dashed #aa0000
+    border-bottom: 2px dashed #aa0000;
 }
 
 .project .attributes {
-    font-style: italic
+    font-style: italic;
 }
 
 .project .attribbracket {
-    margin-left: 0.5em
+    margin-left: 0.5em;
 }
 
 .toplinks {
@@ -247,11 +257,11 @@ video {
     width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #cccccc
+    border-bottom: 1px solid #cccccc;
 }
 
 table td {
-    border: 1px solid white
+    border: 1px solid white;
 }
 
 td {
@@ -260,7 +270,7 @@ td {
 }
 
 table.skami {
-    border-color: #eeeeee !important
+    border-color: #eeeeee !important;
 }
 
 .header .pagetree {
@@ -271,25 +281,30 @@ table.skami {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     border-top: 1px solid #cccccc;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .header .pagetree .title {
-    color: #fff
+    color: #fff;
 }
 
 .header {
     font-size: 100%;
     font-weight: normal;
     padding-bottom: 0em;
-    border-bottom: 1px solid #cccccc;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-h1 { font-size: 150% }
-h2 { font-size: 130% }
-h3 { font-size: 115% }
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 130%;
+}
+h3 {
+    font-size: 115%;
+}
 
 body {
     font-family: sans-serif;
@@ -319,7 +334,7 @@ table.commits tr td {
 
 a {
     color: #99f;
-    text-decoration: none
+    text-decoration: none;
 }
 
 table.gb_entryform tr td {
@@ -340,8 +355,26 @@ table.gb_entryform tr td input {
     margin-bottom: 5px;
 }
 
+table.gb_entryform_container {
+    width: 100%;
+}
+
+table.gb_entryform_container tr td {
+    border: none;
+    vertical-align: top;
+}
+
+table.gb_entryform_container tr td p,
+table.gb_entryform_container tr td ul {
+    margin: 0px;
+}
+
+table.gb_entryform tbody tr td textarea {
+    width: 210px;
+}
+
 table.gb_entry tr td {
-    border: solid #FFFFFF;
+    border: solid #ffffff 1px;
     width: 500px;
     vertical-align: top;
     padding: 5px;
@@ -354,7 +387,7 @@ table.gb_entry {
 table.gb_admin {
     margin-bottom: 5px;
     width: 500px;
-    border: #FFFFFF solid;
+    border: #ffffff solid;
 }
 
 table.gb_admin tr td {
@@ -375,4 +408,13 @@ table.gb_admin tr td.gb_message {
     border-top: none;
     vertical-align: top;
     padding: 5px;
+}
+
+table.infotable tr td {
+    border: none;
+    padding-right: 5px;
+}
+
+table.infotable tr td h1 {
+    margin: 0px;
 }

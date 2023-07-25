@@ -16,6 +16,6 @@ $count = 0;
         @break
     @endif
     {{ str_pad($count+1, 2, '0', STR_PAD_LEFT) }}] <a href="{{ $track->url }}">{{ $track->name }} • {{ $track->artist }}</a>
-            <small>({{ $track->plays }} plays)</small><br/>
+            <small>({{ $track->plays }} plays)</small><br>
 @php $count++ @endphp
 @endforeach

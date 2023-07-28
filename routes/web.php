@@ -14,23 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return View::make('pages.home');
+    return view('pages.home');
 });
 
 Route::get('/bookmarks', function () {
-    return View::make('pages.bookmarks');
+    return view('pages.bookmarks');
 });
 
 Route::get('/projects', function () {
-    return View::make('pages.projects');
+    return view('pages.projects');
 });
 
 Route::get('/calculators', function () {
-    return View::make('pages.calculators');
+    return view('pages.calculators');
 });
 
 Route::get('/computers', function () {
-    return View::make('pages.computers');
+    return view('pages.computers');
 });
 
 Route::get('/guestbook', 'App\Http\Controllers\GuestbookController@guestbook')
@@ -39,6 +39,15 @@ Route::get('/guestbook', 'App\Http\Controllers\GuestbookController@guestbook')
 Route::post('/guestbook', 'App\Http\Controllers\GuestbookController@guestbookpost')
     ->name('guestbookPost')
     ->middleware('rate_limit');
+
+Route::get('/weather', function () {
+    return view('pages.weather');
+});
+
+Route::get('/music', function () {
+    return view('pages.music');
+});
+/* ------------------------------ Admin Routes ------------------------------ */
 
 Route::get('/admin', function () {
     if (!auth()->check()) {
@@ -64,7 +73,7 @@ Route::get('/admin/guestbook/delete', function () {
 
     if ($entry) {
         // Render a confirmation view
-        return View::make('pages.admin.guestbook-del-confirm', compact('entry'));
+        return view('pages.admin.guestbook-del-confirm', compact('entry'));
     } else {
         return view('errors.generic-error')
             ->with('error', "Entry not found")

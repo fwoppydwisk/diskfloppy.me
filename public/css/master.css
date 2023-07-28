@@ -1,5 +1,8 @@
 body {
-    font-family: monospace;
+    font-family: sans-serif;
+    margin: 0px;
+    color: #ddd;
+    background-color: #333;
 }
 
 html {
@@ -106,14 +109,32 @@ div.project pre.small {
     overflow: hidden;
 }
 
-div.preview pre,
-div.project pre {
+div.codeblock pre {
     background-color: #222;
+    border: 2px solid #FFF;
+    padding: 10px;
     color: #ccc;
     display: inline-block;
     text-align: left;
-    padding: 0.2em;
     max-width: 90%;
+    min-width: 400px;
+}
+div.codeblock pre h1,
+div.codeblock pre hr {
+    margin: 0px
+}
+
+div.codeblock pre h1 small {
+    color: #919191;
+    font-size: 12px;
+}
+
+div.codeblock pre hr {
+    margin-bottom: 5px;
+}
+
+div.codeblock pre code {
+    background-color: #222;
 }
 
 div.project pre {
@@ -306,13 +327,6 @@ h3 {
     font-size: 115%;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 0px;
-    color: #ddd;
-    background-color: #333;
-}
-
 table.computers {
     width: 100%;
 }
@@ -413,8 +427,15 @@ table.gb_admin tr td.gb_message {
 table.infotable tr td {
     border: none;
     padding-right: 5px;
+    vertical-align: bottom;
 }
 
-table.infotable tr td h1 {
+table.infotable tr td h1,
+table.infotable tr td h2,
+table.infotable tr td small {
     margin: 0px;
+}
+
+table.infotable tr td small {
+    margin-bottom: 5px;
 }

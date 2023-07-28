@@ -31,17 +31,6 @@
     </table>
     <br>
 
-    {{--
-        <!-- Last.fm -->
-        @include('components.lastfm')
-
-        <!-- WeatherData -->
-        @include('components.weather')
-
-        <!-- Site Updates -->
-        @include('components.git')
-        --}}
-
     <table class="infotable">
         <tr>
             <td colspan="2">
@@ -54,8 +43,8 @@
             </td>
         </tr>
         <tr>
-            <td><strong>E-mail</strong></td>
-            <td><a href="mailto:contact@diskfloppy.me">contact (at) diskfloppy (dot) me</a></td>
+            <td><strong>E-mail:</strong></td>
+            <td><a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a></td>
         </tr>
         <tr>
             <td><strong>Mastodon:</strong></td>
@@ -69,13 +58,5 @@
             <td><strong>GitHub:</strong></td>
             <td><a href="https://github.com/floppydisk05">floppydisk05</a></td>
         </tr>
-        <!--<tr>
-                    <td colspan="2">
-                        <a href="https://stackoverflow.com/users/15933092/floppydisk"><img
-                                src="https://stackoverflow.com/users/flair/15933092.png?theme=dark" width="208" height="58"
-                                alt="profile for floppydisk at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-                                title="profile for floppydisk at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
-                    </td>
-                </tr>-->
     </table>
 @stop

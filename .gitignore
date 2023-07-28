@@ -18,3 +18,4 @@ yarn-error.log
 /.idea
 /.vscode
 .auth0.*.json
+**/.DS_Store

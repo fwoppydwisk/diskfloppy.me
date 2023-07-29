@@ -2,7 +2,7 @@
 @section('title', 'Guestbook')
 @section('content')
     <br>
-    <table class="gb-entryform_container">
+    <table class="gb-entryform-container">
         <tr>
             <td>
                 <form method="POST" action="/guestbook">

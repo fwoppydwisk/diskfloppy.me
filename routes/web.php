@@ -44,7 +44,10 @@ Route::get('/weather', function () {
     return view('pages.weather');
 });
 
-Route::get('/music', function () {
+Route::get('/music', function ()
+{
+    return view('pages.music');
+});
     return view('pages.music');
 });
 /* ------------------------------ Admin Routes ------------------------------ */

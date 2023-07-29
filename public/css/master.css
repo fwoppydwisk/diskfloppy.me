@@ -162,7 +162,9 @@ nav div a img {
 }
 
 nav div h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
         Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
     font-weight: normal;

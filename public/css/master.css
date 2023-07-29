@@ -297,7 +297,9 @@ td {
 }
 
 table.skami {
-    border-color: #eeeeee !important;
+    table.skami {
+        border-color: #eeeeee;
+    }
 }
 
 .header .pagetree {

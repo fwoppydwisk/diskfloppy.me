@@ -24,13 +24,13 @@ class GuestbookController extends Controller {
 
         DB::insert(
             'INSERT INTO guestbook__entries (name, timestamp, ip_address, agent, message) values (?, ?, ?, ?, ?)',
-            array(
+            [
                 htmlspecialchars($request->get('name')),
                 time(),
                 $request->ip(),
                 $request->userAgent(),
                 htmlspecialchars($request->get('message'))
-            )
+            ]
         );
 
         return back()->with('success', 'Entry submitted successfully!');

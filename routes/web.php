@@ -48,8 +48,7 @@ Route::get('/music', function ()
 {
     return view('pages.music');
 });
-    return view('pages.music');
-});
+
 /* ------------------------------ Admin Routes ------------------------------ */
 
 Route::get('/admin', function () {

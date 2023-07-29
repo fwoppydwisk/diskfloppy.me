@@ -17,14 +17,14 @@ class RateLimiter
     public function handle(Request $request, Closure $next): Response
     {
         $ipAddress = $request->ip();
-        $cacheKey = 'rate_limit_' . $ipAddress;
+        $cacheKey = 'rate_limit_'.$ipAddress;
 
         if (Cache::has($cacheKey)) {
-            // If the cache key exists, the IP has submitted an entry within the last hour
+            // If the cache key exists, the IP has submitted an entry within the last hour.
             return response()->view('errors.guestbook-ratelimit', [], 429);
         }
 
-        // Add the IP address to the cache and set the expiration time to one hour
+        // Add the IP address to the cache and set the expiration time to one hour.
         Cache::put($cacheKey, true, 3600);
 
         return $next($request);

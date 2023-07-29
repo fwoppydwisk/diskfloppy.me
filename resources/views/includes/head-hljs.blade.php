@@ -12,4 +12,4 @@
     <title>~floppydisk / @yield('title')</title>
     <meta property="og:title" content="~floppydisk / @yield('title')">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:image" content="/favicon.png">
+    <meta property="og:image" content="/favicon-128x128.png">

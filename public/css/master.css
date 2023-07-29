@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    margin: 0px;
+    margin: 0;
     color: #ddd;
     background-color: #333;
 }
@@ -54,13 +54,7 @@ h2,
 h3 {
     margin-top: 1em;
     clear: left;
-    h1,
-    h2,
-    h3 {
-        margin-top: 1em;
-        clear: left;
-        color: #fff;
-    }
+    color: #fff;
 }
 
 img {
@@ -125,9 +119,10 @@ div.codeblock pre {
     max-width: 90%;
     min-width: 400px;
 }
+
 div.codeblock pre h1,
 div.codeblock pre hr {
-    margin: 0px
+    margin: 0
 }
 
 div.codeblock pre h1 small {
@@ -168,12 +163,12 @@ nav div a img {
 
 nav div h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
     font-weight: normal;
     font-size: 30px;
     margin: 10px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 div.date {
@@ -186,10 +181,7 @@ div.note {
 
 table {
     border-collapse: collapse;
-    table {
-        border-collapse: collapse;
-        border-color: #fff;
-    }
+    border-color: #fff;
 }
 
 table.noborder td {
@@ -295,14 +287,12 @@ table td {
 }
 
 td {
-    padding: 0px;
+    padding: 0;
     vertical-align: top;
 }
 
 table.skami {
-    table.skami {
-        border-color: #eeeeee;
-    }
+    border-color: #eeeeee;
 }
 
 .header .pagetree {
@@ -344,7 +334,7 @@ table.computers {
 
 td.computer {
     width: 50%;
-    border: 0px;
+    border: 0;
 }
 
 div.footer {
@@ -362,78 +352,74 @@ a {
     text-decoration: none;
 }
 
-table.gb_entryform tr td {
+table.gb-entryform tr td {
     border: none;
 }
 
-table.gb_entryform tr td label {
+table.gb-entryform tr td label {
     padding-right: 5px;
 }
 
-table.gb_entryform tr td span.text-danger {
+table.gb-entryform tr td span.text-danger {
     padding-left: 5px;
     color: rgb(255, 114, 114);
 }
 
-table.gb_entryform tr td textarea,
-table.gb_entryform tr td input {
+table.gb-entryform tr td textarea,
+table.gb-entryform tr td input {
     margin-bottom: 5px;
 }
 
-table.gb_entryform_container {
+table.gb-entryform-container {
     width: 100%;
 }
 
-table.gb_entryform_container tr td {
+table.gb-entryform-container tr td {
     border: none;
     vertical-align: top;
 }
 
-table.gb_entryform_container tr td p,
-table.gb_entryform_container tr td ul {
-    margin: 0px;
+table.gb-entryform-container tr td p,
+table.gb-entryform-container tr td ul {
+    margin: 0;
 }
 
-table.gb_entryform tbody tr td textarea {
+table.gb-entryform tbody tr td textarea {
     width: 210px;
 }
 
-table.gb_entry tr td {
+table.gb-entry tr td {
     border: solid #ffffff 1px;
     width: 500px;
     vertical-align: top;
     padding: 5px;
 }
 
-table.gb_entry {
+table.gb-entry {
     margin-bottom: 5px;
 }
 
-table.gb_admin {
+table.gb-admin {
     margin-bottom: 5px;
     width: 500px;
-    table.gb_admin {
-        margin-bottom: 5px;
-        width: 500px;
-        border: #fff solid;
-    }
+    border: #fff solid;
 }
 
-table.gb_admin tr td {
+table.gb-admin tr td {
     border-right: none;
     border-bottom: none;
     vertical-align: top;
     padding: 5px;
 }
 
-table.gb_admin tr td.gb_del {
+table.gb-admin tr td.gb-del {
     border-left: none;
     vertical-align: top;
     padding: 5px;
     width: 32px;
 }
 
-table.gb_admin tr td.gb_message {
+table.gb-admin tr td.gb-message {
     border-top: none;
     vertical-align: top;
     padding: 5px;
@@ -448,7 +434,7 @@ table.infotable tr td {
 table.infotable tr td h1,
 table.infotable tr td h2,
 table.infotable tr td small {
-    margin: 0px;
+    margin: 0;
 }
 
 table.infotable tr td small {

@@ -26,5 +26,5 @@ class RedirectIfAuthenticated
         }
 
         return $next($request);
-    }
+    } // End handle().
 }

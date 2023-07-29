@@ -6,7 +6,7 @@
     <p>Are you sure you want to delete this entry?</p>
 
     <h3>Entry Details:</h3>
-    <table class="gb_entry_details">
+    <table class="gb-entry_details">
         <tr>
             <td><b>ID:</b></td>
             <td>{{ $entry->id }}</td>

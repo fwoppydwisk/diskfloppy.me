@@ -401,7 +401,11 @@ table.gb_entry {
 table.gb_admin {
     margin-bottom: 5px;
     width: 500px;
-    border: #ffffff solid;
+    table.gb_admin {
+        margin-bottom: 5px;
+        width: 500px;
+        border: #fff solid;
+    }
 }
 
 table.gb_admin tr td {

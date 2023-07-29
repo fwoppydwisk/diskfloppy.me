@@ -2,13 +2,13 @@
 @section('title', 'Guestbook')
 @section('content')
     <br>
-    <table class="gb_entryform_container">
+    <table class="gb-entryform_container">
         <tr>
             <td>
                 <form method="POST" action="/guestbook">
                     @csrf
                     <x-honeypot />
-                    <table class="gb_entryform">
+                    <table class="gb-entryform">
                         <tr>
                             <td>
                                 <label for="name"><strong>Name:</strong></label>
@@ -62,7 +62,7 @@
     @endphp
     <h1>Entries <small>({{ count($entries) }} total)</small></h1>
     @foreach ($entries as $entry)
-        <table class="gb_entry">
+        <table class="gb-entry">
             <tr>
                 <td>
                     Submitted by <strong>{{ $entry->name }}</strong>

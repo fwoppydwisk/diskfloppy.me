@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
 
     <!-- Page-specific -->
-    <title>~floppydisk / @yield('title')</title>
-    <meta property="og:title" content="~floppydisk / @yield('title')">
+    <title>@yield('title') - diskfloppy.me</title>
+    <meta property="og:title" content="diskfloppy.me | @yield('title')">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="/favicon-128x128.png">

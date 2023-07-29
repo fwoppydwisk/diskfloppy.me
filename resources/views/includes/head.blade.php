@@ -11,4 +11,4 @@
     <title>@yield('title') - diskfloppy.me</title>
     <meta property="og:title" content="diskfloppy.me | @yield('title')">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:image" content="/favicon.png">
+    <meta property="og:image" content="/favicon-128x128.png">

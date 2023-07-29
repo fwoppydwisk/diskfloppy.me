@@ -186,7 +186,10 @@ div.note {
 
 table {
     border-collapse: collapse;
-    border-color: #ffffff;
+    table {
+        border-collapse: collapse;
+        border-color: #fff;
+    }
 }
 
 table.noborder td {

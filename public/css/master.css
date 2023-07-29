@@ -165,8 +165,6 @@ nav div h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
-        Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
     font-weight: normal;
     font-size: 30px;
     margin: 10px;
@@ -332,13 +330,6 @@ h2 {
 }
 
 h3 {
-    font-size: 115%;
-}
-    font-size: 130%;
-}
-h3 {
-    font-size: 115%;
-}
     font-size: 115%;
 }
 

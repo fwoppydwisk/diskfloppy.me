@@ -2,8 +2,36 @@
 @section('title', 'Home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
-    <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.
-    </p>
+    <div class="me">
+        <img src="{{ URL::asset('images/me_200x200.jpg') }}" alt="Me">
+        <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.
+    </div>
+
+    <table class="infotable">
+        <tr>
+            <td>
+                <h1>Fun Facts</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>&#9670; I am (unfortunately) British</td>
+        </tr>
+        <tr>
+            <td>&#9670; I watched the entirety of The Owl House (~18 hours) in under 48 hours.</td>
+        </tr>
+        <tr>
+            <td>&#9670; I spend way too much time on my computer.</td>
+        </tr>
+        <tr>
+            <td>&#9670; Some people say I suck at PHP, but that's clearly wrong :P</td>
+        </tr>
+    </table>
+    <br>
 
     <table class="infotable">
         <tr>

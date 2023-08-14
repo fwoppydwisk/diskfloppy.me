@@ -13,5 +13,5 @@
         alt="Valid HTML 4.01!"><br>
     This site is best viewed at 1024x768 with 16-bit color or better<br>
     &copy; floppydisk 2021-{{ date('Y') }}, Site Version {{ config('app.version') }}, <a
-        href="https://github.com/floppydisk05/diskfloppy.me">GitHub</a><br>
+        href="https://github.com/floppydisk05/diskfloppy.me">Source</a><br>
 </div>

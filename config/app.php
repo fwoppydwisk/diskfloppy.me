@@ -5,7 +5,7 @@ use Illuminate\Support\ServiceProvider;
 
 return [
     'name' => env('APP_NAME', 'diskfloppy.me'),
-    'version' => '5.5.0',
+    'version' => '6.0',
     'env' => env('APP_ENV', 'production'),
     'debug' => (bool) env('APP_DEBUG', false),
     'url' => env('APP_URL', 'http://localhost'),

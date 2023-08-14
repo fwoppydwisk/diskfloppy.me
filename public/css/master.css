@@ -8,6 +8,7 @@ body {
     margin: 0;
     color: var(--foreground);
     background-color: var(--background);
+    text-align: left;
 }
 
 html {
@@ -435,4 +436,13 @@ table.infotable tr td small {
 
 .hljs {
     background: none !important;
+}
+
+.me img {
+    float: right;
+    margin: 5px;
+}
+
+.me p {
+    text-align: justify;
 }

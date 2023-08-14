@@ -8,7 +8,7 @@
         $api_root = app('config')->get('app')['api_root'];
 
         $current_track = json_decode(file_get_contents($api_root . '/lastfm/current'));
-        $toptracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
+        $top_tracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
         $count = 0;
     @endphp
     <table class="infotable">
@@ -32,24 +32,24 @@
                 <h2>Top {{ $cfg['toptracks'] }} Tracks (Last 7 days)</h2>
             </td>
         </tr>
-        <tr">
-            <td style="text-align: right"><b>#</b></td>
-            <td><b>Track</b></td>
-            <td><b>Artist</b></td>
-            <td><b>Plays</b></td>
+        <tr
+        ">
+        <td style="text-align: right"><b>#</b></td>
+        <td><b>Track</b></td>
+        <td><b>Artist</b></td>
+        <td><b>Plays</b></td>
         </tr>
-        @foreach ($toptracks as $track)
+        @foreach ($top_tracks as $track)
             @php $count++ @endphp
-            @if ($count >= $cfg['toptracks'])
+            @if ($count >= $cfg['toptracks']+1)
                 @break
             @endif
             <tr>
-                <td style="text-align: right">{{ $count+1 }}</td>
+                <td style="text-align: right">{{ $count }}</td>
                 <td>{{ $track->name }}</td>
                 <td>{{ $track->artist }}</td>
                 <td>{{ $track->plays }}</td>
             </tr>
         @endforeach
     </table>
-    <hr>
 @stop

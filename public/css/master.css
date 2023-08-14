@@ -1,8 +1,13 @@
+root {
+    --background: #181818;
+    --foreground: #dddddd;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
-    color: #ddd;
-    background-color: #333;
+    color: var(--foreground);
+    background-color: var(--background);
 }
 
 html {
@@ -11,28 +16,6 @@ html {
 
 ul {
     list-style-type: square;
-}
-
-table.banner {
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #e04a38;
-    background-color: #e6897e;
-    width: 95%;
-    /* Passes both WCAG AD and WCAG AAA contrast tests */
-    color: #0f0f0f;
-}
-
-table.banner td {
-    padding: 5px;
-}
-
-table.banner td a {
-    color: #0f0f0f;
-}
-
-table.banner td a:hover {
-    text-decoration: underline;
 }
 
 div.page {
@@ -54,7 +37,6 @@ h2,
 h3 {
     margin-top: 1em;
     clear: left;
-    color: #fff;
 }
 
 img {
@@ -109,23 +91,28 @@ div.project pre.small {
     overflow: hidden;
 }
 
-div.codeblock pre {
-    background-color: #222;
-    border: 2px solid #FFF;
+div.codeblock {
+    background-color: var(--background);
+    border: 2px solid #dddddd;
     padding: 10px;
-    color: #ccc;
     display: inline-block;
     text-align: left;
     max-width: 90%;
     min-width: 400px;
+    margin: 10px;
 }
 
-div.codeblock pre h1,
-div.codeblock pre hr {
-    margin: 0
+div.codeblock hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-div.codeblock pre h1 small {
+div.codeblock h1 {
+    margin: 0;
+    font-family: monospace;
+}
+
+div.codeblock h1 small {
     color: #919191;
     font-size: 12px;
 }
@@ -444,4 +431,8 @@ table.infotable tr td small {
 
 table.infotable tr td small {
     margin-bottom: 5px;
+}
+
+.hljs {
+    background: none !important;
 }

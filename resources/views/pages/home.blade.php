@@ -3,7 +3,7 @@
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
     <div class="me">
-        <img src="/images/me_200x200.jpg" alt="Me">
+        <img src="/images/me_200x200.jpg" alt="Me" width="200" height="200">
         <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.
     </div>
 

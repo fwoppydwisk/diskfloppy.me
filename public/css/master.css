@@ -446,3 +446,7 @@ table.infotable tr td small {
 .me p {
     text-align: justify;
 }
+
+a:hover {
+    text-decoration: underline;
+}

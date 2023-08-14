@@ -13,16 +13,10 @@
     @foreach ($categories as $category)
         <table class="infotable">
 
-            <tr>
-                <td colspan="2">
-                    <h1>{{ $category->name }}</h1>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
+            <caption>
+                <h1>{{ $category->name }}</h1>
+                <hr>
+            </caption>
 
             @php
                 $sites = DB::select(

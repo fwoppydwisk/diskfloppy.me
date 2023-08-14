@@ -22,7 +22,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" class="gb-message">
+                <td class="gb-message">
                     <br>
                     {{ htmlspecialchars($entry->message) }}
                 </td>

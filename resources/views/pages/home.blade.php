@@ -8,16 +8,10 @@
     </div>
 
     <table class="infotable">
-        <tr>
-            <td>
-                <h1>Fun Facts</h1>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <hr>
-            </td>
-        </tr>
+        <caption>
+            <h1>Fun Facts</h1>
+            <hr>
+        </caption>
         <tr>
             <td>&#9670; I am (unfortunately) British</td>
         </tr>
@@ -34,16 +28,10 @@
     <br>
 
     <table class="infotable">
-        <tr>
-            <td colspan="2">
-                <h1>Interests</h1>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <hr>
-            </td>
-        </tr>
+        <caption>
+            <h1>Interests</h1>
+            <hr>
+        </caption>
         <tr>
             <td>&#9670; <b>Tech Theatre</b></td>
             <td>- Lighting, Stage Management, etc.</td>
@@ -60,16 +48,10 @@
     <br>
 
     <table class="infotable">
-        <tr>
-            <td colspan="2">
-                <h1>Contact &amp; social</h1>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <hr>
-            </td>
-        </tr>
+        <caption>
+            <h1>Contact &amp; social</h1>
+            <hr>
+        </caption>
         <tr>
             <td><strong>E-mail:</strong></td>
             <td><a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a></td>

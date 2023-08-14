@@ -18,16 +18,10 @@ $updated = gmdate('H:i Y-m-d', $data->updated);
 $data = $data->current;
 @endphp
 <table class="infotable">
-    <tr>
-        <td colspan="2">
-            <h1>Local Weather</h1>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr>
+    <caption>
+        <h1>Local Weather</h1>
+        <hr>
+    </caption>
     <tr>
         <td><b>Wind Speed:</b></td>
         <td>{{ $data->wind->speed }} mph</td>

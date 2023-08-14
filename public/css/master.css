@@ -416,6 +416,7 @@ table.gb-admin tr td.gb-message {
     border-top: none;
     vertical-align: top;
     padding: 5px;
+    column-span: 2;
 }
 
 table.infotable tr td {
@@ -428,6 +429,15 @@ table.infotable tr td h1,
 table.infotable tr td h2,
 table.infotable tr td small {
     margin: 0;
+}
+
+caption h1,
+caption h2 {
+    margin: 0;
+}
+
+caption {
+    text-align: left;
 }
 
 table.infotable tr td small {

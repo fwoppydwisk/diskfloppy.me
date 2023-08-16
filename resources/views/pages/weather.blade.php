@@ -17,7 +17,7 @@ $data = json_decode(file_get_contents($api_root.'/weather'));
 $updated = gmdate('H:i Y-m-d', $data->updated);
 $data = $data->current;
 @endphp
-<table class="infotable">
+<table class="info-table">
     <caption>
         <h1>Local Weather</h1>
         <hr>

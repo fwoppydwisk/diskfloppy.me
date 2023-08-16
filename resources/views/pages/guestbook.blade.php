@@ -2,13 +2,13 @@
 @section('title', 'Guestbook')
 @section('content')
     <br>
-    <table class="gb-entryform-container">
+    <table class="gb-entry-form-container">
         <tr>
             <td>
                 <form method="POST" action="/guestbook">
                     @csrf
                     <x-honeypot />
-                    <table class="gb-entryform">
+                    <table class="gb-entry-form">
                         <tr>
                             <td>
                                 <label for="name"><strong>Name:</strong></label>

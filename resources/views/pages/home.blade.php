@@ -4,7 +4,7 @@
 @section('content')
     <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.
 
-    <table class="infotable">
+    <table class="info-table">
         <caption>
             <h1>Fun Facts</h1>
             <hr>
@@ -21,10 +21,13 @@
         <tr>
             <td>&#9670; Some people say I suck at PHP, but that's clearly wrong :P</td>
         </tr>
+        <tr>
+            <td>&#9670; Some of my favorite games are: OneShot, Minecraft, Stardew Valley, N++ and Starbound</td>
+        </tr>
     </table>
     <br>
 
-    <table class="infotable">
+    <table class="info-table">
         <caption>
             <h1>Interests</h1>
             <hr>
@@ -44,7 +47,7 @@
     </table>
     <br>
 
-    <table class="infotable">
+    <table class="info-table">
         <caption>
             <h1>Contact &amp; social</h1>
             <hr>

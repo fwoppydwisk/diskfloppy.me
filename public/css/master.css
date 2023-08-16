@@ -299,7 +299,6 @@ table.gb-admin tr td.gb-message {
     border-top: none;
     vertical-align: top;
     padding: 5px;
-    column-span: 2;
 }
 
 table.info-table tr td {

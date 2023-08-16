@@ -11,7 +11,7 @@
     @endphp
 
     @foreach ($categories as $category)
-        <table class="infotable">
+        <table class="info-table">
 
             <caption>
                 <h1>{{ $category->name }}</h1>

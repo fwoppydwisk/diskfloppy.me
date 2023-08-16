@@ -11,7 +11,7 @@
         $top_tracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
         $count = 0;
     @endphp
-    <table class="infotable">
+    <table class="info-table">
         <tr>
             <td colspan="4">
                 <h2>Last/Current Track:</h2>
@@ -32,8 +32,7 @@
                 <h2>Top {{ $cfg['toptracks'] }} Tracks (Last 7 days)</h2>
             </td>
         </tr>
-        <tr
-        ">
+        <tr>
         <td style="text-align: right"><b>#</b></td>
         <td><b>Track</b></td>
         <td><b>Artist</b></td>

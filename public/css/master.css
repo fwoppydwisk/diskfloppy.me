@@ -28,7 +28,7 @@ div.page {
 }
 
 h1.inline {
-    margin-top: 0em;
+    margin-top: 0;
     clear: none;
     display: inline;
 }
@@ -56,43 +56,7 @@ table.form td {
 
 /* -------------------------------------------------------------------------- */
 
-div.preview {
-    display: inline-block;
-    width: 30em;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: top;
-    margin-bottom: 2em;
-}
-
-div.project {
-    display: inline-block;
-    width: 40em;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: top;
-    margin-bottom: 2em;
-}
-
-div.preview .heading .name,
-div.project .heading .name {
-    font-size: 120%;
-}
-
-div.preview img,
-div.project img {
-    width: auto;
-    max-width: 90%;
-    max-height: 15em;
-}
-
-div.preview pre.small,
-div.project pre.small {
-    font-size: 75%;
-    overflow: hidden;
-}
-
-div.codeblock {
+div.code-block {
     background-color: var(--background);
     border: 2px solid #dddddd;
     padding: 10px;
@@ -103,31 +67,27 @@ div.codeblock {
     margin: 10px;
 }
 
-div.codeblock hr {
+div.code-block hr {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-div.codeblock h1 {
+div.code-block h1 {
     margin: 0;
     font-family: monospace;
 }
 
-div.codeblock h1 small {
+div.code-block h1 small {
     color: #919191;
     font-size: 12px;
 }
 
-div.codeblock pre hr {
+div.code-block pre hr {
     margin-bottom: 5px;
 }
 
-div.codeblock pre code {
+div.code-block pre code {
     background-color: #222;
-}
-
-div.project pre {
-    border: 1px solid #666666;
 }
 
 pre {
@@ -155,8 +115,7 @@ nav div h1 {
         sans-serif;
     font-weight: normal;
     font-size: 30px;
-    margin: 10px;
-    margin-left: 0;
+    margin: 10px 10px 10px 0;
 }
 
 div.date {
@@ -172,14 +131,6 @@ table {
     border-color: #fff;
 }
 
-table.noborder td {
-    border: none;
-}
-
-table.skami a {
-    text-decoration: none;
-}
-
 table.weather th {
     font-weight: normal;
 }
@@ -187,35 +138,6 @@ table.weather th {
 table.weather td {
     font-weight: bold;
     text-align: right;
-}
-
-.project .name {
-    font-weight: bold;
-}
-
-.toplinks a {
-    margin-right: 0.5em;
-    text-decoration: none;
-}
-
-div.inlinepage {
-    margin-top: 2em;
-    border: 0;
-    padding: 0;
-}
-
-div.pheader {
-    font-size: 120%;
-}
-
-div.pheader span.date {
-    margin-right: 1em;
-    font-weight: normal;
-}
-
-div.pheader a {
-    font-weight: bold;
-    text-decoration: none;
 }
 
 div.rss {
@@ -237,14 +159,6 @@ video {
     max-width: 100%;
 }
 
-.toplinks span {
-    display: block;
-    text-align: right;
-    float: left;
-    width: 8em;
-    margin-right: 0.5em;
-}
-
 .deprecated {
     line-height: 140%;
     width: 100%;
@@ -252,22 +166,6 @@ video {
     text-align: center;
     padding-bottom: 0.5em;
     border-bottom: 2px dashed #aa0000;
-}
-
-.project .attributes {
-    font-style: italic;
-}
-
-.project .attribbracket {
-    margin-left: 0.5em;
-}
-
-.toplinks {
-    line-height: 140%;
-    width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #cccccc;
 }
 
 table td {
@@ -279,29 +177,14 @@ td {
     vertical-align: top;
 }
 
-table.skami {
-    border-color: #eeeeee;
-}
-
-.header .pagetree {
-    font-size: 80%;
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    border-top: 1px solid #cccccc;
-    color: #ffffff;
-}
-
-.header .pagetree .title {
+.header .title {
     color: #fff;
 }
 
 .header {
     font-size: 100%;
     font-weight: normal;
-    padding-bottom: 0em;
+    padding-bottom: 0;
     text-align: center;
     color: #ffffff;
 }
@@ -345,39 +228,39 @@ a {
     text-decoration: none;
 }
 
-table.gb-entryform tr td {
+table.gb-entry-form tr td {
     border: none;
 }
 
-table.gb-entryform tr td label {
+table.gb-entry-form tr td label {
     padding-right: 5px;
 }
 
-table.gb-entryform tr td span.text-danger {
+table.gb-entry-form tr td span.text-danger {
     padding-left: 5px;
     color: rgb(255, 114, 114);
 }
 
-table.gb-entryform tr td textarea,
-table.gb-entryform tr td input {
+table.gb-entry-form tr td textarea,
+table.gb-entry-form tr td input {
     margin-bottom: 5px;
 }
 
-table.gb-entryform-container {
+table.gb-entry-form-container {
     width: 100%;
 }
 
-table.gb-entryform-container tr td {
+table.gb-entry-form-container tr td {
     border: none;
     vertical-align: top;
 }
 
-table.gb-entryform-container tr td p,
-table.gb-entryform-container tr td ul {
+table.gb-entry-form-container tr td p,
+table.gb-entry-form-container tr td ul {
     margin: 0;
 }
 
-table.gb-entryform tbody tr td textarea {
+table.gb-entry-form tbody tr td textarea {
     width: 210px;
 }
 
@@ -419,15 +302,15 @@ table.gb-admin tr td.gb-message {
     column-span: 2;
 }
 
-table.infotable tr td {
+table.info-table tr td {
     border: none;
     padding-right: 5px;
     vertical-align: bottom;
 }
 
-table.infotable tr td h1,
-table.infotable tr td h2,
-table.infotable tr td small {
+table.info-table tr td h1,
+table.info-table tr td h2,
+table.info-table tr td small {
     margin: 0;
 }
 
@@ -440,7 +323,7 @@ caption {
     text-align: left;
 }
 
-table.infotable tr td small {
+table.info-table tr td small {
     margin-bottom: 5px;
 }
 

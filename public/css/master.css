@@ -342,3 +342,32 @@ table.info-table tr td small {
 a:hover {
     text-decoration: underline;
 }
+
+.computer {
+    width: 100%;
+}
+
+.computer td {
+    border: none;
+}
+
+.computer h1,
+.computer hr {
+    margin: 0;
+}
+
+.computer .computer-image {
+    width: 256px;
+}
+
+.spec {
+    padding-left: 20px;
+}
+
+.spec-title {
+    font-weight: bold;
+}
+
+.computer-specs {
+    margin-top: 5px;
+}

@@ -3,7 +3,18 @@
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
     @php
-        $categories = DB::select('
+        $db_alive = true;
+        try {
+            DB::connection()->getPdo();
+        } catch (Exception $e) {
+            $db_alive = false;
+        }
+    @endphp
+    @if (!$db_alive)
+        @include('components.errors.db-error')
+    @else
+    @php
+    $categories = DB::select('
         SELECT id, name
         FROM bookmark__categories
         ORDER BY priority ASC
@@ -37,4 +48,5 @@
         </table>
         <br>
     @endforeach
+    @endif
 @stop

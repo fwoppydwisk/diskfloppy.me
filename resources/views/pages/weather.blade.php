@@ -13,10 +13,22 @@ function degreesToCompassDirection($degrees) {
     return $cardinalDirections[round($degrees*16/360)];
 }
 
-$data = json_decode(file_get_contents($api_root.'/weather'));
-$updated = gmdate('H:i Y-m-d', $data->updated);
-$data = $data->current;
+$api_alive = true;
+
+try {
+    $data = file_get_contents($api_root.'/weather');
+} catch (Exception $e) {
+    $api_alive = false;
+}
 @endphp
+@if (!$api_alive)
+    @include('components.errors.api-error')
+@else
+    @php
+        $data = json_decode(file_get_contents($api_root.'/weather'));
+        $updated = gmdate('H:i Y-m-d', $data->updated);
+        $data = $data->current;
+    @endphp
 <table class="info-table">
     <caption>
         <h1>Local Weather</h1>
@@ -45,4 +57,5 @@ $data = $data->current;
 </table>
 <br>
 <small><i>(Last Update: {{ $updated }})</i></small>
+@endif
 @stop

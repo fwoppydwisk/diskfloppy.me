@@ -7,6 +7,19 @@
         $cfg = app('config')->get('services')['lastfm'];
         $api_root = app('config')->get('app')['api_root'];
 
+        $api_alive = true;
+
+        try {
+            $data = file_get_contents($api_root.'/lastfm/current');
+        } catch (Exception $e) {
+            $api_alive = false;
+        }
+        @endphp
+    @if (!$api_alive)
+        @include('components.errors.api-error')
+    @else
+
+    @php
         $current_track = json_decode(file_get_contents($api_root . '/lastfm/current'));
         $top_tracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
         $count = 0;
@@ -51,4 +64,5 @@
             </tr>
         @endforeach
     </table>
+    @endif
 @stop

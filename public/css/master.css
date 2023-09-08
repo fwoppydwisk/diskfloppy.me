@@ -1,6 +1,7 @@
 :root {
-    --background: #1c1b22;
-    --foreground: #dddddd;
+    --background: #181926;
+    --foreground: #cad3f5;
+    --links: #8aadf4;
 }
 
 body {
@@ -128,7 +129,7 @@ div.note {
 
 table {
     border-collapse: collapse;
-    border-color: #fff;
+    border-color: var(--foreground);
 }
 
 table.weather th {
@@ -178,7 +179,7 @@ td {
 }
 
 .header .title {
-    color: #fff;
+    color: var(--foreground);
 }
 
 .header {
@@ -186,7 +187,6 @@ td {
     font-weight: normal;
     padding-bottom: 0;
     text-align: center;
-    color: #ffffff;
 }
 
 h1 {
@@ -224,7 +224,7 @@ table.commits tr td {
 }
 
 a {
-    color: #99f;
+    color: var(--links);
     text-decoration: none;
 }
 
@@ -265,7 +265,7 @@ table.gb-entry-form tbody tr td textarea {
 }
 
 table.gb-entry tr td {
-    border: solid #ffffff 1px;
+    border: solid var(--foreground) 1px;
     width: 500px;
     vertical-align: top;
     padding: 5px;
@@ -278,7 +278,7 @@ table.gb-entry {
 table.gb-admin {
     margin-bottom: 5px;
     width: 500px;
-    border: #fff solid;
+    border: var(--foreground) solid;
 }
 
 table.gb-admin tr td {
@@ -370,4 +370,16 @@ a:hover {
 
 .computer-specs {
     margin-top: 5px;
+}
+
+.error-box {
+    width: 500px;
+    border: 5px solid #c81a11;
+    background-color: #f64a3c;
+    padding: 5px;
+}
+.error-box a,
+.error-box p {
+    margin: 0;
+    color: var(--foreground)
 }

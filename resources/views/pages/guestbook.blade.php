@@ -1,13 +1,24 @@
 @extends('layouts.default')
 @section('title', 'Guestbook')
 @section('content')
+    @php
+        $db_alive = true;
+        try {
+            DB::connection()->getPdo();
+        } catch (Exception $e) {
+            $db_alive = false;
+        }
+    @endphp
+    @if (!$db_alive)
+        @include('components.errors.db-error')
+    @else
     <br>
     <table class="gb-entry-form-container">
         <tr>
             <td>
                 <form method="POST" action="/guestbook">
                     @csrf
-                    <x-honeypot />
+                    <x-honeypot/>
                     <table class="gb-entry-form">
                         <tr>
                             <td>
@@ -44,7 +55,7 @@
                 <p>A few things to note:</p>
                 <ul>
                     <li>You can submit an entry <u>once every hour</u>.</li>
-                    <li>Your IP address is logged but <u>not</u> publically displayed.</li>
+                    <li>Your IP address is logged but <u>not</u> publicly displayed.</li>
                     <li>Any entries that appear to be spam <u>will</u> be removed.</li>
                 </ul>
             </td>
@@ -74,4 +85,5 @@
         </table>
         <br>
     @endforeach
+    @endif
 @stop

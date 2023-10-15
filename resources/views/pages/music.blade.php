@@ -24,7 +24,7 @@
         $top_tracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
         $count = 0;
     @endphp
-    <table class="info-table">
+    <table class="info-table" role="presentation">
         <tr>
             <td colspan="4">
                 <h2>Last/Current Track:</h2>

@@ -22,10 +22,10 @@
     @endphp
 
     @foreach ($categories as $category)
-        <table class="info-table">
+        <table class="info-table" role="presentation">
 
             <caption>
-                <h1>{{ $category->name }}</h1>
+                <h2>{{ $category->name }}</h2>
                 <hr>
             </caption>
 

@@ -2,9 +2,9 @@
 @section('title', 'Computers')
 @section('description', 'Computers I own or have owned.')
 @section('content')
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Custom Build</h1><hr></td>
+            <td colspan="2"><h2>Custom Build</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -41,9 +41,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>MacBook Pro (2018)</h1><hr></td>
+            <td colspan="2"><h2>MacBook Pro (2018)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -76,9 +76,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Lenovo ThinkPad T430 (2012)</h1><hr></td>
+            <td colspan="2"><h2>Lenovo ThinkPad T430 (2012)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -111,9 +111,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>IBM ThinkPad X41 (2005)</h1><hr></td>
+            <td colspan="2"><h2>IBM ThinkPad X41 (2005)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -142,9 +142,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Dell OptiPlex GX1 (400L+, 1999)</h1><hr></td>
+            <td colspan="2"><h2>Dell OptiPlex GX1 (400L+, 1999)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -173,9 +173,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>IBM ThinkPad T40 (2003)</h1><hr></td>
+            <td colspan="2"><h2>IBM ThinkPad T40 (2003)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -204,9 +204,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>HP Compaq Elite 8100 CMT</h1><hr></td>
+            <td colspan="2"><h2>HP Compaq Elite 8100 CMT</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -239,9 +239,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Mac mini (2014)</h1><hr></td>
+            <td colspan="2"><h2>Mac mini (2014)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -270,9 +270,9 @@
             </td>
         </tr>
     </table>
-    <table class="computer">
+    <table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Fujitsu Milan (1996)</h1><hr></td>
+            <td colspan="2"><h2>Fujitsu Milan (1996)</h2><hr></td>
         </tr>
         <tr>
             <td>
@@ -297,9 +297,9 @@
             </td>
         </tr>
     </table>
-    <!--<table class="computer">
+    <!--<table class="computer" role="presentation">
         <tr>
-            <td colspan="2"><h1>Compaq Armada M300</h1><hr></td>
+            <td colspan="2"><h2>Compaq Armada M300</h2><hr></td>
         </tr>
         <tr>
             <td>

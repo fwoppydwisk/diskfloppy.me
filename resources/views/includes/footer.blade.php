@@ -1,5 +1,5 @@
 <hr>
-<div class="footer">
+<div class="footer" role="contentinfo">
     <a href="https://www.w3schools.com/html/">
         <img src="{{ URL::asset('images/buttons/html_learn_it_today.gif') }}"
              width="88" height="31" alt="Learn HTML today!">&nbsp;

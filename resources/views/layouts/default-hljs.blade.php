@@ -11,7 +11,7 @@
 </div> <!-- header -->
 
 <div id="pagebody">
-    <div id="content">
+    <div id="content" role="main">
 @yield('content')
     </div> <!-- content -->
     <div id="footer" class="pagefooter">

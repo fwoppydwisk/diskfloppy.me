@@ -13,13 +13,13 @@
         @include('components.errors.db-error')
     @else
     <br>
-    <table class="gb-entry-form-container">
+    <table class="gb-entry-form-container" role="presentation">
         <tr>
             <td>
                 <form method="POST" action="/guestbook">
                     @csrf
                     <x-honeypot/>
-                    <table class="gb-entry-form">
+                    <table class="gb-entry-form" role="presentation">
                         <tr>
                             <td>
                                 <label for="name"><strong>Name:</strong></label>
@@ -71,9 +71,9 @@
             ORDER BY id DESC
         ');
     @endphp
-    <h1>Entries <small>({{ count($entries) }} total)</small></h1>
+    <h2>Entries <small>({{ count($entries) }} total)</small></h2>
     @foreach ($entries as $entry)
-        <table class="gb-entry">
+        <table class="gb-entry" role="presentation">
             <tr>
                 <td>
                     Submitted by <strong>{{ $entry->name }}</strong>

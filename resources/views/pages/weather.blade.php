@@ -29,9 +29,9 @@ try {
         $updated = gmdate('H:i Y-m-d', $data->updated);
         $data = $data->current;
     @endphp
-<table class="info-table">
+<table class="info-table" role="presentation">
     <caption>
-        <h1>Local Weather</h1>
+        <h2>Local Weather</h2>
         <hr>
     </caption>
     <tr>

@@ -6,7 +6,7 @@
 
     <table class="info-table">
         <caption>
-            <h1>Fun Facts</h1>
+            <h2>Fun Facts</h2>
             <hr>
         </caption>
         <tr>
@@ -29,7 +29,7 @@
 
     <table class="info-table">
         <caption>
-            <h1>Interests</h1>
+            <h2>Interests</h2>
             <hr>
         </caption>
         <tr>
@@ -49,7 +49,7 @@
 
     <table class="info-table">
         <caption>
-            <h1>Contact &amp; social</h1>
+            <h2>Contact &amp; social</h2>
             <hr>
         </caption>
         <tr>
@@ -73,7 +73,7 @@
 
     <table class="info-table">
         <caption>
-            <h1>niko</h1>
+            <h2>niko</h2>
             <hr>
         </caption>
         <tr>

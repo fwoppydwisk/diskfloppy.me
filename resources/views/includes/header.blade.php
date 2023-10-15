@@ -12,14 +12,5 @@
                 <a href="/weather/" title="Weather"><img src="/images/icons/nav/weather.png" alt="Weather" width="32" height="32"></a>
                 <a href="/music/" title="Music"><img src="/images/icons/nav/music.png" alt="Music" width="32" height="32"></a>&nbsp;&nbsp;
             </div>
-            <div class="theme-selector">
-                <form>
-                    <label for="theme">Theme</label>
-                    <select name="theme" id="theme-selector" onmousedown="this.value='';" onchange="swapTheme(this.value);">
-                        <option value="catppuccin-macchiato">Catppuccin Macchiato</option>
-                        <option value="blind-yourself">blind yourself</option>
-                    </select>
-                </form>
-            </div>
         </div>
     </nav>

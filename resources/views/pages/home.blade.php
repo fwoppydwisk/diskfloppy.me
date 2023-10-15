@@ -69,19 +69,4 @@
             <td><a href="https://github.com/floppydisk05">floppydisk05</a></td>
         </tr>
     </table>
-    <br>
-
-    <table class="info-table" role="presentation">
-        <caption>
-            <h2>niko</h2>
-            <hr>
-        </caption>
-        <tr>
-            <td>
-                <video width="320" height="320" controls>
-                    <source src="/videos/silly.mp4" type="video/mp4">
-                </video>
-            </td>
-        </tr>
-    </table>
 @stop

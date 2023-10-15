@@ -1,8 +1,4 @@
-:root {
-    --background: #181926;
-    --foreground: #cad3f5;
-    --links: #8aadf4;
-}
+/*@import "colorschemes/catppuccin-macchiato.css";*/
 
 body {
     font-family: sans-serif;
@@ -10,10 +6,6 @@ body {
     color: var(--foreground);
     background-color: var(--background);
     text-align: left;
-}
-
-html {
-    color-scheme: dark;
 }
 
 ul {
@@ -59,7 +51,7 @@ table.form td {
 
 div.code-block {
     background-color: var(--background);
-    border: 2px solid #dddddd;
+    border: 2px solid var(--foreground);
     padding: 10px;
     display: inline-block;
     text-align: left;
@@ -79,7 +71,7 @@ div.code-block h1 {
 }
 
 div.code-block h1 small {
-    color: #919191;
+    color: var(--foreground);
     font-size: 12px;
 }
 
@@ -88,7 +80,7 @@ div.code-block pre hr {
 }
 
 div.code-block pre code {
-    background-color: #222;
+    background-color: var(--background);
 }
 
 pre {
@@ -101,16 +93,37 @@ pre {
     text-decoration: none;
 }
 
+.theme-selector {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.theme-selector label {
+    font-weight: bold;
+}
+
+.theme-selector label::after {
+    content: ': ';
+}
+
 nav {
     margin-bottom: 0.3em;
     text-align: left;
 }
 
-nav div a img {
+nav img {
     width: 32px;
 }
 
-nav div h1 {
+nav h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
@@ -160,17 +173,8 @@ video {
     max-width: 100%;
 }
 
-.deprecated {
-    line-height: 140%;
-    width: 100%;
-    color: #aa0000;
-    text-align: center;
-    padding-bottom: 0.5em;
-    border-bottom: 2px dashed #aa0000;
-}
-
 table td {
-    border: 1px solid white;
+    border: 1px solid var(--foreground);
 }
 
 td {
@@ -238,7 +242,7 @@ table.gb-entry-form tr td label {
 
 table.gb-entry-form tr td span.text-danger {
     padding-left: 5px;
-    color: rgb(255, 114, 114);
+    color: var(--warning);
 }
 
 table.gb-entry-form tr td textarea,
@@ -374,8 +378,8 @@ a:hover {
 
 .error-box {
     width: 500px;
-    border: 5px solid #c81a11;
-    background-color: #f64a3c;
+    border: 5px solid var(--warning-box-border);
+    background-color: var(--warning-box-bg);
     padding: 5px;
 }
 .error-box a,

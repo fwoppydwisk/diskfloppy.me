@@ -308,7 +308,6 @@ table.gb-admin tr td.gb-message {
 table.info-table tr td {
     border: none;
     padding-right: 5px;
-    vertical-align: bottom;
 }
 
 table.info-table tr td h1,
@@ -387,3 +386,8 @@ a:hover {
     margin: 0;
     color: var(--foreground)
 }
+
+.never-said {
+    width: 400px;
+}
+

@@ -2,7 +2,20 @@
 @section('title', 'Home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
-    <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.
+    <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.</p>
+
+    <table class="info-table never-said" role="presentation">
+        <caption>
+            <h2>Things they never said</h2>
+            <hr>
+        </caption>
+        <tr>
+            <script type="text/javascript" language="javascript" src="/js/neverSaid.js"></script>
+            <noscript><td>Oops! You need JavaScript enabled to view this content.</td></noscript>
+        </tr>
+    </table>
+    <br>
+
 
     <table class="info-table" role="presentation">
         <caption>

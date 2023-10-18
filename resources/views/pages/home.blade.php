@@ -4,19 +4,6 @@
 @section('content')
     <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.</p>
 
-    <table class="info-table never-said" role="presentation">
-        <caption>
-            <h2>Things they never said</h2>
-            <hr>
-        </caption>
-        <tr>
-            <script type="text/javascript" language="javascript" src="/js/neverSaid.js"></script>
-            <noscript><td>Oops! You need JavaScript enabled to view this content.</td></noscript>
-        </tr>
-    </table>
-    <br>
-
-
     <table class="info-table" role="presentation">
         <caption>
             <h2>Fun Facts</h2>
@@ -51,11 +38,23 @@
         </tr>
         <tr>
             <td>&#9670; <b>Programming</b></td>
-            <td>- HTML, JavaScript, C#, Java, PHP, Ruby</td>
+            <td>- HTML, CSS, JavaScript, C#, Java, PHP, Ruby, Python</td>
         </tr>
         <tr>
             <td>&#9670; <b>Photography</b></td>
             <td>- <a href="https://www.flickr.com/photos/floppydisk/">Flickr</a></td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="info-table never-said" role="presentation">
+        <caption>
+            <h2>Things they never said</h2>
+            <hr>
+        </caption>
+        <tr>
+            <script type="text/javascript" language="javascript" src="/js/neverSaid.js"></script>
+            <noscript><td>Oops! You need JavaScript enabled to view this content.</td></noscript>
         </tr>
     </table>
     <br>

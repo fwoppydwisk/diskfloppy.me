@@ -5,7 +5,8 @@
              width="88" height="31" alt="Learn HTML today!">&nbsp;
     </a>
     <a href="https://dimden.dev/">
-        <img src="https://dimden.dev/services/images/88x31.gif" alt="dimden.dev">
+        <img src="https://dimden.dev/services/images/88x31.gif" width="88" height="31"
+             alt="dimden.dev">
     </a>&nbsp;
     <a href="https://www.linux.org/">
         <img src="{{ URL::asset('images/buttons/linuxnow.gif') }}" width="88"
@@ -16,8 +17,7 @@
              alt="vim">
     </a>&nbsp;
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img
-            src="{{ URL::asset('images/buttons/vcss-blue.gif') }}" width="88" height="31"
+        <img src="{{ URL::asset('images/buttons/vcss-blue.gif') }}" width="88" height="31"
             alt="Valid CSS!">
     </a>&nbsp;
     <a href="https://wiby.me/">

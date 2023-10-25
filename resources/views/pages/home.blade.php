@@ -6,23 +6,23 @@
 
     <table class="info-table" role="presentation">
         <caption>
-            <h2>Fun Facts</h2>
+            <h2>QuickFacts&trade;</h2>
             <hr>
         </caption>
         <tr>
-            <td>&#9670; I am (unfortunately) British</td>
+            <td>&#9670; 18 y/o, he/him, British</td>
         </tr>
         <tr>
-            <td>&#9670; I watched the entirety of The Owl House (~18 hours) in under 48 hours.</td>
+            <td>&#9670; Theatre Technician, &quot;Web Developer&quot; and NixOS User</td>
         </tr>
         <tr>
-            <td>&#9670; I spend way too much time on my computer.</td>
+            <td>&#9670; Loves ETC desks but often prefers Generics to LEDs</td>
         </tr>
         <tr>
-            <td>&#9670; Some people say I suck at PHP, but that's clearly wrong :P</td>
+            <td>&#9670; Spends way too much time on his computer</td>
         </tr>
         <tr>
-            <td>&#9670; Some of my favorite games are: OneShot, Minecraft, Stardew Valley, N++ and Starbound</td>
+            <td>&#9670; Favorite games: <a href="https://steamcommunity.com/id/floppydisk05/recommended/420530/">OneShot</a>, Minecraft, Stardew Valley, N++ and Starbound</td>
         </tr>
     </table>
     <br>
@@ -34,15 +34,19 @@
         </caption>
         <tr>
             <td>&#9670; <b>Tech Theatre</b></td>
-            <td>- Lighting, Stage Management, etc.</td>
+            <td>- Lighting, Stage Management, etc. (<a href="https://www.controlbooth.com/members/floppydisk.28673/">ControlBooth</a>)</td>
         </tr>
         <tr>
             <td>&#9670; <b>Programming</b></td>
-            <td>- HTML, CSS, JavaScript, C#, Java, PHP, Ruby, Python</td>
+            <td>- HTML, CSS, JavaScript, C#, Java, PHP, Ruby, Python (<a href="https://github.com/floppydisk05">GitHub</a>)</td>
         </tr>
         <tr>
             <td>&#9670; <b>Photography</b></td>
             <td>- <a href="https://www.flickr.com/photos/floppydisk/">Flickr</a></td>
+        </tr>
+        <tr>
+            <td>&#9670; <b>Gaming</b></td>
+            <td>- <a href="https://steamcommunity.com/id/floppydisk05/">Steam Profile</a></td>
         </tr>
     </table>
     <br>
@@ -75,10 +79,6 @@
         <tr>
             <td><strong>Matrix:</strong></td>
             <td><a href="https://matrix.to/#/@floppydisk:arcticfoxes.net">@floppydisk:arcticfoxes.net</a></td>
-        </tr>
-        <tr>
-            <td><strong>GitHub:</strong></td>
-            <td><a href="https://github.com/floppydisk05">floppydisk05</a></td>
         </tr>
     </table>
 @stop

@@ -53,7 +53,7 @@
             <hr>
         </caption>
         <tr>
-            <script type="text/javascript" language="javascript" src="/js/neverSaid.js"></script>
+            <script type="text/javascript" src="/js/neverSaid.js"></script>
             <noscript><td>Oops! You need JavaScript enabled to view this content.</td></noscript>
         </tr>
     </table>

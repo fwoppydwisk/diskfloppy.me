@@ -25,7 +25,7 @@
                                 <label for="name"><strong>Name:</strong></label>
                             </td>
                             <td>
-                                <input name="name" type="text" id="name" placeholder="John Doe">
+                                <input name="name" type="text" id="name">
                             </td>
                             <td>
                                 <span class="text-danger">{{ $errors->first('name') }}</span>
@@ -77,7 +77,8 @@
             <tr>
                 <td>
                     Submitted by <strong>{{ $entry->name }}</strong>
-                    on <strong>{{ gmdate('H:i:s - Y-m-d', $entry->timestamp) }}</strong>
+                    on <strong>{{ gmdate('Y-m-d', $entry->timestamp) }}</strong>
+                    at <strong>{{ gmdate('h:i:s A (e)', $entry->timestamp) }}</strong>
                     <hr>
                     {{ $entry->message }}
                 </td>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,23 +16,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    return View::make('pages.home');
 });
 
 Route::get('/bookmarks', function () {
-    return view('pages.bookmarks');
+    return View::make('pages.bookmarks');
 });
 
 Route::get('/projects', function () {
-    return view('pages.projects');
+    return View::make('pages.projects');
 });
 
 Route::get('/calculators', function () {
-    return view('pages.calculators');
+    return View::make('pages.calculators');
 });
 
 Route::get('/computers', function () {
-    return view('pages.computers');
+    return View::make('pages.computers');
 });
 
 Route::get('/guestbook', 'App\Http\Controllers\GuestbookController@guestbook')
@@ -42,36 +43,36 @@ Route::post('/guestbook', 'App\Http\Controllers\GuestbookController@guestbookpos
     ->middleware('rate_limit');
 
 Route::get('/weather', function () {
-    return view('pages.weather');
+    return View::make('pages.weather');
 });
 
 Route::get('/music', function () {
-    return view('pages.music');
+    return View::make('pages.music');
 });
 
 Route::get('/bot', function () {
-    return view('pages.bot');
+    return View::make('pages.bot');
 });
 
 /* ------------------------------ Admin Routes ------------------------------ */
 
 Route::get('/admin', function () {
     if (!auth()->check()) {
-        return view('errors.no-auth');
+        return View::make('errors.no-auth');
     }
-    return view('pages.admin.index');
+    return View::make('pages.admin.index');
 });
 
 Route::get('/admin/guestbook', function () {
     if (!auth()->check()) {
-        return view('errors.no-auth');
+        return View::make('errors.no-auth');
     }
-    return view('pages.admin.guestbook');
+    return View::make('pages.admin.guestbook');
 });
 
 Route::get('/admin/guestbook/delete', function () {
     if (!auth()->check()) {
-        return view('errors.no-auth');
+        return View::make('errors.no-auth');
     }
 
     $id = request()->input('id');
@@ -79,9 +80,9 @@ Route::get('/admin/guestbook/delete', function () {
 
     if ($entry) {
         // Render a confirmation view
-        return view('pages.admin.guestbook-del-confirm', compact('entry'));
+        return View::make('pages.admin.guestbook-del-confirm', compact('entry'));
     } else {
-        return view('errors.generic-error')
+        return View::make('errors.generic-error')
             ->with('error', "Entry not found")
             ->with('description', "The specified entry does not exist!");
     }
@@ -89,7 +90,7 @@ Route::get('/admin/guestbook/delete', function () {
 
 Route::post('/admin/guestbook/delete', function () {
     if (!auth()->check()) {
-        return view('errors.no-auth');
+        return View::make('errors.no-auth');
     }
 
     $id = request()->input('id');

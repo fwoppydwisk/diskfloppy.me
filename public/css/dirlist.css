@@ -1,11 +1,4 @@
-:root {
-  --background: #1c1b22;
-  --foreground: #dddddd;
-}
-
-html {
-	color-scheme: dark;
-}
+@import "colorschemes/catppuccin-macchiato.css";
 
 body {
 	background-color: var(--background);

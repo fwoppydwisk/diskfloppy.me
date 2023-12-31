@@ -56,46 +56,46 @@ Route::get('/bot', function () {
 
 /* ------------------------------ Admin Routes ------------------------------ */
 
-Route::get('/admin', function () {
-    if (!auth()->check()) {
-        return View::make('errors.no-auth');
-    }
-    return View::make('pages.admin.index');
-});
-
-Route::get('/admin/guestbook', function () {
-    if (!auth()->check()) {
-        return View::make('errors.no-auth');
-    }
-    return View::make('pages.admin.guestbook');
-});
-
-Route::get('/admin/guestbook/delete', function () {
-    if (!auth()->check()) {
-        return View::make('errors.no-auth');
-    }
-
-    $id = request()->input('id');
-    $entry = DB::table('guestbook__entries')->find($id);
-
-    if ($entry) {
-        // Render a confirmation view
-        return View::make('pages.admin.guestbook-del-confirm', compact('entry'));
-    } else {
-        return View::make('errors.generic-error')
-            ->with('error', "Entry not found")
-            ->with('description', "The specified entry does not exist!");
-    }
-});
-
-Route::post('/admin/guestbook/delete', function () {
-    if (!auth()->check()) {
-        return View::make('errors.no-auth');
-    }
-
-    $id = request()->input('id');
-    DB::table('guestbook__entries')->where('id', $id)->delete();
-
-    return back()->with('success', 'Entry deleted successfully!');
-});
+//Route::get('/admin', function () {
+//    if (!auth()->check()) {
+//        return View::make('errors.no-auth');
+//    }
+//    return View::make('pages.admin.index');
+//});
+//
+//Route::get('/admin/guestbook', function () {
+//    if (!auth()->check()) {
+//        return View::make('errors.no-auth');
+//    }
+//    return View::make('pages.admin.guestbook');
+//});
+//
+//Route::get('/admin/guestbook/delete', function () {
+//    if (!auth()->check()) {
+//        return View::make('errors.no-auth');
+//    }
+//
+//    $id = request()->input('id');
+//    $entry = DB::table('guestbook__entries')->find($id);
+//
+//    if ($entry) {
+//        // Render a confirmation view
+//        return View::make('pages.admin.guestbook-del-confirm', compact('entry'));
+//    } else {
+//        return View::make('errors.generic-error')
+//            ->with('error', "Entry not found")
+//            ->with('description', "The specified entry does not exist!");
+//    }
+//});
+//
+//Route::post('/admin/guestbook/delete', function () {
+//    if (!auth()->check()) {
+//        return View::make('errors.no-auth');
+//    }
+//
+//    $id = request()->input('id');
+//    DB::table('guestbook__entries')->where('id', $id)->delete();
+//
+//    return back()->with('success', 'Entry deleted successfully!');
+//});
 

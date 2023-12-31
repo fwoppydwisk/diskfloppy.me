@@ -12,6 +12,11 @@ ul {
     list-style-type: square;
 }
 
+hr {
+    border: 1px solid var(--foreground);
+    border-bottom: none;
+}
+
 div.page {
     min-width: 780px;
     max-width: 800px;
@@ -277,6 +282,11 @@ table.gb-entry tr td {
 
 table.gb-entry {
     margin-bottom: 5px;
+}
+
+table.gb-entry hr {
+    border: 1px dotted var(--foreground);
+    border-bottom: none;
 }
 
 table.gb-admin {

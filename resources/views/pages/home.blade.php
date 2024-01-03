@@ -2,7 +2,7 @@
 @section('title', 'Home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
-    <p>Hi! This my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.</p>
+    <p>Hi! This is my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.</p>
 
     <table class="info-table" role="presentation">
         <caption>
@@ -16,7 +16,7 @@
             <td>&#9670; Theatre Technician, &quot;Web Developer&quot; and NixOS User</td>
         </tr>
         <tr>
-            <td>&#9670; Loves ETC desks but often prefers Generics to LEDs</td>
+            <td>&#9670; Loves ETC desks, prefers Generics to LEDs for some reason</td>
         </tr>
         <tr>
             <td>&#9670; Spends way too much time on his computer</td>

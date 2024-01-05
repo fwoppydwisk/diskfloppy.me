@@ -24,7 +24,7 @@
         $top_tracks = json_decode(file_get_contents($api_root . '/lastfm/top'));
         $count = 0;
     @endphp
-    <table class="info-table" role="presentation">
+    <table class="info-table" role="presentation" width="100%">
         <tr>
             <td colspan="4">
                 <h2>Last/Current Track:</h2>
@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td colspan="4">
-                <a href="{{ $current_track->url }}">{{ $current_track->name }} • {{ $current_track->artist }}</a><br>
+                <a href="{{ $current_track->url }}">{{ $current_track->title }} • {{ $current_track->artist }}</a><br>
             </td>
         </tr>
         <tr>
@@ -58,9 +58,9 @@
             @endif
             <tr>
                 <td style="text-align: right">{{ $count }}</td>
-                <td>{{ $track->name }}</td>
-                <td>{{ $track->artist }}</td>
-                <td>{{ $track->plays }}</td>
+                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;" width="50%">{{ $track->title }}</td>
+                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;" width="50%">{{ $track->artist }}</td>
+                <td>{{ $track->playcount }}</td>
             </tr>
         @endforeach
     </table>

@@ -6,18 +6,15 @@
 
 <body>
 <div class="page">
-<div class="header">
-    @include('includes.header')
-</div> <!-- header -->
-
-<div id="pagebody">
-    <div id="content" role="main">
+    <div id="header" class="header">
+        @include('includes.header')
+    </div> <!-- header -->
+    <div id="content" class="content" role="main">
 @yield('content')
     </div> <!-- content -->
-    <div id="footer" class="pagefooter">
+    <div id="footer" class="footer">
         @include('includes.footer')
     </div> <!-- footer -->
-</div> <!-- pagebody -->
 </div> <!-- page -->
 </body>
 </html>

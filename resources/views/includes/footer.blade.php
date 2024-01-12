@@ -1,7 +1,7 @@
 <hr>
 <div class="footer" role="contentinfo">
     <a href="https://www.debian.org/">
-        <img src="{{ URL::asset('images/debian.gif') }}"
+        <img src="{{ URL::asset('images/buttons/debian.gif') }}"
              class="pixel" width="88" height="31" alt="Powered by Debian">&nbsp;
     </a>
     <a href="https://dimden.dev/">

@@ -2,6 +2,7 @@
 @section('title', 'Home')
 @section('description', 'This is the personal homepage of floppydisk.')
 @section('content')
+
     <p>Hi! This is my personal homepage on the <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb.</p>
 
     <table class="info-table" role="presentation">

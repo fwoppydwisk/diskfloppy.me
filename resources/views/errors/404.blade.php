@@ -1,7 +1,4 @@
 @extends('errors::minimal')
-@php
-abort(503)
-@endphp
 @section('content')
 
 <h1>Error 404 | <strong>Page not found!</strong></h1>

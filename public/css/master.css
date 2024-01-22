@@ -358,6 +358,10 @@ table.info-table tr td {
     padding-right: 5px;
 }
 
+table.info-table {
+    width: 100%;
+}
+
 table.info-table tr td h1,
 table.info-table tr td h2,
 table.info-table tr td small {

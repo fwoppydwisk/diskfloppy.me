@@ -1,5 +1,5 @@
 /**
- * Retrieves a cookie's value
+ * Retrieves a cookies value
  * @param {string} cname Cookie name
  * @returns {string}     Cookie value
  */
@@ -44,29 +44,10 @@ function cookieExists(cname) {
 
 /**
  * Swaps the colorscheme
- * @param option
+ * @param {string} scheme Color scheme ID
  */
 function swapScheme(scheme) {
     setCookie("colorscheme", scheme, 90);
     document.getElementById("css-colorscheme").href = `/css/colorschemes/${scheme}.css`;
     console.log(`Set colorscheme to ${getCookie("colorscheme")}`)
-}
-
-function setDefaultScheme() {
-    if (!cookieExists("colorscheme")) {
-        setCookie("colorscheme", "catppuccin-macchiato", 90);
-        console.debug("Set default colorscheme");
-    } else {
-        const scheme = getCookie("colorscheme");
-        const schemeselector = document.getElementById("scheme-selector");
-        if (scheme && schemeselector) {
-            for (let option of schemeselector.options) {
-                if (option.value == scheme) {
-                    option.selected = true;
-                    break;
-                }
-            }
-        }
-        swapScheme(scheme);
-    }
 }

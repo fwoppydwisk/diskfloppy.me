@@ -57,7 +57,6 @@
                     <li>You can submit an entry <u>once every hour</u>.</li>
                     <li>Your IP address is logged but <u>not</u> publicly displayed.</li>
                     <li>Any entries that appear to be spam <u>will</u> be removed.</li>
-                    <li></li>
                 </ul>
             </td>
         </tr>

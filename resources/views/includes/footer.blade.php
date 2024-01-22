@@ -38,6 +38,7 @@
             <option value="gruvbox">Gruvbox</option>
             <option value="man-page">Man Page</option>
             <option value="papercolor-light">Papercolor Light</option>
+            <option value="rose-pine-dawn">Rosé Pine Dawn</option>
             <option value="solarized-light">Solarized Light</option>
             <option value="terminal-basic">Terminal Basic</option>
         </optgroup>
@@ -55,6 +56,8 @@
             <option value="mono-white">Mono White</option>
             <option value="mono-yellow">Mono Yellow</option>
             <option value="papercolor-dark">Papercolor Dark</option>
+            <option value="rose-pine">Rosé Pine</option>
+            <option value="rose-pine-moon">Rose Pine Moon</option>
             <option value="shel">Shel</option>
             <option value="slate">Slate</option>
             <option value="solarized-dark">Solarized Dark</option>

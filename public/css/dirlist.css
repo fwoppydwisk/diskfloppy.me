@@ -5,6 +5,10 @@ body {
 	color: var(--foreground);
 }
 
+img {
+    image-rendering: pixelated;
+}
+
 a {
     color: #99f;
     text-decoration: none;

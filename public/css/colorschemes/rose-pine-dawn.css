@@ -1,0 +1,13 @@
+:root {
+    --background: #F2E9E1;
+    --background-secondary: #9893A5;
+    --foreground: #575279;
+    --links: #907AA9;
+    --warning: #ff7272;
+    --warning-box-bg: #f64a3c;
+    --warning-box-border: #c81a11;
+}
+
+html {
+    color-scheme: light;
+}

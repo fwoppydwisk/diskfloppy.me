@@ -1,8 +1,8 @@
 :root {
-    --background: #181926;
-    --background-secondary: #363a4f;
-    --foreground: #cad3f5;
-    --links: #8aadf4;
+    --background: #073642;
+    --background-secondary: #657B83;
+    --foreground: #FDF6E3;
+    --links: #2699FF;
     --warning: #ff7272;
     --warning-box-bg: #f64a3c;
     --warning-box-border: #c81a11;

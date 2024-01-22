@@ -1,0 +1,17 @@
+:root {
+    --background: #262626;
+    --background-secondary: #3B3B3B;
+    --foreground: #FAFAFA;
+    --links: #a9a9a9;
+    --warning: #ff7272;
+    --warning-box-bg: #f64a3c;
+    --warning-box-border: #c81a11;
+}
+
+html {
+    color-scheme: dark;
+}
+
+a {
+    text-decoration: underline !important;
+}

@@ -238,7 +238,7 @@ table.computers p.description {
 }
 
 table.computers th {
-    background-color: var(--background-light);
+    background-color: var(--background-secondary);
 }
 
 table.computers td,
@@ -288,6 +288,9 @@ table.gb-entry-form tr td span.text-danger {
 table.gb-entry-form tr td textarea,
 table.gb-entry-form tr td input {
     margin-bottom: 5px;
+    margin-left: 10px;
+    background-color: var(--background);
+    border: var(--foreground) solid 1px;
 }
 
 table.gb-entry-form-container {
@@ -459,5 +462,15 @@ a:hover {
 .error-box a,
 .error-box p {
     margin: 0;
+    color: var(--foreground)
+}
+
+label[for="scheme-selector"] {
+    font-weight: bold;
+}
+
+#scheme-selector {
+    border: var(--foreground) solid 1px;
+    background-color: var(--background-secondary);
     color: var(--foreground)
 }

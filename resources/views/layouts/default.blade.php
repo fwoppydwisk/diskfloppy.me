@@ -4,7 +4,7 @@
     @include('includes.head')
 </head>
 
-<body>
+<body onload="setDefaultScheme()">
 <div class="page">
     <div id="header" class="header">
         @include('includes.header')

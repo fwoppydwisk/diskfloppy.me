@@ -376,11 +376,6 @@ caption {
 table.info-table tr td small {
     margin-bottom: 5px;
 }
-
-.hljs {
-    background: none !important;
-}
-
 .me img {
     float: right;
     margin: 5px;

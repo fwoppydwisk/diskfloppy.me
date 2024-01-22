@@ -51,3 +51,20 @@ function swapScheme(scheme) {
     document.getElementById("css-colorscheme").href = `/css/colorschemes/${scheme}.css`;
     console.log(`Set colorscheme to ${getCookie("colorscheme")}`)
 }
+
+function setSchemeSelector() {
+    if (!cookieExists("colorscheme")) {
+        setCookie("colorscheme", "catppuccin-macchiato", 90);
+    } else {
+        const scheme = getCookie("colorscheme");
+        const schemeselector = document.getElementById("scheme-selector");
+        if (scheme && schemeselector) {
+            for (let option of schemeselector.options) {
+                if (option.value == scheme) {
+                    option.selected = true;
+                    break;
+                }
+            }
+        }
+    }
+}

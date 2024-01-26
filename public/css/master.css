@@ -286,11 +286,22 @@ table.gb-entry-form tr td span.text-danger {
 }
 
 table.gb-entry-form tr td textarea,
-table.gb-entry-form tr td input {
+table.gb-entry-form tr td input,
+table.gb-entry-form tr td button{
     margin-bottom: 5px;
     margin-left: 10px;
     background-color: var(--background);
     border: var(--foreground) solid 1px;
+}
+
+table.gb-entry-form tr td button {
+    color: var(--foreground);
+    background-color: var(--background-secondary);
+}
+
+table.gb-entry-form tr td button:hover {
+    color: var(--background);
+    background-color: var(--foreground);
 }
 
 table.gb-entry-form-container {
@@ -325,6 +336,10 @@ table.gb-entry {
 table.gb-entry hr {
     border: 1px dotted var(--foreground);
     border-bottom: none;
+}
+
+table.gb-entry address {
+    font-size: 0.8pc;
 }
 
 table.gb-admin {

@@ -2,6 +2,8 @@
 @section('title', 'Guestbook')
 @section('content')
     @php
+        use UAParser\Parser;
+        $parser = Parser::create();
         $db_alive = true;
         try {
             DB::connection()->getPdo();
@@ -66,13 +68,16 @@
     <hr>
     @php
         $entries = DB::select('
-            SELECT name, timestamp, message
+            SELECT name, timestamp, message, agent
             FROM guestbook__entries
             ORDER BY id DESC
         ');
     @endphp
     <h2>Entries <small>({{ count($entries) }} total)</small></h2>
     @foreach ($entries as $entry)
+        @php
+            $user_agent = $parser->parse($entry->agent);
+        @endphp
         <table class="gb-entry" role="presentation">
             <tr>
                 <td>
@@ -81,6 +86,13 @@
                     at <strong>{{ gmdate('h:i:s A (e)', $entry->timestamp) }}</strong>
                     <hr>
                     {{ $entry->message }}
+                    <hr>
+                    @if($entry->agent === "Agent Unavailable")
+                        <address>Agent unavailable</address>
+                    @else
+                        <address>Posted using <strong>{{ $user_agent->ua->toString() }}</strong>
+                            on <strong>{{ $user_agent->os->toString() }}</strong></address>
+                    @endif
                 </td>
             </tr>
         </table>

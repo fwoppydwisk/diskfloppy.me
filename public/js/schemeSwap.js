@@ -9,10 +9,10 @@ function getCookie(cname) {
     let ca = decodedCookie.split(';');
     for(let i = 0; i <ca.length; i++) {
         let c = ca[i];
-        while (c.charAt(0) == ' ') {
+        while (c.charAt(0) === ' ') {
             c = c.substring(1);
         }
-        if (c.indexOf(name) == 0) {
+        if (c.indexOf(name) === 0) {
             return c.substring(name.length, c.length);
         }
     }
@@ -29,7 +29,7 @@ function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Strict";
 }
 
 /**
@@ -57,10 +57,10 @@ function setSchemeSelector() {
         setCookie("colorscheme", "catppuccin-macchiato", 90);
     } else {
         const scheme = getCookie("colorscheme");
-        const schemeselector = document.getElementById("scheme-selector");
-        if (scheme && schemeselector) {
-            for (let option of schemeselector.options) {
-                if (option.value == scheme) {
+        const scheme_selector = document.getElementById("scheme-selector");
+        if (scheme && scheme_selector) {
+            for (let option of scheme_selector.options) {
+                if (option.value === scheme) {
                     option.selected = true;
                     break;
                 }

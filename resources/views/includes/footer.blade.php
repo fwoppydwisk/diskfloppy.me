@@ -1,26 +1,26 @@
 <hr>
 <div class="footer" role="contentinfo">
-    <a href="https://www.debian.org/">
+    <a href="https://www.debian.org/" class="button">
         <img src="{{ URL::asset('images/buttons/debian.gif') }}"
              class="pixel" width="88" height="31" alt="Powered by Debian">&nbsp;
     </a>
-    <a href="https://dimden.dev/">
+    <a href="https://dimden.dev/" class="button">
         <img src="https://dimden.dev/services/images/88x31.gif" width="88" height="31"
              class="pixel" alt="dimden.dev">
     </a>&nbsp;
-    <a href="https://www.linux.org/">
+    <a href="https://www.linux.org/" class="button">
         <img src="{{ URL::asset('images/buttons/linuxnow.gif') }}" width="88"
              class="pixel" height="31" alt="Linux NOW!">
     </a>&nbsp;
-    <a href="https://www.vim.org/">
+    <a href="https://www.vim.org/" class="button">
         <img src="{{ URL::asset('images/buttons/vim.gif') }}" width="88" height="31"
              class="pixel" alt="vim">
     </a>&nbsp;
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" class="button">
         <img src="{{ URL::asset('images/buttons/vcss-blue.gif') }}" width="88" height="31"
              class="pixel" alt="Valid CSS!">
     </a>&nbsp;
-    <a href="https://wiby.me/">
+    <a href="https://wiby.me/" class="button">
         <img src="{{ URL::asset('images/buttons/wiby.gif') }}" width="88" height="31"
              class="pixel" alt="Wiby - Search Engine for the Classic Web">
     </a><br>

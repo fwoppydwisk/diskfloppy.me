@@ -25,6 +25,9 @@
         <tr>
             <td>&#9670; Favorite games: <a href="https://steamcommunity.com/id/floppydisk05/recommended/420530/">OneShot</a>, Minecraft, Stardew Valley, N++ and Starbound</td>
         </tr>
+        <tr>
+            <td>&#9670; <a href="http://wxqa.com/">CWOP</a> member</td>
+        </tr>
     </table>
     <br>
 

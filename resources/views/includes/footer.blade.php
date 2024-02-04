@@ -1,9 +1,5 @@
 <hr>
 <div class="footer" role="contentinfo">
-    <a href="https://www.debian.org/" class="button">
-        <img src="{{ URL::asset('images/buttons/debian.gif') }}"
-             class="pixel" width="88" height="31" alt="Powered by Debian">&nbsp;
-    </a>
     <a href="https://dimden.dev/" class="button">
         <img src="https://dimden.dev/services/images/88x31.gif" width="88" height="31"
              class="pixel" alt="dimden.dev">
@@ -15,6 +11,10 @@
     <a href="https://www.vim.org/" class="button">
         <img src="{{ URL::asset('images/buttons/vim.gif') }}" width="88" height="31"
              class="pixel" alt="vim">
+    </a>&nbsp;
+    <a href="https://wave.webaim.org/" class="button">
+        <img src="{{ URL::asset('images/buttons/evaluatedWAVE.png') }}" width="88" height="31"
+             class="pixel" alt="Evaluated to be accessible!">
     </a>&nbsp;
     <a href="http://jigsaw.w3.org/css-validator/check/referer" class="button">
         <img src="{{ URL::asset('images/buttons/vcss-blue.gif') }}" width="88" height="31"

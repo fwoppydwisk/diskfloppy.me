@@ -258,7 +258,7 @@ div.footer {
     margin-bottom: 5px;
 }
 
-div.footer a:hover {
+div.footer a.button {
     text-decoration: none;
 }
 
@@ -269,7 +269,7 @@ table.commits tr td {
 
 a {
     color: var(--links);
-    text-decoration: none;
+    text-decoration: underline dotted;
 }
 
 table.gb-entry-form tr td {
@@ -446,7 +446,7 @@ a:hover {
 }
 
 .project-grid div a {
-    text-decoration: none;
+    text-decoration: underline dotted;
     padding: 2px 2px 0 2px;
     margin: 0;
     font-size: 10pt;

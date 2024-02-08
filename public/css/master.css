@@ -488,3 +488,22 @@ label[for="scheme-selector"] {
     background-color: var(--background-secondary);
     color: var(--foreground)
 }
+
+
+.music-top10 td {
+    border: none;
+    border-left: 1px dotted var(--foreground);
+    padding: 2px 5px
+}
+
+.music-top10 tr:nth-child(2) td {
+    border-bottom: 1px dotted var(--foreground);
+}
+
+.music-top10 tr:nth-child(3) td {
+    padding-top: 5px;
+}
+
+.music-top10 td:first-child {
+    border: none;
+}

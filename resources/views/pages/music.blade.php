@@ -35,14 +35,12 @@
                 <a href="{{ $current_track->url }}">{{ $current_track->title }} • {{ $current_track->artist }}</a><br>
             </td>
         </tr>
+    </table>
+    <hr>
+    <table class="music-top10">
         <tr>
             <td colspan="4">
-                <hr>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <h2>Top {{ $cfg['toptracks'] }} Tracks (Last 7 days)</h2>
+                <h2 style="margin-bottom: 5px">Top {{ $cfg['toptracks'] }} Tracks (Last 7 days)</h2>
             </td>
         </tr>
         <tr>
@@ -58,7 +56,7 @@
             @endif
             <tr>
                 <td style="text-align: right">{{ $count }}</td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;" width="50%">{{ $track->title }}</td>
+                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;" width="50%"><a href="{{ $track->url }}">{{ $track->title }}</a></td>
                 <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;" width="50%">{{ $track->artist }}</td>
                 <td>{{ $track->playcount }}</td>
             </tr>

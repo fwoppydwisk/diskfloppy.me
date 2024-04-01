@@ -32,13 +32,13 @@ Route::get('/computers', [ComputersController::class, 'show']);
 Route::get('/music', [MusicController::class, 'show']);
 
 // Admin pages
-Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show']);
-    // TODO: Re-enable before release
-    // ->middleware('auth');
-Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show']);
-    // TODO: Re-enable before release
-    // ->middleware('auth');
-Route::get('/admin/import', [AdminImportController::class, 'show']);
+Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show'])
+    ->middleware('auth');
+Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show'])
+     ->middleware('auth');
+Route::get('/admin/import', [AdminImportController::class, 'show'])
+    ->middleware('auth');
 Route::post('/admin/import', [AdminImportController::class, 'submit'])
-    ->name('admin.import.submit');
+    ->name('admin.import.submit')
+    ->middleware('auth');
 

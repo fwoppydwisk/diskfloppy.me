@@ -18,10 +18,10 @@ class AdminImportController extends Controller
     public function submit(Request $request)
     {
         $request->validate([
-            'jsonFile' => 'required|mimes:json',
+            'data_file' => 'required|mimes:json',
         ]);
 
-        $file = $request->file('jsonFile');
+        $file = $request->file('data_file');
         $jsonContent = file_get_contents($file->getRealPath());
         $data = json_decode($jsonContent, true);
         $tables = [];

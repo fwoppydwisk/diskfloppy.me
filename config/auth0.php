@@ -37,6 +37,8 @@ return Configuration::VERSION_2 + [
             Configuration::CONFIG_CLIENT_ASSERTION_SIGNING_KEY => Configuration::get(Configuration::CONFIG_CLIENT_ASSERTION_SIGNING_KEY),
             Configuration::CONFIG_CLIENT_ASSERTION_SIGNING_ALGORITHM => Configuration::get(Configuration::CONFIG_CLIENT_ASSERTION_SIGNING_ALGORITHM),
             Configuration::CONFIG_PUSHED_AUTHORIZATION_REQUEST => Configuration::get(Configuration::CONFIG_PUSHED_AUTHORIZATION_REQUEST),
+            Configuration::CONFIG_BACKCHANNEL_LOGOUT_CACHE => Configuration::get(Configuration::CONFIG_BACKCHANNEL_LOGOUT_CACHE),
+            Configuration::CONFIG_BACKCHANNEL_LOGOUT_EXPIRES => Configuration::get(Configuration::CONFIG_BACKCHANNEL_LOGOUT_EXPIRES),
         ],
 
         'api' => [
@@ -52,5 +54,14 @@ return Configuration::VERSION_2 + [
             Configuration::CONFIG_TRANSIENT_STORAGE => Configuration::get(Configuration::CONFIG_TRANSIENT_STORAGE),
             Configuration::CONFIG_TRANSIENT_STORAGE_ID => Configuration::get(Configuration::CONFIG_TRANSIENT_STORAGE_ID),
         ],
+    ],
+
+    'routes' => [
+        Configuration::CONFIG_ROUTE_INDEX => Configuration::get(Configuration::CONFIG_ROUTE_INDEX, '/'),
+        Configuration::CONFIG_ROUTE_CALLBACK => Configuration::get(Configuration::CONFIG_ROUTE_CALLBACK, '/callback'),
+        Configuration::CONFIG_ROUTE_LOGIN => Configuration::get(Configuration::CONFIG_ROUTE_LOGIN, '/login'),
+        Configuration::CONFIG_ROUTE_AFTER_LOGIN => Configuration::get(Configuration::CONFIG_ROUTE_AFTER_LOGIN, '/'),
+        Configuration::CONFIG_ROUTE_LOGOUT => Configuration::get(Configuration::CONFIG_ROUTE_LOGOUT, '/logout'),
+        Configuration::CONFIG_ROUTE_AFTER_LOGOUT => Configuration::get(Configuration::CONFIG_ROUTE_AFTER_LOGOUT, '/'),
     ],
 ];

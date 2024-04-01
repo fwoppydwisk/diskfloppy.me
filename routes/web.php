@@ -1,8 +1,15 @@
 <?php
 
-use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\AdminBookmarksController;
+use App\Http\Controllers\AdminGuestbookController;
+use App\Http\Controllers\AdminImportController;
+use App\Http\Controllers\BookmarksController;
+use App\Http\Controllers\CalculatorsController;
+use App\Http\Controllers\ComputersController;
+use App\Http\Controllers\GuestbookController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MusicController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,87 +22,23 @@ use Illuminate\Support\Facades\View;
 |
 */
 
-Route::get('/', function () {
-    return View::make('pages.home');
-});
-
-Route::get('/bookmarks', function () {
-    return View::make('pages.bookmarks');
-});
-
-Route::get('/projects', function () {
-    return View::make('pages.projects');
-});
-
-Route::get('/calculators', function () {
-    return View::make('pages.calculators');
-});
-
-Route::get('/computers', function () {
-    return View::make('pages.computers');
-});
-
-Route::get('/guestbook', 'App\Http\Controllers\GuestbookController@guestbook')
-    ->name('guestbook');
-
-Route::post('/guestbook', 'App\Http\Controllers\GuestbookController@guestbookpost')
-    ->name('guestbookPost')
+Route::get('/', [HomeController::class, 'show']);
+Route::get('/bookmarks', [BookmarksController::class, 'show']);
+Route::get('/guestbook', [GuestbookController::class, 'show']);
+Route::post('/guestbook', [GuestbookController::class, 'addEntry'])
     ->middleware('rate_limit');
+Route::get('/calculators', [CalculatorsController::class, 'show']);
+Route::get('/computers', [ComputersController::class, 'show']);
+Route::get('/music', [MusicController::class, 'show']);
 
-Route::get('/weather', function () {
-    return View::make('pages.weather');
-});
-
-Route::get('/music', function () {
-    return View::make('pages.music');
-});
-
-Route::get('/bot', function () {
-    return View::make('pages.bot');
-});
-
-/* ------------------------------ Admin Routes ------------------------------ */
-
-//Route::get('/admin', function () {
-//    if (!auth()->check()) {
-//        return View::make('errors.no-auth');
-//    }
-//    return View::make('pages.admin.index');
-//});
-//
-//Route::get('/admin/guestbook', function () {
-//    if (!auth()->check()) {
-//        return View::make('errors.no-auth');
-//    }
-//    return View::make('pages.admin.guestbook');
-//});
-//
-//Route::get('/admin/guestbook/delete', function () {
-//    if (!auth()->check()) {
-//        return View::make('errors.no-auth');
-//    }
-//
-//    $id = request()->input('id');
-//    $entry = DB::table('guestbook__entries')->find($id);
-//
-//    if ($entry) {
-//        // Render a confirmation view
-//        return View::make('pages.admin.guestbook-del-confirm', compact('entry'));
-//    } else {
-//        return View::make('errors.generic-error')
-//            ->with('error', "Entry not found")
-//            ->with('description', "The specified entry does not exist!");
-//    }
-//});
-//
-//Route::post('/admin/guestbook/delete', function () {
-//    if (!auth()->check()) {
-//        return View::make('errors.no-auth');
-//    }
-//
-//    $id = request()->input('id');
-//    DB::table('guestbook__entries')->where('id', $id)->delete();
-//
-//    return back()->with('success', 'Entry deleted successfully!');
-//});
+// Admin pages
+Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show']);
+    // TODO: Re-enable before release
+    // ->middleware('auth');
+Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show']);
+    // TODO: Re-enable before release
+    // ->middleware('auth');
+Route::get('/admin/import', [AdminImportController::class, 'show']);
+Route::post('/admin/import', [AdminImportController::class, 'submit'])
+    ->name('admin.import.submit');
 

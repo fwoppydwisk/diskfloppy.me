@@ -1,5 +1,4 @@
-@extends('errors::minimal')
-
-@section('title', __('Forbidden'))
-@section('code', '403')
-@section('message', __($exception->getMessage() ?: 'Forbidden'))
+<x-minimal-error>
+    <x-slot:code>403</x-slot:code>
+    <x-slot:message>{{__($exception->getMessage() ?: 'Forbidden')}}</x-slot:message>
+</x-minimal-error>

@@ -111,6 +111,10 @@ pre {
     grid-row-gap: 0;
 }
 
+.nav-wrapper div:nth-child(2) {
+    text-align: right;
+}
+
 .theme-selector label {
     font-weight: bold;
 }
@@ -226,7 +230,7 @@ table.computers td ul {
     padding-left: 20px;
 }
 
-table.computers section-title {
+table.computers .section-title {
     text-decoration: underline;
     font-style: italic;
     font-weight: bold;
@@ -272,34 +276,46 @@ a {
     text-decoration: underline dotted;
 }
 
-table.gb-entry-form tr td {
+table.form tr td {
     border: none;
 }
 
-table.gb-entry-form tr td label {
+table.form tr td label {
     padding-right: 5px;
 }
 
-table.gb-entry-form tr td span.text-danger {
+table.form tr td span.text-danger {
     padding-left: 5px;
     color: var(--warning);
 }
 
-table.gb-entry-form tr td textarea,
-table.gb-entry-form tr td input,
-table.gb-entry-form tr td button{
-    margin-bottom: 5px;
-    margin-left: 10px;
+input.file {
+    border: 0 !important;
+}
+
+table.form tr td textarea,
+table.form tr td input,
+table.form tr td button,
+form.import input::file-selector-button,
+form.import button {
     background-color: var(--background);
     border: var(--foreground) solid 1px;
 }
 
-table.gb-entry-form tr td button {
+table.form label {
+    margin: 5px 0;
+}
+
+form.import button,
+form.import input::file-selector-button,
+table.form tr td button {
     color: var(--foreground);
     background-color: var(--background-secondary);
 }
 
-table.gb-entry-form tr td button:hover {
+form.import button:hover,
+form.import input::file-selector-button:hover,
+table.form tr td button:hover {
     color: var(--background);
     background-color: var(--foreground);
 }
@@ -318,7 +334,7 @@ table.gb-entry-form-container tr td ul {
     margin: 0;
 }
 
-table.gb-entry-form tbody tr td textarea {
+table.form tbody tr td textarea {
     width: 210px;
 }
 
@@ -490,20 +506,151 @@ label[for="scheme-selector"] {
 }
 
 
-.music-top10 td {
+.music-top10 td,
+.music-top10 th {
     border: none;
     border-left: 1px dotted var(--foreground);
     padding: 2px 5px
 }
 
-.music-top10 tr:nth-child(2) td {
+.music-top10 tr:nth-child(1) th {
     border-bottom: 1px dotted var(--foreground);
 }
 
-.music-top10 tr:nth-child(3) td {
+.music-top10 tr:nth-child(2) td {
     padding-top: 5px;
 }
 
-.music-top10 td:first-child {
+.music-top10 td:first-child,
+.music-top10 th:first-child {
     border: none;
 }
+
+.music-top10 tr th:first-child {
+    text-align: right;
+}
+
+.music-top10 td {
+    white-space: nowrap; text-overflow:ellipsis; overflow: hidden;
+}
+
+.music-top10 tr td:first-child {
+    text-align: right;
+}
+
+.music-top10 tr td:nth-child(2),
+.music-top10 tr td:nth-child(3) {
+    width: 50%;
+}
+
+.current-track {
+    width: 100%;
+}
+
+.current-track h2 {
+    margin: 0;
+}
+
+.info-section ul {
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.info-section ul li:before {
+    content: "◆ ";
+}
+
+.info-section h2 {
+    margin: 0;
+}
+
+.info-section p {
+    margin-top: 10px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.banner {
+    padding: 5px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.banner div:nth-child(1) {
+    text-align: left;
+}
+
+.banner div:nth-child(2) {
+    text-align: right;
+}
+
+.red-banner {
+    border: 3px solid var(--foreground);
+    background-color: var(--background-secondary);
+}
+
+.info-admin td,
+.info-admin th {
+    border: 1px solid var(--foreground);
+    padding: 5px;
+}
+
+.info-admin th {
+    background-color: var(--background-secondary);
+}
+
+.info-admin th.blank {
+    border: none;
+    background-color: var(--background);
+}
+
+.info-admin button {
+    border: 1px solid var(--foreground);
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.info-admin button:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+.info-admin button:active {
+    background-color: var(--background-secondary);
+    color: var(--foreground);
+}
+
+.info-admin-section h2 {
+    margin-bottom: 5px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.fullwidth td:last-child {
+    width: 0;
+}
+
+.guestbook-message {
+    text-wrap: wrap;
+    width: 100%;
+}
+
+td.diagonal-line {
+    background: linear-gradient(to right bottom, var(--background) 0%,var(--background) 49.9%,var(--foreground) 50%,var(--foreground) 51%,var(--background) 51.1%,var(--background) 100%);
+}
+
+form.import h2 {
+    margin: 10px 0 5px 0;
+}
+

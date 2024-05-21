@@ -17,6 +17,5 @@ return [
     'lastfm' => [
         'key' => env('LASTFM_KEY'),
         'user' => env('LASTFM_USER'),
-        'toptracks' => env('LASTFM_TOP_TRACKS')
     ]
 ];

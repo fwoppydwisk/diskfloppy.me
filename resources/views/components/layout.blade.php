@@ -18,10 +18,8 @@
 
     <!-- Page-specific -->
     <title>{{ $title ?? 'Unknown' }} - diskfloppy.me</title>
-    <meta property="og:title" content="diskfloppy.me | @yield('title')">
-    <meta property="og:description" content="@yield('description')">
+    <meta property="og:title" content="diskfloppy.me | {{ $title }}">
     <meta property="og:image" content="/favicon-128x128.png">
-    <meta name="description" content="@yield('description')">
 </head>
 <body onload="setSchemeSelector()">
 <div class="page">
@@ -71,7 +69,7 @@
                      class="pixel" alt="Wiby - Search Engine for the Classic Web">
             </a><br>
             This site is best viewed at 1024x768 with 16-bit color or better<br>
-            &copy; floppydisk 2021-{{ date('Y') }}, v{{ config('app.version') }}@if(env('DEVEL'))-dev, @else, @endif<a
+            &copy; floppydisk 2021-{{ date('Y') }}, v{{ config('app.version') }} <a
                 href="https://github.com/floppydisk05/diskfloppy.me">Source</a>,
             Served by {{ gethostname() }}<br>
             <label for="scheme-selector">Color Scheme:</label>

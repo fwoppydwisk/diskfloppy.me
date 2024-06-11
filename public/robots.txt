@@ -18,4 +18,3 @@ Disallow: /
 
 User-Agent: PerplexityBot
 Disallow: /
-

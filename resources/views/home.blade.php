@@ -6,7 +6,7 @@
         <h2>QuickFacts&trade;</h2>
         <hr>
         <ul>
-            <li>18 y/o, he/him, British</li>
+            <li>{{ $age }} y/o, he/him, British</li>
             <li>Theatre Technician, &quot;Web Developer&quot; and NixOS User</li>
             <li>Loves ETC desks, prefers Generics to LEDs for some reason</li>
             <li>Has a crippling Soundcraft addiction</li>

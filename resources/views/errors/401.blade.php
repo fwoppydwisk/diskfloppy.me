@@ -1,5 +1,4 @@
-@extends('errors::minimal')
-
-@section('title', __('Unauthorized'))
-@section('code', '401')
-@section('message', __('Unauthorized'))
+<x-minimal-error>
+    <x-slot:code>401</x-slot:code>
+    <x-slot:message>Unauthorized</x-slot:message>
+</x-minimal-error>

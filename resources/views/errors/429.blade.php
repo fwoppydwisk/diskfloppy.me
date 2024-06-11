@@ -1,5 +1,4 @@
-@extends('errors::minimal')
-
-@section('title', __('Too Many Requests'))
-@section('code', '429')
-@section('message', __('Too Many Requests'))
+<x-minimal-error>
+    <x-slot:code>429</x-slot:code>
+    <x-slot:message>Too Many Requests</x-slot:message>
+</x-minimal-error>

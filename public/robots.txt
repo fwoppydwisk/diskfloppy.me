@@ -3,3 +3,19 @@ Disallow: /admin
 Disallow: /login
 Disallow: /js
 Disallow: /css
+
+User-Agent: GPTBot
+Disallow: /
+
+User-Agent: ChatGPT-User
+Disallow: /
+
+User-Agent: Google-Extended
+Disallow: /
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: PerplexityBot
+Disallow: /
+

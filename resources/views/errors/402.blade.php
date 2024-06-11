@@ -1,5 +1,4 @@
-@extends('errors::minimal')
-
-@section('title', __('Payment Required'))
-@section('code', '402')
-@section('message', __('Payment Required'))
+<x-minimal-error>
+    <x-slot:code>402</x-slot:code>
+    <x-slot:message>Payment Required</x-slot:message>
+</x-minimal-error>

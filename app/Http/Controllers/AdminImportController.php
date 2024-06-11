@@ -11,7 +11,8 @@ use Illuminate\View\View;
 
 class AdminImportController extends Controller
 {
-    public function show() : View {
+    public function show(): View
+    {
         return view('admin.import');
     }
 
@@ -26,7 +27,9 @@ class AdminImportController extends Controller
         $data = json_decode($jsonContent, true);
         $tables = [];
         foreach($data as $item) {
-            if ($item['type'] !== "table") continue;
+            if ($item['type'] !== "table") {
+                continue;
+            }
             $tables[$item['name']] = [
                 'data' => $item['data'],
                 'count' => count($item['data'])
@@ -48,7 +51,8 @@ class AdminImportController extends Controller
      * @return void
      * @throws Exception Invalid table specified, to be replaced with custom exception
      */
-    public function import(array $data, string $table_name): void {
+    public function import(array $data, string $table_name): void
+    {
         switch ($table_name) {
             case 'guestbook__entries':
                 GuestbookEntry::importGuestbookEntry($data);

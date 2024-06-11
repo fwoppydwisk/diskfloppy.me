@@ -9,8 +9,10 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Validation\ValidationException;
 use UAParser\Parser;
 
-class GuestbookController extends Controller {
-    public function show(): View {
+class GuestbookController extends Controller
+{
+    public function show(): View
+    {
         $entries = GuestbookEntry::selectEntries();
         $parser = Parser::create();
 
@@ -26,7 +28,8 @@ class GuestbookController extends Controller {
      * @return RedirectResponse
      * @throws ValidationException
      */
-    public function addEntry(Request $request): RedirectResponse {
+    public function addEntry(Request $request): RedirectResponse
+    {
         $this->validate($request, [
             'name' => 'required',
             'message' => 'required'
@@ -37,7 +40,8 @@ class GuestbookController extends Controller {
         return back()->with('success', 'Entry submitted successfully!');
     }
 
-    public function banIP(string $addr) {
+    public function banIP(string $addr)
+    {
         // TODO: Add banning system
         // $matching_bans = DB::select('SELECT reason FROM guestbook__bans WHERE ip_address = ?', array($request->ip()));
         // if (!empty($matching_bans)) {

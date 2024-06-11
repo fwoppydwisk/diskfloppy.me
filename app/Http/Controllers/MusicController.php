@@ -9,7 +9,8 @@ use Illuminate\View\View;
 
 class MusicController extends Controller
 {
-    public function getCurrentTrack() {
+    public function getCurrentTrack()
+    {
         // If it's already cached just return that
         if (Cache::has('current_track')) {
             return Cache::get('current_track');
@@ -34,7 +35,8 @@ class MusicController extends Controller
         return $current_track;
     }
 
-    public function getTopTracks() {
+    public function getTopTracks()
+    {
         // If it's already cached just return that
         if (Cache::has('top_tracks')) {
             return Cache::get('top_tracks');
@@ -61,7 +63,8 @@ class MusicController extends Controller
         Cache::put('top_tracks', $topTracks, now()->addSeconds(15));
         return $topTracks;
     }
-    public function show() : View {
+    public function show(): View
+    {
         return view('music')
             ->with('current_track', $this->getCurrentTrack())
             ->with('top_tracks', $this->getTopTracks());

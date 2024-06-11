@@ -11,10 +11,11 @@ class BookmarkCategoriesTableSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void {
-//        BookmarkCategory::factory()->count(5)->create()->each(function ($category) {
-//            $category->sites()->saveMany(BookmarkSite::factory()->count(3)->make());
-//        });
+    public function run(): void
+    {
+        //        BookmarkCategory::factory()->count(5)->create()->each(function ($category) {
+        //            $category->sites()->saveMany(BookmarkSite::factory()->count(3)->make());
+        //        });
         $category = new BookmarkCategory([
             'name' => 'cool people',
         ]);

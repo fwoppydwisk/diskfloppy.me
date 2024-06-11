@@ -7,7 +7,8 @@ use Illuminate\View\View;
 
 class ComputersController extends Controller
 {
-    public function show() : View {
+    public function show(): View
+    {
         return view('computers');
     }
 }

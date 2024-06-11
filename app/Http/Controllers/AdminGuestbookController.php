@@ -9,16 +9,19 @@ use UAParser\Parser;
 
 class AdminGuestbookController extends Controller
 {
-    function getGuestbookUniqueAddr(): int {
+    public function getGuestbookUniqueAddr(): int
+    {
         $uniqueIpsCount = DB::table('guestbook__entries')->distinct()->count('ip');
         return $uniqueIpsCount;
     }
 
-    function getGuestbookEntriesCount(): int {
+    public function getGuestbookEntriesCount(): int
+    {
         $entryCount = DB::table('guestbook__entries')->count();
         return $entryCount;
     }
-    public function show() : View {
+    public function show(): View
+    {
         $guestbook_unique_addr = $this->getGuestbookUniqueAddr();
         $guestbook_entry_count = $this->getGuestbookEntriesCount();
         $entries = GuestbookEntry::selectEntries();

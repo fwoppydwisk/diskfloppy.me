@@ -8,7 +8,8 @@ use Illuminate\View\View;
 
 class BookmarksController extends Controller
 {
-    public function show() : View {
+    public function show(): View
+    {
         $categories = BookmarkCategory::with('sites')->get();
         return view('bookmarks', compact('categories'));
     }

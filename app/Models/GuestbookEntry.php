@@ -18,8 +18,9 @@ class GuestbookEntry extends Model
      * @param Request $request The HTTP POST request
      * @return void
      */
-    public static function insertGuestbookEntry(Request $request) {
-        $newEntry = new GuestbookEntry;
+    public static function insertGuestbookEntry(Request $request)
+    {
+        $newEntry = new GuestbookEntry();
         $newEntry->name = htmlspecialchars($request->get('name'));
         $newEntry->message = htmlspecialchars($request->get('message'));
         $newEntry->ip = $request->ip();
@@ -28,15 +29,17 @@ class GuestbookEntry extends Model
         $newEntry->save();
     }
 
-    public static function selectEntries() {
+    public static function selectEntries()
+    {
         $entries = GuestbookEntry::orderBy('created_at', 'desc')->get();
         return $entries;
     }
 
-    public static function importGuestbookEntry(array $data) {
+    public static function importGuestbookEntry(array $data)
+    {
         foreach ($data as $entry) {
             $dt = new \DateTime('@' . $entry['timestamp']);
-            $newEntry = new GuestbookEntry;
+            $newEntry = new GuestbookEntry();
             $newEntry->name = $entry['name'];
             $newEntry->ip = $entry['ip_address'];
             $newEntry->agent = $entry['agent'];

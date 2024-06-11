@@ -11,7 +11,7 @@ class HomeController extends Controller
      * Returns age based on birthday date and current date (GMT)
      * @return int
      */
-    function returnAge(): int
+    public function returnAge(): int
     {
         date_default_timezone_set('Europe/London');
         $birthday = new DateTime("2005-06-07");
@@ -24,7 +24,8 @@ class HomeController extends Controller
      * Shows home page
      * @return View
      */
-    public function show() : View {
+    public function show(): View
+    {
         return view('home', [
             'age' => $this->returnAge()
         ]);

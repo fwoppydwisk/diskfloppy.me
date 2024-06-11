@@ -17,5 +17,10 @@ return [
     'lastfm' => [
         'key' => env('LASTFM_KEY'),
         'user' => env('LASTFM_USER'),
+    ],
+
+    'posthog' => [
+        'key' => env('POSTHOG_KEY'),
+        'host' => env('POSTHOG_HOST'),
     ]
 ];

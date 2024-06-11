@@ -10,6 +10,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/tinker": "^2.8",
+        "posthog/posthog-php": "^3.3",
         "scrivo/highlight.php": "v9.18.1.10",
         "sentry/sentry-laravel": "^4.1",
         "spatie/laravel-honeypot": "^4.3",

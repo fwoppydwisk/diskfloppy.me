@@ -9,6 +9,7 @@ use App\Http\Controllers\ComputersController;
 use App\Http\Controllers\GuestbookController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MusicController;
+use App\Http\Middleware\PageView;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,14 +23,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'show']);
-Route::get('/bookmarks', [BookmarksController::class, 'show']);
-Route::get('/guestbook', [GuestbookController::class, 'show']);
+// Run the PageView middleware for *all* public GET routes
+Route::middleware(PageView::class)->group(function () {
+    Route::get('/', [HomeController::class, 'show']);
+    Route::get('/bookmarks', [BookmarksController::class, 'show']);
+    Route::get('/guestbook', [GuestbookController::class, 'show']);
+    Route::get('/calculators', [CalculatorsController::class, 'show']);
+    Route::get('/computers', [ComputersController::class, 'show']);
+    Route::get('/music', [MusicController::class, 'show']);
+});
+
 Route::post('/guestbook', [GuestbookController::class, 'addEntry'])
     ->middleware('rate_limit');
-Route::get('/calculators', [CalculatorsController::class, 'show']);
-Route::get('/computers', [ComputersController::class, 'show']);
-Route::get('/music', [MusicController::class, 'show']);
 
 // Admin pages
 Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show'])

@@ -1,5 +1,4 @@
-@extends('errors::minimal')
-
-@section('title', __('Service Unavailable'))
-@section('code', '503')
-@section('message', __('Service Unavailable'))
+<x-minimal-error>
+    <x-slot:code>503</x-slot:code>
+    <x-slot:message>Service Unavailable</x-slot:message>
+</x-minimal-error>

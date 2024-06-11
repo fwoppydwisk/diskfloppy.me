@@ -16,6 +16,9 @@ class RateLimiter
      */
     public function handle(Request $request, Closure $next): Response
     {
+        if (auth()->check()) {
+            return $next($request);
+        }
         $ipAddress = $request->ip();
         $cacheKey = 'rate_limit_'.$ipAddress;
 

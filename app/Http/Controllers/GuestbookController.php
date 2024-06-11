@@ -2,37 +2,46 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\GuestbookEntry;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Contracts\View\View;
+use Illuminate\Validation\ValidationException;
+use UAParser\Parser;
 
 class GuestbookController extends Controller {
-    public function guestbook() {
-        return view('pages.guestbook');
+    public function show(): View {
+        $entries = GuestbookEntry::selectEntries();
+        $parser = Parser::create();
+
+        return view('guestbook')
+            ->with('entries', $entries)
+            ->with('parser', $parser);
     }
 
-    public function guestbookPost(Request $request) {
+    /**
+     * Creates a new guestbook entry
+     *
+     * @param Request $request
+     * @return RedirectResponse
+     * @throws ValidationException
+     */
+    public function addEntry(Request $request): RedirectResponse {
         $this->validate($request, [
             'name' => 'required',
             'message' => 'required'
         ]);
 
-        $matching_bans = DB::select('SELECT reason FROM guestbook__bans WHERE ip_address = ?', array($request->ip()));
 
-        if (!empty($matching_bans)) {
-            return view('errors.guestbook-ipban')->with('reason', $matching_bans[0]->reason);
-        }
-
-        DB::insert(
-            'INSERT INTO guestbook__entries (name, timestamp, ip_address, agent, message) values (?, ?, ?, ?, ?)',
-            [
-                htmlspecialchars($request->get('name')),
-                time(),
-                $request->ip(),
-                $request->userAgent(),
-                htmlspecialchars($request->get('message'))
-            ]
-        );
-
+        GuestbookEntry::insertGuestbookEntry($request);
         return back()->with('success', 'Entry submitted successfully!');
+    }
+
+    public function banIP(string $addr) {
+        // TODO: Add banning system
+        // $matching_bans = DB::select('SELECT reason FROM guestbook__bans WHERE ip_address = ?', array($request->ip()));
+        // if (!empty($matching_bans)) {
+        //     return view('errors.guestbook-ipban')->with('reason', $matching_bans[0]->reason);
+        // }
     }
 }

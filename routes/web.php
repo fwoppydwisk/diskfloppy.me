@@ -37,13 +37,11 @@ Route::post('/guestbook', [GuestbookController::class, 'addEntry'])
     ->middleware('rate_limit');
 
 // Admin pages
-Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show'])
-    ->middleware('auth');
-Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show'])
-     ->middleware('auth');
-Route::get('/admin/import', [AdminImportController::class, 'show'])
-    ->middleware('auth');
-Route::post('/admin/import', [AdminImportController::class, 'submit'])
-    ->name('admin.import.submit')
-    ->middleware('auth');
+Route::prefix('admin')->group(function () {
+    Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show']);
+    Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show']);
+    Route::get('/admin/import', [AdminImportController::class, 'show']);
+    Route::post('/admin/import', [AdminImportController::class, 'submit'])
+        ->name('admin.import.submit');
 
+})->middleware('auth');

@@ -17,12 +17,5 @@ class AppServiceProvider extends ServiceProvider {
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void {
-        PostHog::init(
-            Config::get('services.posthog.key'),
-            [
-                'host' => 'https://'.Config::get('services.posthog.host')
-            ]
-        );
-    }
+    public function boot(): void {}
 }

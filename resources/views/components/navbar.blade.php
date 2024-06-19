@@ -1,5 +1,5 @@
 <nav>
-    <h1>diskfloppy.me | <strong>{{ $title }}</strong></h1>
+    <h1>{{ str_replace("www.", "", Request::getHost()) }} | <strong>{{ $title }}</strong></h1>
     <div class="nav-wrapper">
         <div>
             <a href="/" title="Home"><img class="pixel" src="/images/icons/nav/home2.png" alt="Home" width="32" height="32"></a>

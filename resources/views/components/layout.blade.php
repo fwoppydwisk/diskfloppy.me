@@ -17,8 +17,8 @@
     {!! (intval(date('n')) == 12) ? '<script src="/js/christmas/snow.js"></script>' : '' !!}
 
     <!-- Page-specific -->
-    <title>{{ $title ?? 'Unknown' }} - diskfloppy.me</title>
-    <meta property="og:title" content="diskfloppy.me | {{ $title }}">
+    <title>{{ $title ?? 'Unknown' }} - {{ str_replace("www.", "", Request::getHost()) }}</title>
+    <meta property="og:title" content="{{ str_replace("www.", "", Request::getHost()) }} | {{ $title }}">
     <meta property="og:image" content="/favicon-128x128.png">
 </head>
 <body onload="setSchemeSelector()">

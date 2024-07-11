@@ -24,16 +24,6 @@
 <body onload="setSchemeSelector()">
 <div class="page">
     <div id="header" class="header">
-        @if (auth()->check())
-        <div class="banner red-banner">
-            <div>
-                <a href="/admin/guestbook">Guestbook</a>&nbsp;|
-                <a href="/admin/bookmarks">Bookmarks</a> |
-                <a href="/admin/import">Import</a>
-            </div>
-            <div><strong>Logged in as:</strong> {{ auth()->user()->name }} (<a href="/logout">logout</a>)</div>
-        </div>
-        @endif
         <x-navbar title="{{ $title }}"/>
         <hr>
     </div> <!-- header -->

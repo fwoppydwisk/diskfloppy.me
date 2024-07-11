@@ -3,7 +3,6 @@
 use App\Http\Controllers\AdminBookmarksController;
 use App\Http\Controllers\AdminGuestbookController;
 use App\Http\Controllers\AdminImportController;
-use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookmarksController;
 use App\Http\Controllers\CalculatorsController;
 use App\Http\Controllers\ComputersController;
@@ -26,7 +25,6 @@ use Illuminate\Support\Facades\Route;
 // Run the PageView middleware for *all* public GET routes
 Route::get('/', [HomeController::class, 'show']);
 Route::get('/bookmarks', [BookmarksController::class, 'show']);
-Route::get('/blog', [BlogController::class, 'showPostList']);
 Route::get('/guestbook', [GuestbookController::class, 'show']);
 Route::get('/calculators', [CalculatorsController::class, 'show']);
 Route::get('/computers', [ComputersController::class, 'show']);

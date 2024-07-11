@@ -11,8 +11,5 @@
             <a href="//weather.diskfloppy.me/" title="Weather"><img class="pixel" src="/images/icons/nav/weather.png" alt="Weather" width="32" height="32"></a>
             <a href="/music/" title="Music"><img class="pixel" src="/images/icons/nav/music.png" alt="Music" width="32" height="32"></a>&nbsp;&nbsp;
         </div>
-        <div>
-            <a href="/login/" title="Admin Login"><img class="pixel" src="/images/icons/nav/admin.png" alt="Admin Login" width="32" height="32"></a>&nbsp;&nbsp;
-        </div>
     </div>
 </nav>

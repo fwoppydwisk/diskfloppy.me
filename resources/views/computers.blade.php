@@ -1,10 +1,5 @@
-@extends('layouts.default')
-@section('title', 'Computers')
-@section('description', 'Computers I own or have owned.')
-@php
-// TODO: AMD whitebox, 745, D531, 1525, server, vaio, qosmio, packard bell
-@endphp
-@section('content')
+<x-layout>
+    <x-slot:title>Computers</x-slot:title>
     <table class="computers">
         <tr>
             <th>PICTURES</th>
@@ -184,4 +179,4 @@
             </td>
         </tr>
     </table>
-@stop
+</x-layout>

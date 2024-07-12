@@ -46,7 +46,8 @@ function cookieExists(cname) {
  * Swaps the colorscheme
  * @param {string} scheme Color scheme ID
  */
-function swapScheme(scheme) {
+function swapScheme() {
+    let scheme = document.getElementById('scheme-selector').value ;
     setCookie("colorscheme", scheme, 90);
     document.getElementById("css-colorscheme").href = `/css/colorschemes/${scheme}.css`;
     console.log(`Set colorscheme to ${getCookie("colorscheme")}`)

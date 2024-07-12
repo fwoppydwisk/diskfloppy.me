@@ -296,6 +296,7 @@ input.file {
 table.form tr td textarea,
 table.form tr td input,
 table.form tr td button,
+button,
 form.import input::file-selector-button,
 form.import button {
     background-color: var(--background);
@@ -314,6 +315,7 @@ table.form tr td button {
 }
 
 form.import button:hover,
+button:hover,
 form.import input::file-selector-button:hover,
 table.form tr td button:hover {
     color: var(--background);
@@ -671,6 +673,12 @@ a:hover img.navbar-icon {
 }
 
 .footer p {
+    vertical-align: middle;
     margin: 0;
     line-height: 1.2;
+}
+
+.footer button,
+.footer select{
+    padding: 5px 10px;
 }

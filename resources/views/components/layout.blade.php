@@ -62,7 +62,7 @@
                 href="https://github.com/floppydisk05/diskfloppy.me">Source</a>,
             Served by {{ gethostname() }}<br>
             <label for="scheme-selector">Color Scheme:</label>
-            <select onchange="swapScheme(this.value)" id="scheme-selector">
+            <select id="scheme-selector">
                 <optgroup label="Misc">
                     <option value="c64">C64</option>
                 </optgroup>
@@ -95,7 +95,8 @@
                     <option value="slate">Slate</option>
                     <option value="solarized-dark">Solarized Dark</option>
                 </optgroup>
-            </select></p>
+            </select>
+            <button onclick="swapScheme()">Apply</button></p>
         </div>
     </div> <!-- footer -->
 </div> <!-- page -->

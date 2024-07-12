@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminBookmarksController;
-use App\Http\Controllers\AdminGuestbookController;
-use App\Http\Controllers\AdminImportController;
 use App\Http\Controllers\BookmarksController;
 use App\Http\Controllers\CalculatorsController;
 use App\Http\Controllers\ComputersController;
@@ -31,13 +28,3 @@ Route::get('/computers', [ComputersController::class, 'show']);
 Route::get('/music', [MusicController::class, 'show']);
 Route::post('/guestbook', [GuestbookController::class, 'addEntry'])
     ->middleware('rate_limit');
-
-// Admin pages
-Route::prefix('admin')->group(function () {
-    Route::get('/admin/guestbook', [AdminGuestbookController::class, 'show']);
-    Route::get('/admin/bookmarks', [AdminBookmarksController::class, 'show']);
-    Route::get('/admin/import', [AdminImportController::class, 'show']);
-    Route::post('/admin/import', [AdminImportController::class, 'submit'])
-        ->name('admin.import.submit');
-
-})->middleware('auth');

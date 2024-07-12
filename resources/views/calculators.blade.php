@@ -37,7 +37,7 @@
             </tr>
             <tr>
                 <td><b>Features</b></td>
-                <td>%, +/-, RV, F, Sci, a<sup>b</sup>&frasl;<sub>c</sub>, Sqr, x<sup>2</sup>, pi, <sup>1</sup>&frasl;<sub>x</sub>, trig,<br>hyp, DMS-DD, log, y<sup>x</sup>, SD, nCr, P-R, n!</sup></td>
+                <td>%, +/-, RV, F, Sci, a<sup>b</sup>&frasl;<sub>c</sub>, Sqr, x<sup>2</sup>, pi, <sup>1</sup>&frasl;<sub>x</sub>, trig,<br>hyp, DMS-DD, log, y<sup>x</sup>, SD, nCr, P-R, n!</td>
             </tr>
             <tr>
                 <td><b>Display</b></td>

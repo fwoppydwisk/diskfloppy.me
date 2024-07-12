@@ -642,7 +642,7 @@ label[for="scheme-selector"] {
 }
 
 .guestbook-message {
-    text-wrap: wrap;
+    text-wrap: normal;
     width: 100%;
 }
 

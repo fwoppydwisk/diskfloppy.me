@@ -1,4 +1,4 @@
-/*@import "colorschemes/catppuccin-macchiato.css";*/
+/* ── Global Elements ─────────────────────────────────────────────────────────────── */
 
 body {
     font-family: sans-serif;
@@ -17,9 +17,98 @@ hr {
     border-bottom: none;
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+    clear: left;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+pre {
+    display: inline;
+    max-width: 95%;
+    overflow: auto;
+}
+
+nav {
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+
+nav img {
+    width: 32px;
+}
+
+nav h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px 10px 10px 0;
+}
+
+video {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: var(--foreground);
+}
+
+table td {
+    border: 1px solid var(--foreground);
+}
+
+td {
+    padding: 0;
+    vertical-align: top;
+}
+
+h1 { font-size: 150%; }
+
+h2 { font-size: 130%; }
+
+h3 { font-size: 115%; }
+
+a {
+    color: var(--links);
+    text-decoration: underline dotted;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+caption h1,
+caption h2 {
+    margin: 0;
+}
+
+caption {
+    text-align: left;
+}
+
+button {
+    background-color: var(--background);
+    border: var(--foreground) solid 1px;
+}
+
+button:hover {
+    color: var(--background);
+    background-color: var(--foreground);
+}
+
+/* ── Common Styles ───────────────────────────────────────────────────────────────── */
+
 div.page {
-    min-width: 780px;
-    max-width: 800px;
+    /*min-width: 1000px;*/
+    /*max-width: 1100px;*/
+    width: 1000px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin: auto;
@@ -31,18 +120,6 @@ h1.inline {
     display: inline;
 }
 
-h1,
-h2,
-h3 {
-    margin-top: 0;
-    clear: left;
-}
-
-img {
-    border: none;
-    max-width: 100%;
-}
-
 img.right {
     float: right;
     margin-left: 0.5em;
@@ -52,55 +129,94 @@ table.form td {
     border: none;
 }
 
-/* -------------------------------------------------------------------------- */
-
-div.code-block {
-    background-color: var(--background);
-    border: 2px solid var(--foreground);
-    padding: 10px;
-    display: inline-block;
-    text-align: left;
-    max-width: 90%;
-    min-width: 400px;
-    margin: 10px;
+img.pixel {
+    image-rendering: pixelated;
 }
 
-div.code-block hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
+td.diagonal-line {
+    background: linear-gradient(to right bottom, var(--background) 0%,var(--background) 49.9%,var(--foreground) 50%,var(--foreground) 51%,var(--background) 51.1%,var(--background) 100%);
 }
 
-div.code-block h1 {
+.info-section {
+    margin-top: 20px;
+}
+
+.info-section ul,
+ul.quick-specs {
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 0;
     margin: 0;
-    font-family: monospace;
 }
 
-div.code-block h1 small {
-    color: var(--foreground);
-    font-size: 12px;
+.info-section ul li:before {
+    content: "◆ ";
 }
 
-div.code-block pre hr {
+.info-section h2 {
+    margin: 0;
+}
+
+.info-section p {
+    margin: 0;
+}
+
+table.info-table tr td {
+    border: none;
+    padding-right: 5px;
+}
+
+table.info-table {
+    width: 100%;
+}
+
+table.info-table tr td h1,
+table.info-table tr td h2,
+table.info-table tr td small {
+    margin: 0;
+}
+
+table.info-table tr td small {
     margin-bottom: 5px;
 }
 
-div.code-block pre code {
-    background-color: var(--background);
+/* ── Footer ──────────────────────────────────────────────────────────────────────── */
+
+.footer p {
+    vertical-align: middle;
+    margin: 0;
+    line-height: 1.2;
 }
 
-pre {
-    display: inline;
-    max-width: 95%;
-    overflow: auto;
+.footer button,
+.footer select{
+    padding: 5px 10px;
 }
 
-.header a {
+label[for="scheme-selector"] {
+    font-weight: bold;
+}
+
+#scheme-selector {
+    border: var(--foreground) solid 1px;
+    background-color: var(--background-secondary);
+    color: var(--foreground)
+}
+
+div.footer {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div.footer a.button {
     text-decoration: none;
 }
 
-.theme-selector {
-    text-align: right;
-    vertical-align: middle;
+
+/* ── Navbar ──────────────────────────────────────────────────────────────────────── */
+
+a:hover img.navbar-icon {
+    opacity: 80%;
 }
 
 .nav-wrapper {
@@ -115,80 +231,10 @@ pre {
     text-align: right;
 }
 
-.theme-selector label {
-    font-weight: bold;
-}
+/* ── Header ──────────────────────────────────────────────────────────────────────── */
 
-.theme-selector label::after {
-    content: ': ';
-}
-
-nav {
-    margin-bottom: 0.3em;
-    text-align: left;
-}
-
-nav img {
-    width: 32px;
-}
-
-nav h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    margin: 10px 10px 10px 0;
-}
-
-div.date {
-    text-align: center;
-}
-
-div.note {
-    font-style: italic;
-}
-
-table {
-    border-collapse: collapse;
-    border-color: var(--foreground);
-}
-
-table.weather th {
-    font-weight: normal;
-}
-
-table.weather td {
-    font-weight: bold;
-    text-align: right;
-}
-
-div.rss {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-}
-
-div.archived {
-    margin-top: 0.5em;
-}
-
-div.archived span.date {
-    font-style: italic;
-    margin-right: 0.2em;
-}
-
-video {
-    max-width: 100%;
-}
-
-table td {
-    border: 1px solid var(--foreground);
-}
-
-td {
-    padding: 0;
-    vertical-align: top;
+.header a {
+    text-decoration: none;
 }
 
 .header .title {
@@ -202,20 +248,7 @@ td {
     text-align: center;
 }
 
-h1 {
-    font-size: 150%;
-}
-h1 {
-    font-size: 150%;
-}
-
-h2 {
-    font-size: 130%;
-}
-
-h3 {
-    font-size: 115%;
-}
+/* ── Computers ───────────────────────────────────────────────────────────────────── */
 
 table.computers {
     width: 100%;
@@ -251,30 +284,7 @@ table.computers th {
     padding: 5px;
 }
 
-
-
-img.pixel {
-    image-rendering: pixelated;
-}
-
-div.footer {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-div.footer a.button {
-    text-decoration: none;
-}
-
-table.commits tr td {
-    border: none;
-    padding-right: 5px;
-}
-
-a {
-    color: var(--links);
-    text-decoration: underline dotted;
-}
+/* ── Forms ───────────────────────────────────────────────────────────────────────── */
 
 table.form tr td {
     border: none;
@@ -289,16 +299,9 @@ table.form tr td span.text-danger {
     color: var(--warning);
 }
 
-input.file {
-    border: 0 !important;
-}
-
 table.form tr td textarea,
 table.form tr td input,
-table.form tr td button,
-button,
-form.import input::file-selector-button,
-form.import button {
+table.form tr td button {
     background-color: var(--background);
     border: var(--foreground) solid 1px;
 }
@@ -307,20 +310,21 @@ table.form label {
     margin: 5px 0;
 }
 
-form.import button,
-form.import input::file-selector-button,
 table.form tr td button {
     color: var(--foreground);
     background-color: var(--background-secondary);
 }
 
-form.import button:hover,
-button:hover,
-form.import input::file-selector-button:hover,
 table.form tr td button:hover {
     color: var(--background);
     background-color: var(--foreground);
 }
+
+table.form tbody tr td textarea {
+    width: 210px;
+}
+
+/* ── Guestbook ───────────────────────────────────────────────────────────────────── */
 
 table.gb-entry-form-container {
     width: 100%;
@@ -334,10 +338,6 @@ table.gb-entry-form-container tr td {
 table.gb-entry-form-container tr td p,
 table.gb-entry-form-container tr td ul {
     margin: 0;
-}
-
-table.form tbody tr td textarea {
-    width: 210px;
 }
 
 table.gb-entry tr td {
@@ -360,153 +360,23 @@ table.gb-entry address {
     font-size: 0.8pc;
 }
 
-table.gb-admin {
-    margin-bottom: 5px;
-    width: 500px;
-    border: var(--foreground) solid;
-}
-
-table.gb-admin tr td {
-    border-right: none;
-    border-bottom: none;
-    vertical-align: top;
-    padding: 5px;
-}
-
-table.gb-admin tr td.gb-del {
-    border-left: none;
-    vertical-align: top;
-    padding: 5px;
-    width: 32px;
-}
-
-table.gb-admin tr td.gb-message {
-    border-top: none;
-    vertical-align: top;
-    padding: 5px;
-}
-
-table.info-table tr td {
-    border: none;
-    padding-right: 5px;
-}
-
-table.info-table {
+.guestbook-message {
+    text-wrap: normal;
     width: 100%;
 }
 
-table.info-table tr td h1,
-table.info-table tr td h2,
-table.info-table tr td small {
-    margin: 0;
+
+/* ── Calculators ─────────────────────────────────────────────────────────────────── */
+
+.calculator-spec-table td {
+    padding: 5px 10px 5px 5px;
 }
 
-caption h1,
-caption h2 {
-    margin: 0;
-}
-
-caption {
-    text-align: left;
-}
-
-table.info-table tr td small {
-    margin-bottom: 5px;
-}
-.me img {
-    float: right;
-    margin: 5px;
-}
-
-.me p {
-    text-align: justify;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.spec {
-    padding-left: 20px;
-}
-
-.spec-title {
-    font-weight: bold;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(0, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    height: 100%;
-}
-
-.project-grid div {
-    padding: 5px;
-}
-
-.project-section-title,
-.project-grid div h1,
-.project-grid div p {
-    margin: 5px 0;
-}
-
-.project-section-title {
-    margin-top: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--foreground);
-}
-
-.project-grid div h1 {
-    margin-top: 10px;
-}
-
-.project-grid div a {
-    text-decoration: underline dotted;
-    padding: 2px 2px 0 2px;
-    margin: 0;
-    font-size: 10pt;
-}
-
-.project-grid .project-links a {
-    color: var(--links);
-    border: 1px solid var(--foreground);
-    border-left: none;
-}
-
-.project-grid .project-links a:first-child {
-    border: 1px solid var(--foreground);
-}
-
-.project-grid .project-links a:hover {
-    background-color: var(--foreground);
-    color: var(--background);
-}
-
-.error-box {
-    width: 500px;
-    border: 5px solid var(--warning-box-border);
-    background-color: var(--warning-box-bg);
-    padding: 5px;
-}
-.error-box a,
-.error-box p {
-    margin: 0;
-    color: var(--foreground)
-}
-
-label[for="scheme-selector"] {
-    font-weight: bold;
-}
-
-#scheme-selector {
-    border: var(--foreground) solid 1px;
+.calculator-spec-table tr td:first-child {
     background-color: var(--background-secondary);
-    color: var(--foreground)
 }
 
+/* ── Music ───────────────────────────────────────────────────────────────────────── */
 
 .music-top10 td,
 .music-top10 th {
@@ -553,32 +423,11 @@ label[for="scheme-selector"] {
     margin: 0;
 }
 
-.info-section {
-    margin-top: 20px;
-}
+/* ── Misc ────────────────────────────────────────────────────────────────────────── */
 
-.info-section ul {
-    list-style-position: inside;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.info-section ul li:before {
-    content: "◆ ";
-}
-
-.info-section h2 {
-    margin: 0;
-}
-
-.info-section p {
-    margin: 0;
-}
-
-.contact-section {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.red-banner {
+    border: 3px solid var(--foreground);
+    background-color: var(--background-secondary);
 }
 
 .banner {
@@ -599,86 +448,14 @@ label[for="scheme-selector"] {
     text-align: right;
 }
 
-.red-banner {
-    border: 3px solid var(--foreground);
-    background-color: var(--background-secondary);
-}
-
-.info-admin td,
-.info-admin th {
-    border: 1px solid var(--foreground);
+.error-box {
+    width: 500px;
+    border: 5px solid var(--warning-box-border);
+    background-color: var(--warning-box-bg);
     padding: 5px;
 }
-
-.info-admin th {
-    background-color: var(--background-secondary);
-}
-
-.info-admin th.blank {
-    border: none;
-    background-color: var(--background);
-}
-
-.info-admin button {
-    border: 1px solid var(--foreground);
-    background-color: var(--background);
-    color: var(--foreground);
-}
-
-.info-admin button:hover {
-    background-color: var(--foreground);
-    color: var(--background);
-}
-
-.info-admin button:active {
-    background-color: var(--background-secondary);
-    color: var(--foreground);
-}
-
-.info-admin-section h2 {
-    margin-bottom: 5px;
-}
-
-.fullwidth {
-    width: 100%;
-}
-
-.fullwidth td:last-child {
-    width: 0;
-}
-
-.guestbook-message {
-    text-wrap: normal;
-    width: 100%;
-}
-
-td.diagonal-line {
-    background: linear-gradient(to right bottom, var(--background) 0%,var(--background) 49.9%,var(--foreground) 50%,var(--foreground) 51%,var(--background) 51.1%,var(--background) 100%);
-}
-
-form.import h2 {
-    margin: 10px 0 5px 0;
-}
-
-.calculator-spec-table td {
-    padding: 5px 10px 5px 5px;
-}
-
-.calculator-spec-table tr td:first-child {
-    background-color: var(--background-secondary);
-}
-
-a:hover img.navbar-icon {
-    opacity: 80%;
-}
-
-.footer p {
-    vertical-align: middle;
+.error-box a,
+.error-box p {
     margin: 0;
-    line-height: 1.2;
-}
-
-.footer button,
-.footer select{
-    padding: 5px 10px;
+    color: var(--foreground)
 }

@@ -1,18 +1,14 @@
 <x-layout>
     <x-slot:title>Bookmarks</x-slot:title>
     @foreach($categories as $category)
-        <table class="info-table" role="presentation">
-            <caption>
-                <h2>{{ $category->name }}</h2>
-                <hr>
-            </caption>
-            <tbody>
+        <div class="info-section">
+            <h2>{{ $category->name }}</h2>
+            <hr>
+            <ul>
             @foreach($category->sites as $site)
-                <tr>
-                    <td><a href="{{ $site->url }}">{{ $site->name }}</a> - {{ $site->description }}</td>
-                </tr>
+                    <li><a href="{{ $site->url }}">{{ $site->name }}</a> - {{ $site->description }}</li>
             @endforeach
-            </tbody>
-        </table>
+            </ul>
+        </div>
     @endforeach
 </x-layout>

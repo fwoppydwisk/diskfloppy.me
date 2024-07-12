@@ -94,6 +94,7 @@ caption {
 }
 
 button {
+    color: var(--foreground);
     background-color: var(--background);
     border: var(--foreground) solid 1px;
 }
@@ -255,6 +256,7 @@ table.computers {
 }
 
 table.computers td:first-child {
+    width: 350px;
     text-align: center;
     font-weight: bold;
 }

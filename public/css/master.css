@@ -34,7 +34,7 @@ h1.inline {
 h1,
 h2,
 h3 {
-    margin-top: 1em;
+    margin-top: 0;
     clear: left;
 }
 
@@ -551,6 +551,10 @@ label[for="scheme-selector"] {
     margin: 0;
 }
 
+.info-section {
+    margin-top: 20px;
+}
+
 .info-section ul {
     list-style-position: inside;
     list-style-type: none;
@@ -567,7 +571,7 @@ label[for="scheme-selector"] {
 }
 
 .info-section p {
-    margin-top: 10px;
+    margin: 0;
 }
 
 .contact-section {
@@ -654,3 +658,19 @@ form.import h2 {
     margin: 10px 0 5px 0;
 }
 
+.calculator-spec-table td {
+    padding: 5px 10px 5px 5px;
+}
+
+.calculator-spec-table tr td:first-child {
+    background-color: var(--background-secondary);
+}
+
+a:hover img.navbar-icon {
+    opacity: 80%;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.2;
+}

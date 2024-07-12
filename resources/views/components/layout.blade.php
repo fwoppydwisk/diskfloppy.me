@@ -57,8 +57,8 @@
                 <img src="{{ URL::asset('images/buttons/wiby.gif') }}" width="88" height="31"
                      class="pixel" alt="Wiby - Search Engine for the Classic Web">
             </a><br>
-            This site is best viewed at 1024x768 with 16-bit color or better<br>
-            &copy; floppydisk 2021-{{ date('Y') }}, v{{ config('app.version') }} <a
+            <p>This site is best viewed at 1024x768 with 16-bit color or better<br>
+            &copy; floppydisk 2021-{{ date('Y') }}, v{{ config('app.version') }}, <a
                 href="https://github.com/floppydisk05/diskfloppy.me">Source</a>,
             Served by {{ gethostname() }}<br>
             <label for="scheme-selector">Color Scheme:</label>
@@ -95,7 +95,7 @@
                     <option value="slate">Slate</option>
                     <option value="solarized-dark">Solarized Dark</option>
                 </optgroup>
-            </select><br>
+            </select></p>
         </div>
     </div> <!-- footer -->
 </div> <!-- page -->

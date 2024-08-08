@@ -56,24 +56,20 @@
         @php
             $user_agent = $parser->parse($entry->agent);
         @endphp
-        <table class="gb-entry" role="presentation">
-            <tr>
-                <td>
-                    Submitted by <strong>{{ $entry->name }}</strong>
-                    on <strong>{{ $entry->created_at->format('Y-m-d') }}</strong>
-                    at <strong>{{ $entry->created_at->format('h:i:s A (e)') }}</strong>
-                    <hr>
-                    <span class="guestbook-message">{{ $entry->message }}</span>
-                    <hr>
-                    @if($entry->agent === "Agent Unavailable")
-                        <address>Agent unavailable</address>
-                    @else
-                        <address>Posted using <strong>{{ $user_agent->ua->toString() }}</strong>
-                            on <strong>{{ $user_agent->os->toString() }}</strong></address>
-                    @endif
-                </td>
-            </tr>
-        </table>
+        <div class="section">
+            Submitted by <strong>{{ $entry->name }}</strong>
+            on <strong>{{ $entry->created_at->format('Y-m-d') }}</strong>
+            at <strong>{{ $entry->created_at->format('h:i:s A (e)') }}</strong>
+            <hr>
+            <span class="guestbook-message">{{ $entry->message }}</span>
+            <hr>
+            @if($entry->agent === "Agent Unavailable")
+                <address>Agent unavailable</address>
+            @else
+                <address>Posted using <strong>{{ $user_agent->ua->toString() }}</strong>
+                    on <strong>{{ $user_agent->os->toString() }}</strong></address>
+            @endif
+        </div>
         <br>
     @endforeach
 </x-layout>

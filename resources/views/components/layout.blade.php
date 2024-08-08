@@ -25,9 +25,9 @@
 <body onload="setSchemeSelector()">
 <div class="container">
     <div class="page">
-        <div class="header">
+        <header>
             <h1>{{ str_replace("www.", "", Request::getHost()) }}</h1>
-        </div>
+        </header>
         <div class="navbar">
             <p>
                 <strong>Current Path:</strong>
@@ -39,17 +39,17 @@
             </p>
         </div>
         <div class="content">
-            <div class="main">
+            <main>
                 {{ $slot }}
-            </div>
+            </main>
             <div class="sidebar">
-                <div class="section"><x-navigation/></div>
+                <div class="section"><nav><x-navigation/></nav></div>
                 <div class="section"><x-settings/></div>
                 <div class="section centerbox"><x-discord-status/></div>
                 <div class="section"><x-weather/></div>
             </div>
         </div>
-        <div class="footer">
+        <footer>
             <div>
                 (c) floppydisk 2021-{{ date('Y') }}<br>
                 v{{ config('app.version') }}, <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a><br>
@@ -81,7 +81,7 @@
                          class="pixel" alt="Wiby - Search Engine for the Classic Web">
                 </a>
             </div>
-        </div>
+        </footer>
     </div>
 </div>
 </body>

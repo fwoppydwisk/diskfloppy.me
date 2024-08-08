@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:title>Bookmarks</x-slot:title>
     @foreach($categories as $category)
-        <div class="info-section">
+        <div class="section">
             <h2>{{ $category->name }}</h2>
             <hr>
             <ul>

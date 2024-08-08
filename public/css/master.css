@@ -146,7 +146,7 @@ ul {
     flex-grow: 1;
 }
 
-.main {
+main {
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
@@ -154,18 +154,18 @@ ul {
 
 .navbar,
 .content,
-.header,
-.footer {
+header,
+footer {
     margin: 10px 10px 0 0;
 }
 
-.header,
-.footer,
+header,
+footer,
 .navbar {
     padding: 5px;
 }
 
-.footer {
+footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -173,7 +173,7 @@ ul {
     grid-row-gap: 0;
 }
 
-.footer div:last-child {
+footer div:last-child {
     text-align: right;
 }
 
@@ -209,12 +209,12 @@ a.button:hover img {
     opacity: 80%;
 }
 
-.main > .section,
+main > .section,
 .sidebar > .section {
     margin-bottom: 10px;
 }
 
-.main > .section:last-child,
+main > .section:last-child,
 .sidebar > .section:last-child {
     margin-bottom: 0;
 }

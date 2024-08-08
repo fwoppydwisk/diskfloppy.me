@@ -28,10 +28,7 @@
     <div class="section">
         <h2>Random Quote</h2>
         <hr>
-        <p class="quote">
-            <script type="text/javascript" src="{{ asset("/js/randomQuote.js") }}"></script>
-            <noscript>Oops! You need JavaScript enabled to view this content.</noscript>
-        </p>
+        <x-toh-quote/>
     </div>
     <div class="section">
         <h2>Contact</h2>

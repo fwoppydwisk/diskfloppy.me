@@ -426,9 +426,7 @@ return [
             "lines" => [
                 [
                     "character" => "KING",
-                    "line" => "(Rage squeals
-
-)"
+                    "line" => "*Rage squeals*"
                 ]
             ],
             "attribution" => "The Owl House, S1E10"

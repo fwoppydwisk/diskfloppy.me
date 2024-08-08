@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Http;
 use Illuminate\View\View;
 use DateTime;
 
@@ -24,7 +27,7 @@ class HomeController extends Controller {
      */
     public function show(): View {
         return view('home', [
-            'age' => $this->returnAge()
+            'age' => $this->returnAge(),
         ]);
     }
 }

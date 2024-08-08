@@ -45,7 +45,7 @@
             <div class="sidebar">
                 <div class="section"><x-navigation/></div>
                 <div class="section"><x-settings/></div>
-                <div class="section centerbox"><x-online-status/></div>
+                <div class="section centerbox"><x-discord-status/></div>
                 <div class="section"><x-weather/></div>
             </div>
         </div>

@@ -239,3 +239,98 @@ a.button:hover img {
     padding-left: 10px;
     border-left: solid 2px var(--foreground);
 }
+
+.music-top10 {
+    width: 100%;
+}
+
+.music-top10 td,
+.music-top10 th {
+    border: none;
+    border-left: 1px dotted var(--foreground);
+    padding: 2px 5px
+}
+
+.music-top10 tr:nth-child(1) th {
+    border-bottom: 1px dotted var(--foreground);
+}
+
+.music-top10 tr:nth-child(2) td {
+    padding-top: 5px;
+}
+
+.music-top10 td:first-child,
+.music-top10 th:first-child {
+    border: none;
+}
+
+.music-top10 tr th:first-child {
+    text-align: right;
+}
+
+.music-top10 td {
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.music-top10 tr td:first-child {
+    text-align: right;
+}
+
+.music-top10 tr td:nth-child(2),
+.music-top10 tr td:nth-child(3) {
+}
+
+
+.current-track h2 {
+    margin: 0;
+}
+
+table.computers {
+    table-layout: auto;
+    width: 75%;
+}
+
+table.computers td ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+table.computers .section-title {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+table.computers p.description {
+    font-style: italic;
+    margin: 5px 0 2px 0;
+}
+
+table.computers th {
+    background-color: var(--background-secondary);
+}
+
+table.computers td:first-child {
+    white-space: nowrap;
+}
+
+table.computers td,
+table.computers th {
+    border: var(--foreground) solid 1px;
+    padding: 5px;
+}
+
+.calculator-spec-table td {
+    border: var(--foreground) solid 1px;
+}
+
+.calculator-spec-table td {
+    padding: 5px 10px 5px 5px;
+}
+
+.calculator-spec-table tr td:first-child {
+    background-color: var(--background-secondary);
+}

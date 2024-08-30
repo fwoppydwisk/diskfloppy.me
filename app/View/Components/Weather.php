@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Closure;
+use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
@@ -25,11 +26,16 @@ class Weather extends Component
             return Cache::get('weather_data');
         }
 
-        $response = Http::get('http://'. Config::get('services.weatherlink') . '/v1/current_conditions');
-        $data = $response->json();
-        $conditions = $data["data"]["conditions"];
-        Cache::put('weather_data', $conditions, now()->addSeconds(60));
-        return $conditions;
+        try {
+            $response = Http::get('http://' . Config::get('services.weatherlink') . '/v1/current_conditions');
+            $data = $response->json();
+            $conditions = $data["data"]["conditions"];
+            Cache::put('weather_data', $conditions, now()->addSeconds(60));
+            return $conditions;
+        } catch (Exception $ex) {
+            return null;
+        }
+
     }
 
     /**

@@ -31,13 +31,15 @@ class DiscordStatus extends Component
 
         $response = Http::get('https://api.lanyard.rest/v1/users/' . Config::get('services.lanyard.user_id'));
         $data = $response->json();
+        if (!isset($data["data"])) return null;
         $presence = $data["data"];
         Cache::put('discord_presence', $presence, now()->addSeconds(60));
         return $presence;
     }
 
-    public function getOnlineStatus(): array {
+    public function getOnlineStatus(): ?array {
         $presence = $this->getDiscordPresence();
+        if ($presence == null) return null;
         return match ($presence["discord_status"]) {
             "online", "dnd" => [
                 "text" => "online",

@@ -52,10 +52,30 @@
         <footer>
             <div>
                 (c) floppydisk 2021-{{ date('Y') }}<br>
-                v{{ config('app.version') }}, <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a><br>
+                v{{ config('app.version') }},
+                <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a>,
+                <a href="/privacy">Privacy Policy?</a><br>
                 Served by {{ gethostname() }}
             </div>
             <div>
+                <a href="https://confusionunknown.nekoweb.org/" class="button">
+                    <img src="{{ URL::asset('images/buttons/cnfunknown.gif') }}" width="88" height="31"
+                         class="pixel" alt="confusionunknown">
+                </a>
+                <a href="https://julimiro.eu/" class="button">
+                    <img src="{{ URL::asset('images/buttons/juli.gif') }}" width="88" height="31"
+                         class="pixel" alt="julimiro">
+                </a>
+                <a href="https://x86.breadtf.com/" class="button">
+                    <img src="{{ URL::asset('images/buttons/x86.gif') }}" width="88" height="31"
+                         class="pixel" alt="x86Overflow">
+                </a>
+                <img src="{{ URL::asset('images/buttons/brokenimage.gif') }}" width="88" height="31"
+                     class="pixel" alt="Made with my own two paws">
+                <img src="{{ URL::asset('images/buttons/brokenimage.gif') }}" width="88" height="31"
+                     class="pixel" alt="Made with my own two paws">
+                <img src="{{ URL::asset('images/buttons/brokenimage.gif') }}" width="88" height="31"
+                     class="pixel" alt="Made with my own two paws"><br>
                 <a href="https://dimden.dev/" class="button">
                     <img src="https://dimden.dev/services/images/88x31.gif" width="88" height="31"
                          class="pixel" alt="dimden.dev">
@@ -67,19 +87,15 @@
                 <a href="https://www.vim.org/" class="button">
                     <img src="{{ URL::asset('images/buttons/vim.gif') }}" width="88" height="31"
                          class="pixel" alt="vim">
-                </a><br>
+                </a>
                 <a href="https://wave.webaim.org/" class="button">
                     <img src="{{ URL::asset('images/buttons/evaluatedWAVE.png') }}" width="88" height="31"
                          class="pixel" alt="Evaluated to be accessible!">
                 </a>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer" class="button">
-                    <img src="{{ URL::asset('images/buttons/vcss-blue.gif') }}" width="88" height="31"
-                         class="pixel" alt="Valid CSS!">
-                </a>
-                <a href="https://wiby.me/" class="button">
-                    <img src="{{ URL::asset('images/buttons/wiby.gif') }}" width="88" height="31"
-                         class="pixel" alt="Wiby - Search Engine for the Classic Web">
-                </a>
+                <img src="{{ URL::asset('images/buttons/aliasing.png') }}" width="88" height="31"
+                     class="pixel" alt="I heart aliasing!">
+                <img src="{{ URL::asset('images/buttons/paws.gif') }}" width="88" height="31"
+                     class="pixel" alt="Made with my own two paws">
             </div>
         </footer>
     </div>

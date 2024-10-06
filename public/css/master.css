@@ -54,9 +54,7 @@ select {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
     font-family: "pixel nes", sans-serif;
 }
 
@@ -67,6 +65,11 @@ h4,
 ul,
 p {
     margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--foreground);
 }
 
 a {
@@ -167,7 +170,7 @@ footer,
 
 footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -333,4 +336,8 @@ table.computers th {
 
 .calculator-spec-table tr td:first-child {
     background-color: var(--background-secondary);
+}
+
+.sidebar > .section > button {
+    margin-top: 5px;
 }

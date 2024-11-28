@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:title>Bookmarks</x-slot:title>
     @foreach($categories as $category)
-        <div class="section">
+        <div class="bookmark-category">
             <h2>{{ $category->name }}</h2>
             @if($category->id == 1)
                 <p><em>(These are shuffled every load)</em></p>

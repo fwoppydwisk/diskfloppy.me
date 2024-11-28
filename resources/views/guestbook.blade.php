@@ -56,7 +56,7 @@
         @php
             $user_agent = $parser->parse($entry->agent);
         @endphp
-        <div class="section">
+        <div class="gb-entry">
             Submitted by <strong>{{ $entry->name }}</strong>
             on <strong>{{ $entry->created_at->format('Y-m-d') }}</strong>
             at <strong>{{ $entry->created_at->format('h:i:s A (e)') }}</strong>

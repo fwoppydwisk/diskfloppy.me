@@ -1,4 +1,3 @@
-<div class="section">
 <table class="music-top10">
     <caption>
         <h2 style="margin-bottom: 5px">Top 10 Tracks (Last 30 days):</h2>
@@ -15,4 +14,3 @@
         <x-track :track="$track" :count="$count"/>
     @endforeach
 </table>
-</div>

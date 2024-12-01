@@ -6,14 +6,14 @@
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f27405">
+    <title>wah! (dot moe)</title>
     <link rel="stylesheet" href="{{ asset('/css/master.css') }}"/>
     <link rel="icon" type="image/png" href="{{ asset('/favicon-32x32.png') }}" sizes="32x32"/>
     <link rel="icon" type="image/png" href="{{ asset('/favicon-16x16.png') }}" sizes="16x16"/>
-    {!! (intval(date('n')) == 12) ? '<script src="/js/christmas/snow.js"></script>' : '' !!}
+    {!! (intval(date('n')) == 12) ? '<script src="/js/christmas/snowstorm.js"></script>' : '' !!}
 
     <!-- Page-specific -->
-    <title>{{ $title ?? 'Unknown' }} - {{ str_replace("www.", "", Request::getHost()) }}</title>
-    <meta property="og:title" content="{{ str_replace("www.", "", Request::getHost()) }} | {{ $title }}">
+    <meta property="og:title" content="wah.moe | {{ $title }}">
     <meta property="og:image" content="/favicon-128x128.png">
 </head>
 <body>

@@ -21,6 +21,7 @@ body {
     min-height: 100%;
     background-color: hsla(0, 0%, 0%, 0);
     padding: 10px;
+    font-family: serif;
 }
 
 /*noinspection CssUnknownTarget*/
@@ -111,6 +112,28 @@ div#content::after {
     clear: both;
 }
 
+div#footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+div#footer div:last-child {
+    text-align: right;
+}
+
+div#footer div:last-child img {
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+    width: 88px;
+    height: 31px;
+}
+
+/** Wah! **/
 div.wah {
     float: right;
     border: var(--border);
@@ -136,27 +159,6 @@ div.wah p {
 
 div.wah img {
     width: 250px;
-}
-
-div#footer {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    align-items: center;
-}
-
-div#footer div:last-child {
-    text-align: right;
-}
-
-div#footer div:last-child img {
-    image-rendering: pixelated;
-    margin: 0;
-    padding: 0;
-    width: 88px;
-    height: 31px;
 }
 
 /** Guestbook **/
@@ -234,4 +236,26 @@ table.music-top10 tr td:first-child {
 /** Bookmarks **/
 div.bookmark-category:first-child h2 {
     margin: 0;
+}
+
+
+/** Rosco **/
+div.rosco-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div.rosco {
+    border: var(--border);
+    padding: 5px;
+    filter: var(--shadow-small);
+    background-color: var(--background);
+    margin: 10px;
+    height: auto;
+}
+
+div.rosco,
+div.rosco img {
+    max-width: 220px;
 }

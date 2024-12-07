@@ -21,7 +21,7 @@ class Wah extends Component
         try {
             $response = Http::get('https://api.tinyfox.dev/img.json?animal=wah');
             $data = $response->json();
-            return "https://tinyfox.dev".$data["loc"];
+            return "https://api.tinyfox.dev".$data["loc"];
         } catch (Exception $ex) {
             return "";
         }

@@ -37,18 +37,18 @@
                 </span>
             </div>
             <div>
-                <img src="{{ URL::asset('images/buttons/cnfunknown.gif') }}">
-                <img src="{{ URL::asset('images/buttons/juli.gif') }}">
-                <img src="{{ URL::asset('images/buttons/x86.gif') }}">
-                <img src="{{ URL::asset('images/buttons/thnlqd.png') }}">
-                <img src="https://dimden.dev/services/images/88x31.gif">
-                <img src="{{ URL::asset('images/buttons/csshard.gif') }}"><br>
-                <img src="{{ URL::asset('images/buttons/linuxnow.gif') }}">
-                <img src="{{ URL::asset('images/buttons/paws.gif') }}">
-                <img src="{{ URL::asset('images/buttons/transrights.gif') }}">
-                <img src="{{ URL::asset('images/buttons/debian.gif') }}">
-                <img src="{{ URL::asset('images/buttons/vim.gif') }}">
-                <img src="{{ URL::asset('images/buttons/aliasing.png') }}">
+                <a href="https://aliceisvery.gay/"><img src="{{ URL::asset('images/buttons/cnfunknown.gif') }}" alt="ConfusionUnknown"></a>
+                <a href="https://julimiro.eu/"><img src="{{ URL::asset('images/buttons/juli.gif') }}" alt="Julimiro.eu"></a>
+                <a href="https://x86.breadtf.com/"><img src="{{ URL::asset('images/buttons/x86.gif') }}" alt="x86Overflow"></a>
+                <a href="https://thinliquid.dev/"><img src="{{ URL::asset('images/buttons/thnlqd.png') }}" alt="thinliquid"></a>
+                <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" alt="dimden.dev"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="{{ URL::asset('images/buttons/csshard.gif') }}" alt="CSS is hard"></a><br>
+                <a href="https://linux.org/"><img src="{{ URL::asset('images/buttons/linuxnow.gif') }}" alt="Linux NOW!"></a>
+                <img src="{{ URL::asset('images/buttons/paws.gif') }}" alt="Made with my own two paws">
+                <img src="{{ URL::asset('images/buttons/transrights.gif') }}" alt="Trans Rights NOW!">
+                <a href="https://www.debian.org/"><img src="{{ URL::asset('images/buttons/debian.gif') }}" alt="Powered by Debian"></a>
+                <a href="https://www.vim.org/"><img src="{{ URL::asset('images/buttons/vim.gif') }}" alt="Vim"></a>
+                <img src="{{ URL::asset('images/buttons/aliasing.png') }}" alt="I Heart Aliasing">
             </div>
         </div>
     </div>

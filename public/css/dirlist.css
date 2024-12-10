@@ -1,40 +1,63 @@
-@import "colorschemes/catppuccin-macchiato.css";
+:root {
+  --background: #f2efbd;
+  --background-dim: hsl(57, 85%, 85%);
+  --foreground: #2a271c;
+  --border-color: #f27405;
+  --border: var(--border-color) 2px solid;
+  --shadow-color: hsla(11, 96%, 43%, 0.4);
+  --shadow: drop-shadow(8px 8px var(--shadow-color));
+  --shadow-small: drop-shadow(3px 3px var(--shadow-color));
+  --links: hsl(183, 93%, 27%);
+  --links-hover: hsl(183, 93%, 15%);
+  --table-header: hsla(11, 96%, 43%, 0.2);
+}
 
 body {
-	background-color: var(--background);
-	color: var(--foreground);
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 20px;
 }
 
 img {
-    image-rendering: pixelated;
+  image-rendering: pixelated;
 }
 
 a {
-    color: #99f;
-    text-decoration: none;
+  color: var(--links);
+  text-decoration: underline dotted;
 }
 
 a:hover {
-    text-decoration: underline;
+  color: var(--links-hover);
+  text-decoration: underline solid;
 }
 
 h1#indextitle {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
 }
 
-tr, th, td {
-	font-family: monospace;
-	font-size: 12pt;
-	padding: 0 5px;
+tr,
+th,
+td {
+  font-family: monospace;
+  font-size: 12pt;
+  padding: 0 15px;
+}
+
+tr td:nth-child(2) {
+  padding-left: 0;
 }
 
 address {
-	font-family: sans-serif;
-	font-size: 12pt
+  font-family: sans-serif;
+  font-size: 12pt;
 }
 
 .description {
-	font-style: italic;
-	font-size: 90%;
+  font-style: italic;
+  font-size: 90%;
 }
+

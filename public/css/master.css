@@ -92,6 +92,21 @@ div.page-container > div:last-child {
     margin-bottom: 0;
 }
 
+div#header {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+div#header img {
+    filter: drop-shadow(2px 2px hsl(0, 0%, 66%));
+    margin-right: 10px;
+    image-rendering: pixelated;
+}
+
 div#header h1 {
     margin: 0;
     font-style: italic;

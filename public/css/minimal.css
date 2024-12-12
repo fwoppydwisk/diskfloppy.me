@@ -1,12 +1,13 @@
-* { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
-html { color-scheme: dark; }
-body { color: #cad3f5; background-color: #181926; }
+html { color-scheme: light; }
+body { color: #2a271c; background-color: #f2efbd; font-family: serif; }
 h1, h2, h4, ul, p { margin: 0; }
 h1 { font-weight: normal; }
 h4 { margin-bottom: 5px; }
 ul { padding: 5px 30px; }
-a { color: #8aadf4; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: hsl(183, 93%, 27%); text-decoration: underline dotted; }
+a:hover { color: hsl(183, 93%, 15%); text-decoration: underline solid; }
 code { font-family: monospace; }
 code.addr { font-size: 24px; }
-table { border: 1px solid #cad3f5; }
+table { border: #f27405 2px solid; background-color: #f2efbd; filter: drop-shadow(3px 3px hsla(11, 96%, 43%, 0.4)); }
+img { border: #f27405 2px solid; filter: drop-shadow(3px 3px hsla(11, 96%, 43%, 0.4)); }
+hr { border: none; border-bottom: 2px solid #f27405; }

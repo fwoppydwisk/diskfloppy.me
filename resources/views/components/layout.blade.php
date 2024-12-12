@@ -13,17 +13,22 @@
     {!! (intval(date('n')) == 12) ? '<script src="/js/christmas/snowstorm.js"></script>' : '' !!}
 
     <!-- Page-specific -->
-    <meta property="og:title" content="wah.moe | {{ $title }}">
+    <meta property="og:title" content="wah! (dot moe) - {{ $title }}">
     <meta property="og:image" content="/favicon-128x128.png">
 </head>
 <body>
     <div class="page-container">
         <div id="header">
-            <h1>wah!</h1>
-            <p>
-                (dot moe)
-            </p>
-            <x-navigation></x-navigation>
+            <div>
+                <img src="{{ asset('/images/logo.png') }}" width="65">
+            </div>
+            <div>
+                <h1>wah!</h1>
+                <p>
+                    (dot moe)
+                </p>
+                <x-navigation></x-navigation>
+            </div>
         </div>
         <div id="content">
             {{ $slot }}

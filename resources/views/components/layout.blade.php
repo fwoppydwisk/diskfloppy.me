@@ -44,7 +44,7 @@
             <div>
                 <a href="https://aliceisvery.gay/"><img src="{{ URL::asset('images/buttons/cnfunknown.gif') }}" alt="ConfusionUnknown"></a>
                 <a href="https://julimiro.eu/"><img src="{{ URL::asset('images/buttons/juli.gif') }}" alt="Julimiro.eu"></a>
-                <a href="https://x86.breadtf.com/"><img src="{{ URL::asset('images/buttons/x86.gif') }}" alt="x86Overflow"></a>
+                <a href="https://x86.isafox.gay/"><img src="{{ URL::asset('images/buttons/x86.gif') }}" alt="x86Overflow"></a>
                 <a href="https://thinliquid.dev/"><img src="{{ URL::asset('images/buttons/thnlqd.png') }}" alt="thinliquid"></a>
                 <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" alt="dimden.dev"></a>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="{{ URL::asset('images/buttons/csshard.gif') }}" alt="CSS is hard"></a><br>

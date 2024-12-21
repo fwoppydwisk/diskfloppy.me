@@ -252,6 +252,19 @@ table.music-top10 tr td:first-child {
     background-color: var(--table-header);
 }
 
+div.current-track {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+div.current-track img {
+    float: left;
+    filter: var(--shadow-small);
+    border: var(--border);
+}
 
 /** Bookmarks **/
 div.bookmark-category:first-child h2 {

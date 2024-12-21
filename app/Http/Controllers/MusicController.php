@@ -25,10 +25,12 @@ class MusicController extends Controller
         $data = $response->json();
         error_log($response->body());
         $track_data = $data["recenttracks"]["track"][0];
+        $image = array_column($track_data["image"], null, 'size')['large'] ?? false;
         $current_track = [
             'title' => $track_data["name"],
             'artist' => $track_data["artist"]["#text"],
             'url' => $track_data["url"],
+            'image' => $image["#text"],
         ];
         Cache::put('current_track', $current_track, now()->addSeconds(15));
         return $current_track;

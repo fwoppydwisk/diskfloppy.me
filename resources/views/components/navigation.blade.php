@@ -1,6 +1,7 @@
 <nav>
     <strong>Pages:</strong>
     <a href="/">home</a> |
+    <a href="//wiki.wah.moe">wah-ki</a> |
     <a href="//git.wah.moe">git</a> |
     <a href="/pub">files</a> |
     <a href="/bookmarks">bookmarks</a> |

@@ -264,6 +264,8 @@ div.current-track img {
     float: left;
     filter: var(--shadow-small);
     border: var(--border);
+    width: 174px;
+    height: 174px;
 }
 
 /** Bookmarks **/

@@ -50,7 +50,7 @@
                 <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" alt="dimden.dev"></a><br>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="{{ URL::asset('images/buttons/csshard.gif') }}" alt="CSS is hard"></a>
                 <a href="https://linux.org/"><img src="{{ URL::asset('images/buttons/linuxnow.gif') }}" alt="Linux NOW!"></a>
-                <img src="{{ URL::asset('images/buttons/paws.gif') }}" alt="Made with my own two paws">
+                <img src="{{ URL::asset('images/buttons/paws-aliased.png') }}" alt="Made with my own two paws">
                 <img src="{{ URL::asset('images/buttons/transrights.gif') }}" alt="Trans Rights NOW!">
                 <a href="https://www.vim.org/"><img src="{{ URL::asset('images/buttons/vim.gif') }}" alt="Vim"></a>
                 <img src="{{ URL::asset('images/buttons/aliasing.png') }}" alt="I Heart Aliasing">

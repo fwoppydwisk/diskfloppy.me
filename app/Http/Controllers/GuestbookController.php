@@ -27,21 +27,7 @@ class GuestbookController extends Controller {
      * @throws ValidationException
      */
     public function addEntry(Request $request): RedirectResponse {
-        $this->validate($request, [
-            'name' => 'required',
-            'message' => 'required'
-        ]);
-
-
         GuestbookEntry::insertGuestbookEntry($request);
         return back()->with('success', 'Entry submitted successfully!');
-    }
-
-    public function banIP(string $addr) {
-        // TODO: Add banning system
-        // $matching_bans = DB::select('SELECT reason FROM guestbook__bans WHERE ip_address = ?', array($request->ip()));
-        // if (!empty($matching_bans)) {
-        //     return view('errors.guestbook-ipban')->with('reason', $matching_bans[0]->reason);
-        // }
     }
 }

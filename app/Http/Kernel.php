@@ -47,6 +47,7 @@ class Kernel extends HttpKernel
 
     protected $routeMiddleware = [
         'rate_limit' => \App\Http\Middleware\RateLimiter::class,
+        'validator' => \App\Http\Middleware\GuestbookValidate::class,
     ];
 
 

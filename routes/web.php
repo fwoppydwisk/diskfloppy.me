@@ -25,4 +25,5 @@ Route::get('/guestbook', [GuestbookController::class, 'show']);
 Route::get('/music', [MusicController::class, 'show']);
 Route::get('/rosco', [RoscoController::class, 'show']);
 Route::post('/guestbook', [GuestbookController::class, 'addEntry'])
+    ->middleware('validator')
     ->middleware('rate_limit');

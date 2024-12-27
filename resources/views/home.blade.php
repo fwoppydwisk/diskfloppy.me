@@ -8,7 +8,7 @@
     <br>
     <p>Some quick facts about me:</p>
     <ul>
-        <li>19 y/o, he/him, British</li>
+        <li>{{ $age }} y/o, he/him, British</li>
         <li>Theatre Technician and &quot;Web Developer&quot;</li>
         <li>Loves ETC desks, prefers Generics to LEDs for some reason</li>
         <li>Spends way too much time on his computer</li>
@@ -27,19 +27,4 @@
         <li><strong>Gaming</strong> - <a href="https://steamcommunity.com/id/fwoppydwisk/">Steam Profile</a>
         </li>
     </ul>
-
-{{--    <div class="section">--}}
-{{--        <h2>Random Quote</h2>--}}
-{{--        <hr>--}}
-{{--        <x-toh-quote/>--}}
-{{--    </div>--}}
-{{--    <div class="section">--}}
-{{--        <h2>Contact</h2>--}}
-{{--        <hr>--}}
-{{--        <p>--}}
-{{--            <strong>E-mail:</strong> <a href="mailto:contact@diskfloppy.me">contact@diskfloppy.me</a><br>--}}
-{{--            <strong>Mastodon:</strong> <a rel="me" href="https://c.im/@floppydisk">@floppydisk@c.im</a><br>--}}
-{{--            <strong>Matrix:</strong> <a href="https://matrix.to/#/@floppydisk:arcticfoxes.net">@floppydisk:arcticfoxes.net</a>--}}
-{{--        </p>--}}
-{{--    </div>--}}
 </x-layout>

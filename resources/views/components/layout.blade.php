@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{{ asset('/css/master.css') }}"/>
     <link rel="icon" type="image/png" href="{{ asset('/favicon-32x32.png') }}" sizes="32x32"/>
     <link rel="icon" type="image/png" href="{{ asset('/favicon-16x16.png') }}" sizes="16x16"/>
-    {!! (intval(date('n')) == 12) ? '<script src="/js/christmas/snowstorm.js"></script>' : '' !!}
+    @if ($isChristmas)<script src="{{ asset('/js/christmas/snowstorm.js') }}"></script>@endif
+
 
     <!-- Page-specific -->
     <meta property="og:title" content="wah! (dot moe) - {{ $title }}">
@@ -36,6 +37,7 @@
         <div id="footer">
             <div>
                 <span>
+                    {{ $isChristmas === true ? "true" : "false" }}
                     &copy; floppydisk 2021-{{ date('Y') }}<br>
                     v{{ config('app.version') }}, <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a><br>
                     Served by {{ gethostname() }}

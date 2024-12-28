@@ -2,28 +2,28 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://www.diskfloppy.me/</loc>
-	<lastmod>2024-11-27T23:59:26+00:00</lastmod>
+	<loc>https://wah.moe/</loc>
+	<lastmod>2024-12-28T18:33:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.diskfloppy.me/pub/</loc>
-	<lastmod>2024-11-27T23:59:26+00:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://www.diskfloppy.me/bookmarks</loc>
-	<lastmod>2024-11-27T23:59:26+00:00</lastmod>
+	<loc>https://wah.moe/bookmarks</loc>
+	<lastmod>2024-12-28T18:33:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.diskfloppy.me/guestbook</loc>
-	<lastmod>2024-11-27T23:59:26+00:00</lastmod>
+	<loc>https://wah.moe/guestbook</loc>
+	<lastmod>2024-12-28T18:33:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.diskfloppy.me/music</loc>
-	<lastmod>2024-11-27T23:59:26+00:00</lastmod>
+	<loc>https://wah.moe/music</loc>
+	<lastmod>2024-12-28T18:33:23+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wah.moe/rosco</loc>
+	<lastmod>2024-12-28T18:33:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 </urlset>

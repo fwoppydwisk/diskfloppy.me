@@ -37,7 +37,6 @@
         <div id="footer">
             <div>
                 <span>
-                    {{ $isChristmas === true ? "true" : "false" }}
                     &copy; floppydisk 2021-{{ date('Y') }}<br>
                     v{{ config('app.version') }}, <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a><br>
                     Served by {{ gethostname() }}

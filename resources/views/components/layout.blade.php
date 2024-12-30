@@ -37,8 +37,8 @@
         <div id="footer">
             <div>
                 <span>
-                    &copy; floppydisk 2021-{{ date('Y') }}<br>
-                    v{{ config('app.version') }}, <a href="https://git.frzn.dev/fwoppydwisk/diskfloppy.me/releases/latest">Source</a><br>
+                    &copy; RoscoeDeWah 2021-{{ date('Y') }}<br>
+                    v{{ config('app.version') }}, <a href="https://git.frzn.dev/RoscoeDeWah/wah.moe/releases/latest">Source</a><br>
                     Served by {{ gethostname() }}
                 </span>
             </div>

@@ -23,6 +23,6 @@
                     Agent: &nbsp;&nbsp;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0	</code>
             </td></tr></table>
     <hr align="left">
-    <p>&copy; floppydisk 2021-2024</p>
+    <p>&copy; RoscoeDeWah 2021-2024</p>
 </body>
 </html>

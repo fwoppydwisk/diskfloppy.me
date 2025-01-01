@@ -20,8 +20,8 @@ class GuestbookEntry extends Model
      */
     public static function insertGuestbookEntry(Request $request) {
         $newEntry = new GuestbookEntry;
-        $newEntry->name = htmlspecialchars($request->get('name'));
-        $newEntry->message = htmlspecialchars($request->get('message'));
+        $newEntry->name = $request->get('name');
+        $newEntry->message = $request->get('message');
         $newEntry->ip = $request->ip();
         $newEntry->agent = $request->userAgent();
         $newEntry->admin = auth()->check();
